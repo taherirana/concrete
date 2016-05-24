@@ -282,7 +282,7 @@
             // btnPrintReceipt
             // 
             this.btnPrintReceipt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnPrintReceipt.Location = new System.Drawing.Point(464, 531);
+            this.btnPrintReceipt.Location = new System.Drawing.Point(463, 531);
             this.btnPrintReceipt.Name = "btnPrintReceipt";
             this.btnPrintReceipt.Size = new System.Drawing.Size(76, 27);
             this.btnPrintReceipt.TabIndex = 26;

@@ -79,7 +79,7 @@
             this.btnCancel.Size = new System.Drawing.Size(69, 24);
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Text = "انصراف";
-            this.btnCancel.Click += new System.EventHandler(this.btnCansel_Click);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -119,9 +119,9 @@
             // 
             // p5
             // 
-            this.p5.Location = new System.Drawing.Point(427, 122);
+            this.p5.Location = new System.Drawing.Point(428, 122);
             this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(36, 30);
+            this.p5.Size = new System.Drawing.Size(35, 30);
             this.p5.TabIndex = 13;
             // 
             // p4
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 202);
+            this.ClientSize = new System.Drawing.Size(646, 209);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

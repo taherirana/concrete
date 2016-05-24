@@ -33,6 +33,8 @@
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
             this.txtconcretetype = new System.Windows.Forms.TextBox();
+            this.txtconcretePrice = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
@@ -49,13 +51,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtconcretePrice);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnSubmit);
             this.groupBox1.Controls.Add(this.txtconcretetype);
             this.groupBox1.Controls.Add(this.lblconcretetype);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(261, 118);
+            this.groupBox1.Size = new System.Drawing.Size(261, 170);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت نوع بتن";
@@ -63,7 +67,7 @@
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCancel.Location = new System.Drawing.Point(12, 84);
+            this.btnCancel.Location = new System.Drawing.Point(12, 134);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(69, 24);
             this.btnCancel.TabIndex = 10;
@@ -78,7 +82,7 @@
             // btnSubmit
             // 
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnSubmit.Location = new System.Drawing.Point(107, 84);
+            this.btnSubmit.Location = new System.Drawing.Point(107, 134);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(69, 24);
             this.btnSubmit.TabIndex = 9;
@@ -97,11 +101,27 @@
             this.txtconcretetype.Size = new System.Drawing.Size(164, 30);
             this.txtconcretetype.TabIndex = 7;
             // 
+            // txtconcretePrice
+            // 
+            this.txtconcretePrice.Location = new System.Drawing.Point(12, 85);
+            this.txtconcretePrice.Name = "txtconcretePrice";
+            this.txtconcretePrice.Size = new System.Drawing.Size(164, 30);
+            this.txtconcretePrice.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(205, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 23);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "مبلغ:";
+            // 
             // Frm_SabtAConcreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(262, 118);
+            this.ClientSize = new System.Drawing.Size(259, 170);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -127,5 +147,7 @@
         private System.Windows.Forms.TextBox txtconcretetype;
         private Telerik.WinControls.UI.RadButton btnCancel;
         private Telerik.WinControls.UI.RadButton btnSubmit;
+        private System.Windows.Forms.TextBox txtconcretePrice;
+        private System.Windows.Forms.Label label1;
     }
 }

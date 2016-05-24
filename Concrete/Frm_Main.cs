@@ -39,5 +39,10 @@ namespace Concrete
             Frm_SabtAConcreate fsac = new Frm_SabtAConcreate();
             fsac.ShowDialog();
         }
+
+        private void rbe_SInvoice_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

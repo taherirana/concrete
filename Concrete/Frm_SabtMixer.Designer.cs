@@ -66,7 +66,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(-1, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(645, 210);
+            this.groupBox1.Size = new System.Drawing.Size(645, 212);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت میکسر";
@@ -119,9 +119,9 @@
             // 
             // p5
             // 
-            this.p5.Location = new System.Drawing.Point(428, 122);
+            this.p5.Location = new System.Drawing.Point(427, 122);
             this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(35, 30);
+            this.p5.Size = new System.Drawing.Size(36, 30);
             this.p5.TabIndex = 13;
             // 
             // p4
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 209);
+            this.ClientSize = new System.Drawing.Size(642, 205);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

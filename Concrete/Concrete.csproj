@@ -92,6 +92,9 @@
     <EmbeddedResource Include="Frm_SabtCustomer.resx">
       <DependentUpon>Frm_SabtCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SabtMixer.resx">
+      <DependentUpon>Frm_SabtMixer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

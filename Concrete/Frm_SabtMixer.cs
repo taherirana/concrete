@@ -15,5 +15,10 @@ namespace Concrete
         {
             InitializeComponent();
         }
+
+        private void btnCansel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

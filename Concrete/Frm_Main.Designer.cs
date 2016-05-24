@@ -116,6 +116,7 @@
             this.rbe_SabtMixer.Name = "rbe_SabtMixer";
             this.rbe_SabtMixer.Text = "ثبت میکسر";
             this.rbe_SabtMixer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbe_SabtMixer.Click += new System.EventHandler(this.rbe_SabtMixer_Click);
             // 
             // radRibbonBarGroup4
             // 

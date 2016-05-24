@@ -27,5 +27,11 @@ namespace Concrete
         {
 
         }
+
+        private void rbe_SabtMixer_Click(object sender, EventArgs e)
+        {
+            Frm_SabtMixer fsm = new Frm_SabtMixer();
+            fsm.ShowDialog();
+        }
     }
 }

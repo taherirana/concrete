@@ -30,9 +30,9 @@
         {
             this.lblconcretetype = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtconcretetype = new System.Windows.Forms.TextBox();
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
+            this.txtconcretetype = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
@@ -60,13 +60,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت نوع بتن";
             // 
-            // txtconcretetype
-            // 
-            this.txtconcretetype.Location = new System.Drawing.Point(12, 37);
-            this.txtconcretetype.Name = "txtconcretetype";
-            this.txtconcretetype.Size = new System.Drawing.Size(164, 30);
-            this.txtconcretetype.TabIndex = 7;
-            // 
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
@@ -90,22 +83,30 @@
             this.btnSubmit.Size = new System.Drawing.Size(69, 24);
             this.btnSubmit.TabIndex = 9;
             this.btnSubmit.Text = "ثبت";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             // 
+            // txtconcretetype
+            // 
+            this.txtconcretetype.Location = new System.Drawing.Point(12, 37);
+            this.txtconcretetype.Name = "txtconcretetype";
+            this.txtconcretetype.Size = new System.Drawing.Size(164, 30);
+            this.txtconcretetype.TabIndex = 7;
+            // 
             // Frm_SabtAConcreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 121);
+            this.ClientSize = new System.Drawing.Size(255, 117);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Frm_SabtAConcreate";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;

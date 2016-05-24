@@ -31,11 +31,8 @@
             this.radRibbonBar1 = new Telerik.WinControls.UI.RadRibbonBar();
             this.ribbonTab1 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup2 = new Telerik.WinControls.UI.RadRibbonBarGroup();
-            this.rbe_sabtCustomer = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup3 = new Telerik.WinControls.UI.RadRibbonBarGroup();
-            this.rbe_SabtMixer = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup4 = new Telerik.WinControls.UI.RadRibbonBarGroup();
-            this.rbe_SabtAConcreate = new Telerik.WinControls.UI.RadButtonElement();
             this.ribbonTab2 = new Telerik.WinControls.UI.RibbonTab();
             this.ribbonTab3 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup1 = new Telerik.WinControls.UI.RadRibbonBarGroup();
@@ -45,6 +42,9 @@
             this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuSeparatorItem3 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.radMenuSeparatorItem4 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
+            this.rbe_sabtCustomer = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbe_SabtMixer = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbe_SabtAConcreate = new Telerik.WinControls.UI.RadButtonElement();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,14 +93,6 @@
             this.radRibbonBarGroup2.Name = "radRibbonBarGroup2";
             this.radRibbonBarGroup2.Text = "مشتری";
             // 
-            // rbe_sabtCustomer
-            // 
-            this.rbe_sabtCustomer.Image = global::Concrete.Properties.Resources.Customer_Transparent1;
-            this.rbe_sabtCustomer.Name = "rbe_sabtCustomer";
-            this.rbe_sabtCustomer.Text = "ثبت مشتری";
-            this.rbe_sabtCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.rbe_sabtCustomer.Click += new System.EventHandler(this.rbe_sabtCustomer_Click);
-            // 
             // radRibbonBarGroup3
             // 
             this.radRibbonBarGroup3.AutoSize = false;
@@ -110,14 +102,6 @@
             this.radRibbonBarGroup3.Name = "radRibbonBarGroup3";
             this.radRibbonBarGroup3.Text = "میکسر";
             // 
-            // rbe_SabtMixer
-            // 
-            this.rbe_SabtMixer.Image = global::Concrete.Properties.Resources.concrete_truck_icon;
-            this.rbe_SabtMixer.Name = "rbe_SabtMixer";
-            this.rbe_SabtMixer.Text = "ثبت میکسر";
-            this.rbe_SabtMixer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.rbe_SabtMixer.Click += new System.EventHandler(this.rbe_SabtMixer_Click);
-            // 
             // radRibbonBarGroup4
             // 
             this.radRibbonBarGroup4.AutoSize = false;
@@ -126,13 +110,6 @@
             this.rbe_SabtAConcreate});
             this.radRibbonBarGroup4.Name = "radRibbonBarGroup4";
             this.radRibbonBarGroup4.Text = "بتن";
-            // 
-            // rbe_SabtAConcreate
-            // 
-            this.rbe_SabtAConcreate.Image = global::Concrete.Properties.Resources.new1;
-            this.rbe_SabtAConcreate.Name = "rbe_SabtAConcreate";
-            this.rbe_SabtAConcreate.Text = "ثبت بتن";
-            this.rbe_SabtAConcreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // ribbonTab2
             // 
@@ -188,6 +165,30 @@
             this.radMenuSeparatorItem4.Name = "radMenuSeparatorItem4";
             this.radMenuSeparatorItem4.Text = "radMenuSeparatorItem4";
             this.radMenuSeparatorItem4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // rbe_sabtCustomer
+            // 
+            this.rbe_sabtCustomer.Image = global::Concrete.Properties.Resources.Customer_Transparent1;
+            this.rbe_sabtCustomer.Name = "rbe_sabtCustomer";
+            this.rbe_sabtCustomer.Text = "ثبت مشتری";
+            this.rbe_sabtCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbe_sabtCustomer.Click += new System.EventHandler(this.rbe_sabtCustomer_Click);
+            // 
+            // rbe_SabtMixer
+            // 
+            this.rbe_SabtMixer.Image = global::Concrete.Properties.Resources.concrete_truck_icon;
+            this.rbe_SabtMixer.Name = "rbe_SabtMixer";
+            this.rbe_SabtMixer.Text = "ثبت میکسر";
+            this.rbe_SabtMixer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbe_SabtMixer.Click += new System.EventHandler(this.rbe_SabtMixer_Click);
+            // 
+            // rbe_SabtAConcreate
+            // 
+            this.rbe_SabtAConcreate.Image = global::Concrete.Properties.Resources.new1;
+            this.rbe_SabtAConcreate.Name = "rbe_SabtAConcreate";
+            this.rbe_SabtAConcreate.Text = "ثبت بتن";
+            this.rbe_SabtAConcreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbe_SabtAConcreate.Click += new System.EventHandler(this.rbe_SabtAConcreate_Click);
             // 
             // Frm_Main
             // 

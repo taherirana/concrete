@@ -89,6 +89,9 @@
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SabtAConcreate.resx">
+      <DependentUpon>Frm_SabtAConcreate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_SabtCustomer.resx">
       <DependentUpon>Frm_SabtCustomer.cs</DependentUpon>
     </EmbeddedResource>

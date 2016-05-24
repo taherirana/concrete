@@ -33,5 +33,11 @@ namespace Concrete
             Frm_SabtMixer fsm = new Frm_SabtMixer();
             fsm.ShowDialog();
         }
+
+        private void rbe_SabtAConcreate_Click(object sender, EventArgs e)
+        {
+            Frm_SabtAConcreate fsac = new Frm_SabtAConcreate();
+            fsac.ShowDialog();
+        }
     }
 }

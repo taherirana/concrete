@@ -51,6 +51,7 @@
     <Reference Include="TelerikCommon, Version=2016.1.112.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
     <Compile Include="DB.cs" />
     <Compile Include="FrmConcreteSalesInvoice.cs">
       <SubType>Form</SubType>

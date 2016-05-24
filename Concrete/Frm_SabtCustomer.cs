@@ -23,6 +23,19 @@ namespace Concrete
             this.Close();
         }
 
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            String Name = txtName.Text.Trim();
+            String Family = txtFamily.Text.Trim();
+            string IDCode = txtKmeli.Text.Trim();
+
+            Customer c = new Customer(Name,Family,IDCode);
+
+            DB db = new DB();
+
+            db.InserCustomer(c);
+        }
+
 
     }
 }

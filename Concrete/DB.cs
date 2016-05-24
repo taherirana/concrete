@@ -12,14 +12,14 @@ namespace Concrete
 
     public interface IDatabase
     {
-        public bool InserCustomer();
+        bool InserCustomer();
 
-        public bool EditCustomer();
+        bool EditCustomer();
 
-        public bool DeleteCustomer();
+        bool DeleteCustomer();
 
-        public bool GetCustomer();
+        bool GetCustomer();
 
-        public bool GetAllCustomers();
+        bool GetAllCustomers();
     }
 }

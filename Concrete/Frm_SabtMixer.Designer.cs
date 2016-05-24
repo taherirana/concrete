@@ -105,7 +105,7 @@
             this.cmbmmixer.FormattingEnabled = true;
             this.cmbmmixer.Location = new System.Drawing.Point(32, 88);
             this.cmbmmixer.Name = "cmbmmixer";
-            this.cmbmmixer.Size = new System.Drawing.Size(164, 31);
+            this.cmbmmixer.Size = new System.Drawing.Size(178, 31);
             this.cmbmmixer.TabIndex = 15;
             // 
             // label4
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 205);
+            this.ClientSize = new System.Drawing.Size(638, 201);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

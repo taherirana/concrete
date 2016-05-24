@@ -16,7 +16,7 @@ namespace Concrete
             InitializeComponent();
         }
 
-        private void btnCansel_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
 
@@ -25,7 +25,10 @@ namespace Concrete
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Frm_Main f1 = new Frm_Main();
+            this.Hide();
             f1.ShowDialog();
+            
+           
         }
     }
 }

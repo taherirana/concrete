@@ -30,10 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtKmeli = new System.Windows.Forms.TextBox();
+            this.txtFamily = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +52,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtKmeli);
+            this.groupBox1.Controls.Add(this.txtFamily);
+            this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -60,41 +68,69 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت مشتری";
             // 
+            // txtKmeli
+            // 
+            this.txtKmeli.Location = new System.Drawing.Point(11, 35);
+            this.txtKmeli.Name = "txtKmeli";
+            this.txtKmeli.Size = new System.Drawing.Size(164, 30);
+            this.txtKmeli.TabIndex = 7;
+            // 
+            // txtFamily
+            // 
+            this.txtFamily.Location = new System.Drawing.Point(235, 35);
+            this.txtFamily.Name = "txtFamily";
+            this.txtFamily.Size = new System.Drawing.Size(164, 30);
+            this.txtFamily.TabIndex = 6;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(501, 35);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(164, 30);
+            this.txtName.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(175, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 23);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "کدملی:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(653, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 23);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "تلفن:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(643, 203);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "آدرس:";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(444, 38);
+            this.label2.Location = new System.Drawing.Point(405, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "نام خانوادگی:";
             // 
-            // label3
+            // textBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(664, 211);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "نام:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(664, 123);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "نام:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(230, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 23);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "کدملی:";
+            this.textBox1.Location = new System.Drawing.Point(471, 135);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(164, 30);
+            this.textBox1.TabIndex = 8;
             // 
             // Frm_SabtCustomer
             // 
@@ -123,5 +159,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtFamily;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtKmeli;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

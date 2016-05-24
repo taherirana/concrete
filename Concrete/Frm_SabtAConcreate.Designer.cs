@@ -43,9 +43,9 @@
             // lblconcretetype
             // 
             this.lblconcretetype.AutoSize = true;
-            this.lblconcretetype.Location = new System.Drawing.Point(193, 40);
+            this.lblconcretetype.Location = new System.Drawing.Point(212, 46);
             this.lblconcretetype.Name = "lblconcretetype";
-            this.lblconcretetype.Size = new System.Drawing.Size(63, 23);
+            this.lblconcretetype.Size = new System.Drawing.Size(57, 26);
             this.lblconcretetype.TabIndex = 0;
             this.lblconcretetype.Text = "نوع بتن:";
             // 
@@ -59,7 +59,7 @@
             this.groupBox1.Controls.Add(this.lblconcretetype);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(261, 170);
+            this.groupBox1.Size = new System.Drawing.Size(287, 192);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت نوع بتن";
@@ -67,9 +67,9 @@
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCancel.Location = new System.Drawing.Point(12, 134);
+            this.btnCancel.Location = new System.Drawing.Point(13, 152);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(69, 24);
+            this.btnCancel.Size = new System.Drawing.Size(76, 27);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "انصراف";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -82,9 +82,9 @@
             // btnSubmit
             // 
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnSubmit.Location = new System.Drawing.Point(107, 134);
+            this.btnSubmit.Location = new System.Drawing.Point(118, 152);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(69, 24);
+            this.btnSubmit.Size = new System.Drawing.Size(76, 27);
             this.btnSubmit.TabIndex = 9;
             this.btnSubmit.Text = "ثبت";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -96,37 +96,38 @@
             // 
             // txtconcretetype
             // 
-            this.txtconcretetype.Location = new System.Drawing.Point(12, 37);
+            this.txtconcretetype.Location = new System.Drawing.Point(13, 42);
             this.txtconcretetype.Name = "txtconcretetype";
-            this.txtconcretetype.Size = new System.Drawing.Size(164, 30);
+            this.txtconcretetype.Size = new System.Drawing.Size(180, 33);
             this.txtconcretetype.TabIndex = 7;
             // 
             // txtconcretePrice
             // 
-            this.txtconcretePrice.Location = new System.Drawing.Point(12, 85);
+            this.txtconcretePrice.Location = new System.Drawing.Point(13, 96);
             this.txtconcretePrice.Name = "txtconcretePrice";
-            this.txtconcretePrice.Size = new System.Drawing.Size(164, 30);
+            this.txtconcretePrice.Size = new System.Drawing.Size(180, 33);
             this.txtconcretePrice.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(205, 85);
+            this.label1.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(226, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 23);
+            this.label1.Size = new System.Drawing.Size(37, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "مبلغ:";
             // 
             // Frm_SabtAConcreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 170);
+            this.ClientSize = new System.Drawing.Size(285, 192);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Frm_SabtAConcreate";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;

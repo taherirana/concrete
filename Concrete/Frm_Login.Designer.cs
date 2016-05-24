@@ -96,7 +96,7 @@
             this.btnExit.Size = new System.Drawing.Size(69, 24);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "خروج";
-            this.btnExit.Click += new System.EventHandler(this.btnCansel_Click);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnExit.GetChildAt(0))).Text = "خروج";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnExit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnExit.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));

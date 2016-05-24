@@ -33,10 +33,10 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.btnLogin = new Telerik.WinControls.UI.RadButton();
-            this.btnCansel = new Telerik.WinControls.UI.RadButton();
+            this.btnExit = new Telerik.WinControls.UI.RadButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCansel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,20 +88,20 @@
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnLogin.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             // 
-            // btnCansel
+            // btnExit
             // 
-            this.btnCansel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCansel.Location = new System.Drawing.Point(14, 351);
-            this.btnCansel.Name = "btnCansel";
-            this.btnCansel.Size = new System.Drawing.Size(69, 24);
-            this.btnCansel.TabIndex = 6;
-            this.btnCansel.Text = "خروج";
-            this.btnCansel.Click += new System.EventHandler(this.btnCansel_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCansel.GetChildAt(0))).Text = "خروج";
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.btnExit.Location = new System.Drawing.Point(14, 351);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(69, 24);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.Text = "خروج";
+            this.btnExit.Click += new System.EventHandler(this.btnCansel_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnExit.GetChildAt(0))).Text = "خروج";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnExit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnExit.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnExit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnExit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             // 
             // pictureBox1
             // 
@@ -119,7 +119,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(271, 387);
             this.ControlBox = false;
-            this.Controls.Add(this.btnCansel);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUsername);
@@ -128,13 +128,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Frm_Login";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ورود";
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCansel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,7 +149,7 @@
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPass;
         private Telerik.WinControls.UI.RadButton btnLogin;
-        private Telerik.WinControls.UI.RadButton btnCansel;
+        private Telerik.WinControls.UI.RadButton btnExit;
     }
 }
 

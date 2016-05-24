@@ -30,6 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new Telerik.WinControls.UI.RadButton();
+            this.btnSubmit = new Telerik.WinControls.UI.RadButton();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.txt_mobile = new System.Windows.Forms.TextBox();
+            this.txt_tell = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtKmeli = new System.Windows.Forms.TextBox();
             this.txtFamily = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -37,15 +43,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_tell = new System.Windows.Forms.TextBox();
-            this.txt_mobile = new System.Windows.Forms.TextBox();
-            this.txt_address = new System.Windows.Forms.TextBox();
-            this.btnCansel = new Telerik.WinControls.UI.RadButton();
-            this.btnSabt = new Telerik.WinControls.UI.RadButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCansel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSabt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,8 +59,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnCansel);
-            this.groupBox1.Controls.Add(this.btnSabt);
+            this.groupBox1.Controls.Add(this.btnCancel);
+            this.groupBox1.Controls.Add(this.btnSubmit);
             this.groupBox1.Controls.Add(this.txt_address);
             this.groupBox1.Controls.Add(this.txt_mobile);
             this.groupBox1.Controls.Add(this.txt_tell);
@@ -79,6 +79,65 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت مشتری";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.btnCancel.Location = new System.Drawing.Point(521, 200);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(69, 24);
+            this.btnCancel.TabIndex = 8;
+            this.btnCancel.Text = "انصراف";
+            this.btnCancel.Click += new System.EventHandler(this.btnCansel_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.btnSubmit.Location = new System.Drawing.Point(596, 200);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(69, 24);
+            this.btnSubmit.TabIndex = 7;
+            this.btnSubmit.Text = "ثبت";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            // 
+            // txt_address
+            // 
+            this.txt_address.Location = new System.Drawing.Point(11, 155);
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(654, 30);
+            this.txt_address.TabIndex = 11;
+            // 
+            // txt_mobile
+            // 
+            this.txt_mobile.Location = new System.Drawing.Point(235, 92);
+            this.txt_mobile.Name = "txt_mobile";
+            this.txt_mobile.Size = new System.Drawing.Size(164, 30);
+            this.txt_mobile.TabIndex = 10;
+            // 
+            // txt_tell
+            // 
+            this.txt_tell.Location = new System.Drawing.Point(501, 92);
+            this.txt_tell.Name = "txt_tell";
+            this.txt_tell.Size = new System.Drawing.Size(164, 30);
+            this.txt_tell.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(418, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 23);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "موبایل:";
             // 
             // txtKmeli
             // 
@@ -137,65 +196,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "نام خانوادگی:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(418, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 23);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "موبایل:";
-            // 
-            // txt_tell
-            // 
-            this.txt_tell.Location = new System.Drawing.Point(501, 92);
-            this.txt_tell.Name = "txt_tell";
-            this.txt_tell.Size = new System.Drawing.Size(164, 30);
-            this.txt_tell.TabIndex = 9;
-            // 
-            // txt_mobile
-            // 
-            this.txt_mobile.Location = new System.Drawing.Point(235, 92);
-            this.txt_mobile.Name = "txt_mobile";
-            this.txt_mobile.Size = new System.Drawing.Size(164, 30);
-            this.txt_mobile.TabIndex = 10;
-            // 
-            // txt_address
-            // 
-            this.txt_address.Location = new System.Drawing.Point(11, 155);
-            this.txt_address.Name = "txt_address";
-            this.txt_address.Size = new System.Drawing.Size(654, 30);
-            this.txt_address.TabIndex = 11;
-            // 
-            // btnCansel
-            // 
-            this.btnCansel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCansel.Location = new System.Drawing.Point(521, 200);
-            this.btnCansel.Name = "btnCansel";
-            this.btnCansel.Size = new System.Drawing.Size(69, 24);
-            this.btnCansel.TabIndex = 8;
-            this.btnCansel.Text = "انصراف";
-            this.btnCansel.Click += new System.EventHandler(this.btnCansel_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCansel.GetChildAt(0))).Text = "انصراف";
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCansel.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            // 
-            // btnSabt
-            // 
-            this.btnSabt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnSabt.Location = new System.Drawing.Point(596, 200);
-            this.btnSabt.Name = "btnSabt";
-            this.btnSabt.Size = new System.Drawing.Size(69, 24);
-            this.btnSabt.TabIndex = 7;
-            this.btnSabt.Text = "ثبت";
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSabt.GetChildAt(0))).Text = "ثبت";
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSabt.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSabt.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSabt.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSabt.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            // 
             // Frm_SabtCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -212,8 +212,8 @@
             this.Text = "ثبت مشتری";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCansel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSabt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -233,7 +233,7 @@
         private System.Windows.Forms.TextBox txt_mobile;
         private System.Windows.Forms.TextBox txt_tell;
         private System.Windows.Forms.Label label6;
-        private Telerik.WinControls.UI.RadButton btnCansel;
-        private Telerik.WinControls.UI.RadButton btnSabt;
+        private Telerik.WinControls.UI.RadButton btnCancel;
+        private Telerik.WinControls.UI.RadButton btnSubmit;
     }
 }

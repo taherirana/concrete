@@ -167,7 +167,7 @@
             // 
             this.txtDriverFamily.Location = new System.Drawing.Point(32, 39);
             this.txtDriverFamily.Name = "txtDriverFamily";
-            this.txtDriverFamily.Size = new System.Drawing.Size(174, 30);
+            this.txtDriverFamily.Size = new System.Drawing.Size(164, 30);
             this.txtDriverFamily.TabIndex = 7;
             // 
             // txtDriverName
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 205);
+            this.ClientSize = new System.Drawing.Size(634, 197);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

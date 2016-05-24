@@ -130,7 +130,7 @@
             // 
             this.rbe_SabtAConcreate.Image = global::Concrete.Properties.Resources.new1;
             this.rbe_SabtAConcreate.Name = "rbe_SabtAConcreate";
-            this.rbe_SabtAConcreate.Text = "ثبت عیار بتن";
+            this.rbe_SabtAConcreate.Text = "ثبت بتن";
             this.rbe_SabtAConcreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // ribbonTab2

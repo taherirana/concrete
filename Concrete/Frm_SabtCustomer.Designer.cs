@@ -86,7 +86,7 @@
             this.btnCancel.Location = new System.Drawing.Point(573, 226);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 8;
+            this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "انصراف";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
@@ -101,7 +101,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(656, 226);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 7;
+            this.btnSubmit.TabIndex = 11;
             this.btnSubmit.Text = "ثبت";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
@@ -115,21 +115,21 @@
             this.txt_address.Location = new System.Drawing.Point(12, 175);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(719, 33);
-            this.txt_address.TabIndex = 11;
+            this.txt_address.TabIndex = 10;
             // 
             // txt_mobile
             // 
             this.txt_mobile.Location = new System.Drawing.Point(259, 104);
             this.txt_mobile.Name = "txt_mobile";
             this.txt_mobile.Size = new System.Drawing.Size(180, 33);
-            this.txt_mobile.TabIndex = 10;
+            this.txt_mobile.TabIndex = 9;
             // 
             // txt_tell
             // 
             this.txt_tell.Location = new System.Drawing.Point(551, 104);
             this.txt_tell.Name = "txt_tell";
             this.txt_tell.Size = new System.Drawing.Size(180, 33);
-            this.txt_tell.TabIndex = 9;
+            this.txt_tell.TabIndex = 8;
             // 
             // label6
             // 

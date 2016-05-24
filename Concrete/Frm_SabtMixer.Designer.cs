@@ -119,9 +119,9 @@
             // 
             // p5
             // 
-            this.p5.Location = new System.Drawing.Point(428, 122);
+            this.p5.Location = new System.Drawing.Point(427, 122);
             this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(35, 30);
+            this.p5.Size = new System.Drawing.Size(36, 30);
             this.p5.TabIndex = 13;
             // 
             // p4
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 206);
+            this.ClientSize = new System.Drawing.Size(634, 202);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

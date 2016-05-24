@@ -167,7 +167,7 @@
             // 
             this.txtDriverFamily.Location = new System.Drawing.Point(32, 39);
             this.txtDriverFamily.Name = "txtDriverFamily";
-            this.txtDriverFamily.Size = new System.Drawing.Size(164, 30);
+            this.txtDriverFamily.Size = new System.Drawing.Size(174, 30);
             this.txtDriverFamily.TabIndex = 7;
             // 
             // txtDriverName

@@ -25,18 +25,26 @@ namespace Concrete
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            DB db = new DB();
+
+            db.InserCustomer(GetCustomer());
+        }
+
+        /// <summary>
+        /// Getting Customer Info from related TextBox
+        /// </summary>
+        /// <returns>Customer</returns> 
+        private Customer GetCustomer()
+        {
             String Name = txtName.Text.Trim();
             String Family = txtFamily.Text.Trim();
             string IDCode = txtKmeli.Text.Trim();
 
-            Customer c = new Customer(Name,Family,IDCode);
+            Customer c = new Customer(Name, Family, IDCode);
 
             c.AddPhone(txt_mobile.Text.Trim());
             c.AddAddress(txt_address.Text.Trim());
-
-            DB db = new DB();
-
-            db.InserCustomer(c);
+            return c;
         }
 
 

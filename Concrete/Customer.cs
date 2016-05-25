@@ -12,6 +12,9 @@ namespace Concrete
             Firstname = _FirstName;
             LastName = _LastName;
             IDCode = _IDCode;
+
+            Phones = new List<string>();
+            Addresses = new List<string>();  
           
         }
 

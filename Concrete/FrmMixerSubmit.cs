@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Concrete
 {
-    public partial class Frm_SabtMixer : Form
+    public partial class FrmMixerSubmit : Form
     {
-        public Frm_SabtMixer()
+        public FrmMixerSubmit()
         {
             InitializeComponent();
         }

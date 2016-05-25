@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Concrete
 {
-    public partial class Frm_SabtAConcreate : Form
+    public partial class FrmConcreteTypeSubmit : Form
     {
-        public Frm_SabtAConcreate()
+        public FrmConcreteTypeSubmit()
         {
             InitializeComponent();
         }

@@ -30,13 +30,13 @@ namespace Concrete
 
         private void rbe_SabtMixer_Click(object sender, EventArgs e)
         {
-            Frm_SabtMixer fsm = new Frm_SabtMixer();
+            FrmMixerSubmit fsm = new FrmMixerSubmit();
             fsm.ShowDialog();
         }
 
         private void rbe_SabtAConcreate_Click(object sender, EventArgs e)
         {
-            Frm_SabtAConcreate fsac = new Frm_SabtAConcreate();
+            FrmConcreteTypeSubmit fsac = new FrmConcreteTypeSubmit();
             fsac.ShowDialog();
         }
 
@@ -50,6 +50,30 @@ namespace Concrete
         {
             FrmCarrierSubmit fcs = new FrmCarrierSubmit();
             fcs.ShowDialog();
+        }
+
+        private void rbeCustomerManage_Click(object sender, EventArgs e)
+        {
+            FrmCustomerManage fcm = new FrmCustomerManage();
+            fcm.ShowDialog();
+        }
+
+        private void rbeMixerManage_Click(object sender, EventArgs e)
+        {
+            FrmMixerManage fmm = new FrmMixerManage();
+            fmm.ShowDialog();
+        }
+
+        private void rbeCarrierManage_Click(object sender, EventArgs e)
+        {
+            FrmCarrierManage fcm = new FrmCarrierManage();
+            fcm.ShowDialog();
+        }
+
+        private void rbeConcreteTypeManage_Click(object sender, EventArgs e)
+        {
+            FrmConcreteTypeManage fctm = new FrmConcreteTypeManage();
+            fctm.ShowDialog();
         }
     }
 }

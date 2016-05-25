@@ -96,6 +96,9 @@ namespace Concrete
             return true;
         }
 
+
+        
+
         public bool insertCustomerAddress(Customer c)
         {
             cmd.CommandText = "INSERT INTO Customer_Address (FK_Customer_ID,Address) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @Address)";
@@ -205,10 +208,43 @@ namespace Concrete
             if(con.State ==System.Data.ConnectionState.Open)
                 con.Close();
         }
+
+
+        public bool InsertConcrete(Concrete ce)
+        {
+            cmd.CommandText = "INSERT INTO Concrete_Type (Concrete_Type_Code , Concrete_Price)  VALUES (@Concrete_Type_Code , @Concrete_Price)";
+            cmd.Parameters.Clear();
+
+            cmd.Parameters.AddWithValue( "@Concrete_Type_Code" , ce.Type.ToString()  );
+            cmd.Parameters.AddWithValue( "@Concrete_Price"     , ce.Price.ToString() );
+
+            try
+            {
+                Open();
+            
+                int count = cmd.ExecuteNonQuery();
+                
+                if (count>0)
+                    return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                Close();
+                
+            }
+
+            return false;
+            
+        }
     }
 
     public interface IDatabase
     {
+
         bool InserCustomer(Customer c);
 
         bool EditCustomer(Customer c);
@@ -219,9 +255,11 @@ namespace Concrete
 
         List<Customer> GetAllCustomers();
 
+        bool InsertConcrete(Concrete ce);
+
         void Open();
 
         void Close();
-        
+
     }
 }

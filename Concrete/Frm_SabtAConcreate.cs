@@ -20,7 +20,7 @@ namespace Concrete
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            Concrete ce = new Concrete( int.Parse( txtconcretetype.Text.Trim() ), int.Parse( txtconcretePrice.Text.Trim() ) );
 
         }
 

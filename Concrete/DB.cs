@@ -43,7 +43,7 @@ namespace Concrete
             transaction.Rollback();
             Close();
             return false;
-            
+
         }
 
 
@@ -70,8 +70,8 @@ namespace Concrete
         {
             cmd.CommandText = "INSERT INTO Customer_Phone (FK_Customer_ID,PhoneNumber) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @PhoneNumber)";
             cmd.Parameters.Clear();
-            int count=-1;
-            
+            int count = -1;
+
             try
             {
                 Open();
@@ -80,7 +80,7 @@ namespace Concrete
                 {
                     cmd.Parameters.AddWithValue("@FK_Customer_ID", c.CustomerID);
                     cmd.Parameters.AddWithValue("@PhoneNumber", phone);
-                    
+
                     count = int.Parse(cmd.ExecuteScalar().ToString());
 
                     if (count < 0)
@@ -97,7 +97,7 @@ namespace Concrete
         }
 
 
-        
+
 
         public bool insertCustomerAddress(Customer c)
         {
@@ -124,7 +124,7 @@ namespace Concrete
             }
             catch (Exception ex)
             {
-                
+
                 return false;
             }
             return true;
@@ -153,11 +153,11 @@ namespace Concrete
         private int getCustomerID(string _Firstname, String _LastName)
         {
             cmd.CommandText = string.Format("select Customer_ID from Customer where Customer_Name = '{0}' and Customer_Family = '{1}'", _Firstname, _LastName);
-            int id=-1;
+            int id = -1;
             try
             {
                 Open();
-                id = int.Parse( cmd.ExecuteScalar().ToString());
+                id = int.Parse(cmd.ExecuteScalar().ToString());
             }
             catch
             {
@@ -205,7 +205,7 @@ namespace Concrete
 
         public void Close()
         {
-            if(con.State ==System.Data.ConnectionState.Open)
+            if (con.State == System.Data.ConnectionState.Open)
                 con.Close();
         }
 
@@ -215,16 +215,16 @@ namespace Concrete
             cmd.CommandText = "INSERT INTO Concrete_Type (Concrete_Type_Code , Concrete_Price)  VALUES (@Concrete_Type_Code , @Concrete_Price)";
             cmd.Parameters.Clear();
 
-            cmd.Parameters.AddWithValue( "@Concrete_Type_Code" , ce.Type.ToString()  );
-            cmd.Parameters.AddWithValue( "@Concrete_Price"     , ce.Price.ToString() );
+            cmd.Parameters.AddWithValue("@Concrete_Type_Code", ce.Type.ToString());
+            cmd.Parameters.AddWithValue("@Concrete_Price", ce.Price.ToString());
 
             try
             {
                 Open();
-            
+
                 int count = cmd.ExecuteNonQuery();
-                
-                if (count>0)
+
+                if (count > 0)
                     return true;
             }
             catch
@@ -234,11 +234,11 @@ namespace Concrete
             finally
             {
                 Close();
-                
+
             }
 
             return false;
-            
+
         }
     }
 

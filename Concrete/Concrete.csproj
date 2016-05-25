@@ -146,9 +146,6 @@
     <EmbeddedResource Include="FrmCustomerManage.resx">
       <DependentUpon>FrmCustomerManage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMixerManage.resx">
-      <DependentUpon>FrmMixerManage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>

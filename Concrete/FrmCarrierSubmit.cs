@@ -20,5 +20,12 @@ namespace Concrete
         {
             this.Close();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            Career cr = new Career("fname","Lname","PQ","ow");
+            DB db= new DB();
+            db.InsertCareer(cr);
+        }
     }
 }

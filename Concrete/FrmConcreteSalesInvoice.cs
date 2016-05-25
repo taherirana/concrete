@@ -20,5 +20,17 @@ namespace Concrete
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            btnPrintInvoice.Enabled = false;
+            btnPrintReceipt.Enabled = false;
+            btnNewInvoice.Enabled = false;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

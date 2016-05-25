@@ -96,9 +96,6 @@ namespace Concrete
             return true;
         }
 
-
-
-
         public bool insertCustomerAddress(Customer c)
         {
             cmd.CommandText = "INSERT INTO Customer_Address (FK_Customer_ID,Address) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @Address)";
@@ -240,6 +237,72 @@ namespace Concrete
             return false;
 
         }
+
+
+        public bool InsertCareer(Career cr)
+        {
+
+            int CareerOwnerShipID = GetCareerOwnerShipTypeID(cr.ownership);
+
+
+            cmd.CommandText = "INSERT INTO Career (CareerDriverName , CareerDriverFamily , CareerNumber ,FK_Career_OwnerShip_type )  VALUES (@CareerDriverName , @CareerDriverFamily,@CareerNumber,@FK_Career_OwnerShip_type)";
+            cmd.Parameters.Clear();
+
+            cmd.Parameters.AddWithValue("@CareerDriverName", cr.CareerDriverFName);
+            cmd.Parameters.AddWithValue("@CareerDriverFamily", cr.CareerDriverLName);
+            cmd.Parameters.AddWithValue("@CareerNumber", cr.plaque);
+            cmd.Parameters.AddWithValue("@FK_Career_OwnerShip_type", CareerOwnerShipID);
+
+
+
+            if (CareerOwnerShipID > 0)
+            {
+
+                try
+                {
+                    Open();
+
+                    int count = cmd.ExecuteNonQuery();
+
+                    if (count > 0)
+                        return true;
+
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+                finally
+                {
+                    Close();
+                }
+
+            }
+            return false;
+        }
+
+
+        public int GetCareerOwnerShipTypeID(string OwnerShipTypeName)
+        {
+            cmd.CommandText = "select Mixer_Owner_Type_ID from  Owner_Type where Mixer_Owner_Type = @OwnerShipTypeName";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@OwnerShipTypeName", OwnerShipTypeName);
+
+            int ID = -1;
+            try
+            {
+                Open();
+                ID = cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                Close();
+            }
+            return ID;
+        }
     }
 
     public interface IDatabase
@@ -256,6 +319,10 @@ namespace Concrete
         List<Customer> GetAllCustomers();
 
         bool InsertConcrete(Concrete ce);
+
+        bool InsertCareer(Career cr);
+
+        int GetCareerOwnerShipTypeID(string OwnerShipTypeName);
 
         void Open();
 

@@ -12,7 +12,7 @@ namespace Concrete
             Firstname = _FirstName;
             LastName = _LastName;
             IDCode = _IDCode;
-          
+            int i = 0;
         }
 
         public void AddPhone(String PhoneNumber)

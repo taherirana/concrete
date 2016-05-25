@@ -25,8 +25,6 @@ namespace Concrete
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            
-
             DB db = new DB();
 
             db.InserCustomer(GetCustomer());

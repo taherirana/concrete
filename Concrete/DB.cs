@@ -28,20 +28,18 @@ namespace Concrete
             transaction = con.BeginTransaction("Insert phones Transaction");
             cmd.Transaction = transaction;
 
-
-            int id = InsertCustomerBasicInfo(c);
-            if (id > 0)
+            if (InsertCustomerBasicInfo(c))
             {
-                if (insertCustomerPhones(c, id))
-                    if (insertCustomerAddress(c, id))
+                if (insertCustomerPhones(c))
+                {
+                    if (insertCustomerAddress(c))
                     {
                         transaction.Commit();
                         Close();
                         return true;
                     }
-                        
+                }
             }
-
             transaction.Rollback();
             Close();
             return false;
@@ -49,35 +47,26 @@ namespace Concrete
         }
 
 
-        private int InsertCustomerBasicInfo(Customer c)
+        private bool InsertCustomerBasicInfo(Customer c)
         {
             cmd.CommandText = "INSERT INTO Customer (Customer_Name,Customer_Family,Customer_ID_code) OUTPUT INSERTED.Customer_ID values (@FirstName , @LastName , @IDCode)";
             cmd.Parameters.AddWithValue("@FirstName", c.Firstname);
             cmd.Parameters.AddWithValue("@LastName", c.LastName);
             cmd.Parameters.AddWithValue("@IDCode", c.IDCode);
 
-            int id = -1;
-
             try
             {
-               
-
-                id = int.Parse( cmd.ExecuteScalar().ToString() );
-                insertCustomerPhones(c, id);
+                c.CustomerID = int.Parse(cmd.ExecuteScalar().ToString());
             }
             catch (Exception ex)
             {
-                return -1;
-            }
-            finally
-            {
-                
+                return false;
             }
 
-            return id;
+            return true;
         }
 
-        public bool insertCustomerPhones(Customer c , int CustomerID)
+        public bool insertCustomerPhones(Customer c)
         {
             cmd.CommandText = "INSERT INTO Customer_Phone (FK_Customer_ID,PhoneNumber) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @PhoneNumber)";
             cmd.Parameters.Clear();
@@ -89,7 +78,7 @@ namespace Concrete
 
                 foreach (string phone in c.Phones)
                 {
-                    cmd.Parameters.AddWithValue("@FK_Customer_ID", CustomerID);
+                    cmd.Parameters.AddWithValue("@FK_Customer_ID", c.CustomerID);
                     cmd.Parameters.AddWithValue("@PhoneNumber", phone);
                     
                     count = int.Parse(cmd.ExecuteScalar().ToString());
@@ -107,12 +96,10 @@ namespace Concrete
             return true;
         }
 
-        public bool insertCustomerAddress(Customer c, int CustomerID)
+        public bool insertCustomerAddress(Customer c)
         {
-            cmd.CommandText = "INSERT INTO Customer_Phone (FK_Customer_ID,PhoneNumber) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @Address)";
+            cmd.CommandText = "INSERT INTO Customer_Address (FK_Customer_ID,Address) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @Address)";
             cmd.Parameters.Clear();
-
-            
 
             int count = -1;
 
@@ -120,11 +107,9 @@ namespace Concrete
             {
                 Open();
 
-                 
-
                 foreach (string address in c.Addresses)
                 {
-                    cmd.Parameters.AddWithValue("@FK_Customer_ID", CustomerID);
+                    cmd.Parameters.AddWithValue("@FK_Customer_ID", c.CustomerID);
                     cmd.Parameters.AddWithValue("@Address", address);
 
                     count = int.Parse(cmd.ExecuteScalar().ToString());

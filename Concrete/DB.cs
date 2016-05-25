@@ -80,7 +80,7 @@ namespace Concrete
         public bool insertCustomerPhones(Customer c , int CustomerID)
         {
             cmd.CommandText = "INSERT INTO Customer_Phone (FK_Customer_ID,PhoneNumber) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @PhoneNumber)";
-
+            cmd.Parameters.Clear();
             int count=-1;
             
             try
@@ -110,8 +110,9 @@ namespace Concrete
         public bool insertCustomerAddress(Customer c, int CustomerID)
         {
             cmd.CommandText = "INSERT INTO Customer_Phone (FK_Customer_ID,PhoneNumber) OUTPUT INSERTED.FK_Customer_ID values ( @FK_Customer_ID , @Address)";
+            cmd.Parameters.Clear();
 
-            SqlTransaction transaction = null;
+            
 
             int count = -1;
 
@@ -119,14 +120,12 @@ namespace Concrete
             {
                 Open();
 
-                transaction = con.BeginTransaction("Insert phones Transaction");
-
-                cmd.Transaction = transaction;
+                 
 
                 foreach (string address in c.Addresses)
                 {
                     cmd.Parameters.AddWithValue("@FK_Customer_ID", CustomerID);
-                    cmd.Parameters.AddWithValue("@PhoneNumber", address);
+                    cmd.Parameters.AddWithValue("@Address", address);
 
                     count = int.Parse(cmd.ExecuteScalar().ToString());
 
@@ -137,13 +136,9 @@ namespace Concrete
             }
             catch (Exception ex)
             {
-                transaction.Rollback();
+                
                 return false;
             }
-
-            transaction.Commit();
-            Close();
-
             return true;
         }
 

@@ -31,6 +31,9 @@ namespace Concrete
 
             Customer c = new Customer(Name,Family,IDCode);
 
+            c.AddPhone(txt_mobile.Text.Trim());
+            c.AddAddress(txt_address.Text.Trim());
+
             DB db = new DB();
 
             db.InserCustomer(c);

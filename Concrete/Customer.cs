@@ -18,6 +18,12 @@ namespace Concrete
           
         }
 
+        public int CustomerID
+        {
+            get;
+            set;
+        }
+
         public void AddPhone(String PhoneNumber)
         {
             Phones.Add(PhoneNumber);

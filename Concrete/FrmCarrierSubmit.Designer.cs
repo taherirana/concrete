@@ -1,6 +1,6 @@
 ﻿namespace Concrete
 {
-    partial class Frm_SabtMixer
+    partial class FrmCarrierSubmit
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
-            this.cmbmmixer = new System.Windows.Forms.ComboBox();
+            this.cmbmCarrier = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.p5 = new System.Windows.Forms.TextBox();
             this.p4 = new System.Windows.Forms.TextBox();
@@ -52,7 +52,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnSubmit);
-            this.groupBox1.Controls.Add(this.cmbmmixer);
+            this.groupBox1.Controls.Add(this.cmbmCarrier);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.p5);
             this.groupBox1.Controls.Add(this.p4);
@@ -64,12 +64,12 @@
             this.groupBox1.Controls.Add(this.txtDriverName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(2, 0);
+            this.groupBox1.Location = new System.Drawing.Point(2, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(697, 232);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ثبت میکسر";
+            this.groupBox1.Text = "ثبت Carrier";
             // 
             // btnCancel
             // 
@@ -100,20 +100,20 @@
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             // 
-            // cmbmmixer
+            // cmbmCarrier
             // 
-            this.cmbmmixer.FormattingEnabled = true;
-            this.cmbmmixer.Location = new System.Drawing.Point(35, 99);
-            this.cmbmmixer.Name = "cmbmmixer";
-            this.cmbmmixer.Size = new System.Drawing.Size(180, 34);
-            this.cmbmmixer.TabIndex = 15;
+            this.cmbmCarrier.FormattingEnabled = true;
+            this.cmbmCarrier.Location = new System.Drawing.Point(35, 99);
+            this.cmbmCarrier.Name = "cmbmCarrier";
+            this.cmbmCarrier.Size = new System.Drawing.Size(180, 32);
+            this.cmbmCarrier.TabIndex = 15;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(261, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 26);
+            this.label4.Size = new System.Drawing.Size(72, 24);
             this.label4.TabIndex = 14;
             this.label4.Text = "نوع مالکیت:";
             // 
@@ -121,14 +121,14 @@
             // 
             this.p5.Location = new System.Drawing.Point(470, 138);
             this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(39, 33);
+            this.p5.Size = new System.Drawing.Size(39, 31);
             this.p5.TabIndex = 13;
             // 
             // p4
             // 
             this.p4.Location = new System.Drawing.Point(508, 138);
             this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(78, 33);
+            this.p4.Size = new System.Drawing.Size(78, 31);
             this.p4.TabIndex = 12;
             this.p4.Text = "ایران";
             this.p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -137,21 +137,21 @@
             // 
             this.p3.Location = new System.Drawing.Point(470, 105);
             this.p3.Name = "p3";
-            this.p3.Size = new System.Drawing.Size(39, 33);
+            this.p3.Size = new System.Drawing.Size(39, 31);
             this.p3.TabIndex = 11;
             // 
             // p2
             // 
             this.p2.Location = new System.Drawing.Point(508, 105);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(38, 33);
+            this.p2.Size = new System.Drawing.Size(38, 31);
             this.p2.TabIndex = 10;
             // 
             // p1
             // 
             this.p1.Location = new System.Drawing.Point(545, 105);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(41, 33);
+            this.p1.Size = new System.Drawing.Size(41, 31);
             this.p1.TabIndex = 9;
             // 
             // label3
@@ -159,7 +159,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(598, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 26);
+            this.label3.Size = new System.Drawing.Size(75, 24);
             this.label3.TabIndex = 8;
             this.label3.Text = "پلاک ماشین:";
             // 
@@ -167,14 +167,14 @@
             // 
             this.txtDriverFamily.Location = new System.Drawing.Point(35, 44);
             this.txtDriverFamily.Name = "txtDriverFamily";
-            this.txtDriverFamily.Size = new System.Drawing.Size(180, 33);
+            this.txtDriverFamily.Size = new System.Drawing.Size(180, 31);
             this.txtDriverFamily.TabIndex = 7;
             // 
             // txtDriverName
             // 
             this.txtDriverName.Location = new System.Drawing.Point(404, 44);
             this.txtDriverName.Name = "txtDriverName";
-            this.txtDriverName.Size = new System.Drawing.Size(180, 33);
+            this.txtDriverName.Size = new System.Drawing.Size(180, 31);
             this.txtDriverName.TabIndex = 6;
             // 
             // label2
@@ -182,7 +182,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(233, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 26);
+            this.label2.Size = new System.Drawing.Size(112, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "نام خانوادگی راننده:";
             // 
@@ -191,25 +191,25 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(609, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 26);
+            this.label1.Size = new System.Drawing.Size(61, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "نام راننده:";
             // 
-            // Frm_SabtMixer
+            // FrmCarrierSubmit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 234);
+            this.ClientSize = new System.Drawing.Size(702, 245);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "Frm_SabtMixer";
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Name = "FrmCarrierSubmit";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ثبت میکسر";
+            this.Text = "ثبت Carrier";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
@@ -221,8 +221,10 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private Telerik.WinControls.UI.RadButton btnCancel;
+        private Telerik.WinControls.UI.RadButton btnSubmit;
+        private System.Windows.Forms.ComboBox cmbmCarrier;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox p5;
         private System.Windows.Forms.TextBox p4;
         private System.Windows.Forms.TextBox p3;
@@ -231,9 +233,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDriverFamily;
         private System.Windows.Forms.TextBox txtDriverName;
-        private System.Windows.Forms.ComboBox cmbmmixer;
-        private System.Windows.Forms.Label label4;
-        private Telerik.WinControls.UI.RadButton btnCancel;
-        private Telerik.WinControls.UI.RadButton btnSubmit;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

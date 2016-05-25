@@ -45,5 +45,11 @@ namespace Concrete
             FrmConcreteSalesInvoice fcsi = new FrmConcreteSalesInvoice();
             fcsi.ShowDialog();
         }
+
+        private void rbecarrierSubmit_Click(object sender, EventArgs e)
+        {
+            FrmCarrierSubmit fcs = new FrmCarrierSubmit();
+            fcs.ShowDialog();
+        }
     }
 }

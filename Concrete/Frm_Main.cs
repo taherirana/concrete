@@ -51,5 +51,29 @@ namespace Concrete
             FrmCarrierSubmit fcs = new FrmCarrierSubmit();
             fcs.ShowDialog();
         }
+
+        private void rbeCustomerManage_Click(object sender, EventArgs e)
+        {
+            FrmCustomerManage fcm = new FrmCustomerManage();
+            fcm.ShowDialog();
+        }
+
+        private void rbeMixerManage_Click(object sender, EventArgs e)
+        {
+            FrmMixerManage fmm = new FrmMixerManage();
+            fmm.ShowDialog();
+        }
+
+        private void rbeCarrierManage_Click(object sender, EventArgs e)
+        {
+            FrmCarrierManage fcm = new FrmCarrierManage();
+            fcm.ShowDialog();
+        }
+
+        private void rbeConcreteTypeManage_Click(object sender, EventArgs e)
+        {
+            FrmConcreteTypeManage fctm = new FrmConcreteTypeManage();
+            fctm.ShowDialog();
+        }
     }
 }

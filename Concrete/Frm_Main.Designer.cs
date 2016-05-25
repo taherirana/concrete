@@ -43,10 +43,14 @@
             this.radMenuSeparatorItem3 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.radMenuSeparatorItem4 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.rbe_sabtCustomer = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeCustomerManage = new Telerik.WinControls.UI.RadButtonElement();
             this.rbe_SabtMixer = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeMixerManage = new Telerik.WinControls.UI.RadButtonElement();
             this.rbecarrierSubmit = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeCarrierManage = new Telerik.WinControls.UI.RadButtonElement();
             this.rbe_SabtAConcreate = new Telerik.WinControls.UI.RadButtonElement();
             this.rbe_SInvoice = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeConcreteTypeManage = new Telerik.WinControls.UI.RadButtonElement();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,28 +93,32 @@
             // radRibbonBarGroup2
             // 
             this.radRibbonBarGroup2.AutoSize = false;
-            this.radRibbonBarGroup2.Bounds = new System.Drawing.Rectangle(0, 0, 100, 100);
+            this.radRibbonBarGroup2.Bounds = new System.Drawing.Rectangle(0, 0, 155, 100);
             this.radRibbonBarGroup2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.rbe_sabtCustomer});
+            this.rbe_sabtCustomer,
+            this.rbeCustomerManage});
             this.radRibbonBarGroup2.Name = "radRibbonBarGroup2";
             this.radRibbonBarGroup2.Text = "مشتری";
             // 
             // radRibbonBarGroup3
             // 
             this.radRibbonBarGroup3.AutoSize = false;
-            this.radRibbonBarGroup3.Bounds = new System.Drawing.Rectangle(0, 0, 200, 100);
+            this.radRibbonBarGroup3.Bounds = new System.Drawing.Rectangle(0, 0, 307, 100);
             this.radRibbonBarGroup3.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.rbe_SabtMixer,
-            this.rbecarrierSubmit});
+            this.rbeMixerManage,
+            this.rbecarrierSubmit,
+            this.rbeCarrierManage});
             this.radRibbonBarGroup3.Name = "radRibbonBarGroup3";
-            this.radRibbonBarGroup3.Text = "میکسر";
+            this.radRibbonBarGroup3.Text = "میکسر ---- Carrier";
             // 
             // radRibbonBarGroup4
             // 
             this.radRibbonBarGroup4.AutoSize = false;
-            this.radRibbonBarGroup4.Bounds = new System.Drawing.Rectangle(0, 0, 100, 100);
+            this.radRibbonBarGroup4.Bounds = new System.Drawing.Rectangle(0, 0, 160, 100);
             this.radRibbonBarGroup4.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.rbe_SabtAConcreate});
+            this.rbe_SabtAConcreate,
+            this.rbeConcreteTypeManage});
             this.radRibbonBarGroup4.Name = "radRibbonBarGroup4";
             this.radRibbonBarGroup4.Text = "بتن";
             // 
@@ -176,35 +184,76 @@
             // 
             // rbe_sabtCustomer
             // 
-            this.rbe_sabtCustomer.Image = global::Concrete.Properties.Resources.Customer_Transparent1;
+            this.rbe_sabtCustomer.AutoSize = false;
+            this.rbe_sabtCustomer.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
+            this.rbe_sabtCustomer.Image = global::Concrete.Properties.Resources._1464176801_add_user;
+            this.rbe_sabtCustomer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbe_sabtCustomer.Name = "rbe_sabtCustomer";
             this.rbe_sabtCustomer.Text = "ثبت مشتری";
             this.rbe_sabtCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbe_sabtCustomer.Click += new System.EventHandler(this.rbe_sabtCustomer_Click);
             // 
+            // rbeCustomerManage
+            // 
+            this.rbeCustomerManage.AutoSize = false;
+            this.rbeCustomerManage.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
+            this.rbeCustomerManage.Image = global::Concrete.Properties.Resources._1464176811_edit_user;
+            this.rbeCustomerManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbeCustomerManage.Name = "rbeCustomerManage";
+            this.rbeCustomerManage.Text = "مدیریت مشتری";
+            this.rbeCustomerManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbeCustomerManage.Click += new System.EventHandler(this.rbeCustomerManage_Click);
+            // 
             // rbe_SabtMixer
             // 
             this.rbe_SabtMixer.AutoSize = false;
-            this.rbe_SabtMixer.Bounds = new System.Drawing.Rectangle(0, 0, 60, 75);
+            this.rbe_SabtMixer.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
             this.rbe_SabtMixer.Image = global::Concrete.Properties.Resources.concrete_truck_icon;
+            this.rbe_SabtMixer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbe_SabtMixer.Name = "rbe_SabtMixer";
             this.rbe_SabtMixer.Text = "ثبت میکسر";
             this.rbe_SabtMixer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbe_SabtMixer.Click += new System.EventHandler(this.rbe_SabtMixer_Click);
             // 
+            // rbeMixerManage
+            // 
+            this.rbeMixerManage.AutoSize = false;
+            this.rbeMixerManage.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
+            this.rbeMixerManage.Image = global::Concrete.Properties.Resources._1464178473_setting;
+            this.rbeMixerManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbeMixerManage.Name = "rbeMixerManage";
+            this.rbeMixerManage.Text = "مدیریت میکسر";
+            this.rbeMixerManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbeMixerManage.Click += new System.EventHandler(this.rbeMixerManage_Click);
+            // 
             // rbecarrierSubmit
             // 
             this.rbecarrierSubmit.AutoSize = false;
-            this.rbecarrierSubmit.Bounds = new System.Drawing.Rectangle(0, 0, 60, 75);
+            this.rbecarrierSubmit.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
             this.rbecarrierSubmit.Image = global::Concrete.Properties.Resources.Foden_Concrete_Truck;
+            this.rbecarrierSubmit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbecarrierSubmit.Name = "rbecarrierSubmit";
             this.rbecarrierSubmit.Text = "ثبت carrier";
             this.rbecarrierSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbecarrierSubmit.Click += new System.EventHandler(this.rbecarrierSubmit_Click);
             // 
+            // rbeCarrierManage
+            // 
+            this.rbeCarrierManage.AutoSize = false;
+            this.rbeCarrierManage.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
+            this.rbeCarrierManage.Image = global::Concrete.Properties.Resources._1464178473_setting;
+            this.rbeCarrierManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbeCarrierManage.Name = "rbeCarrierManage";
+            this.rbeCarrierManage.Text = "مدیریت carrier";
+            this.rbeCarrierManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbeCarrierManage.Click += new System.EventHandler(this.rbeCarrierManage_Click);
+            // 
             // rbe_SabtAConcreate
             // 
+            this.rbe_SabtAConcreate.AutoSize = false;
+            this.rbe_SabtAConcreate.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
             this.rbe_SabtAConcreate.Image = global::Concrete.Properties.Resources.new1;
+            this.rbe_SabtAConcreate.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbe_SabtAConcreate.Name = "rbe_SabtAConcreate";
             this.rbe_SabtAConcreate.Text = "ثبت نوع بتن";
             this.rbe_SabtAConcreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -219,6 +268,17 @@
             this.rbe_SInvoice.Text = "ثبت فاکتور فروش";
             this.rbe_SInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbe_SInvoice.Click += new System.EventHandler(this.rbe_SInvoice_Click);
+            // 
+            // rbeConcreteTypeManage
+            // 
+            this.rbeConcreteTypeManage.AutoSize = false;
+            this.rbeConcreteTypeManage.Bounds = new System.Drawing.Rectangle(0, 0, 80, 75);
+            this.rbeConcreteTypeManage.Image = global::Concrete.Properties.Resources._1464178473_setting;
+            this.rbeConcreteTypeManage.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbeConcreteTypeManage.Name = "rbeConcreteTypeManage";
+            this.rbeConcreteTypeManage.Text = "مدیریت نوع بتن";
+            this.rbeConcreteTypeManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbeConcreteTypeManage.Click += new System.EventHandler(this.rbeConcreteTypeManage_Click);
             // 
             // Frm_Main
             // 
@@ -261,5 +321,9 @@
         private Telerik.WinControls.UI.RadButtonElement rbe_SabtAConcreate;
         private Telerik.WinControls.UI.RadButtonElement rbe_SInvoice;
         private Telerik.WinControls.UI.RadButtonElement rbecarrierSubmit;
+        private Telerik.WinControls.UI.RadButtonElement rbeCustomerManage;
+        private Telerik.WinControls.UI.RadButtonElement rbeMixerManage;
+        private Telerik.WinControls.UI.RadButtonElement rbeCarrierManage;
+        private Telerik.WinControls.UI.RadButtonElement rbeConcreteTypeManage;
     }
 }

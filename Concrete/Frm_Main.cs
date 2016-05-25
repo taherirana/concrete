@@ -42,7 +42,8 @@ namespace Concrete
 
         private void rbe_SInvoice_Click(object sender, EventArgs e)
         {
-
+            FrmConcreteSalesInvoice fcsi = new FrmConcreteSalesInvoice();
+            fcsi.ShowDialog();
         }
     }
 }

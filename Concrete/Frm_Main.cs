@@ -20,7 +20,6 @@ namespace Concrete
         {
             Frm_SabtCustomer fsc = new Frm_SabtCustomer();
             fsc.ShowDialog();
-
         }
 
         private void Frm_Main_Load(object sender, EventArgs e)

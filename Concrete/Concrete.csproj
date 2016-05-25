@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Career.cs" />
+    <Compile Include="CareerOwnerShipType.cs" />
     <Compile Include="Concrete.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="DB.cs" />

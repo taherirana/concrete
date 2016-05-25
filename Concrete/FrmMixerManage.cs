@@ -19,6 +19,7 @@ namespace Concrete
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+            /////////////////////////////////////
         }
 
         private void FrmMixerManage_Load(object sender, EventArgs e)

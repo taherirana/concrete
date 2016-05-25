@@ -1,6 +1,6 @@
 ﻿namespace Concrete
 {
-    partial class Frm_SabtAConcreate
+    partial class FrmConcreteTypeSubmit
     {
         /// <summary>
         /// Required designer variable.

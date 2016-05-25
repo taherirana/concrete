@@ -1,6 +1,6 @@
 ﻿namespace Concrete
 {
-    partial class Frm_SabtMixer
+    partial class FrmMixerSubmit
     {
         /// <summary>
         /// Required designer variable.

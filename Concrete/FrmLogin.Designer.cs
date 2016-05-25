@@ -1,6 +1,6 @@
 ﻿namespace Concrete
 {
-    partial class Frm_Login
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.

@@ -30,13 +30,13 @@ namespace Concrete
 
         private void rbe_SabtMixer_Click(object sender, EventArgs e)
         {
-            Frm_SabtMixer fsm = new Frm_SabtMixer();
+            FrmMixerSubmit fsm = new FrmMixerSubmit();
             fsm.ShowDialog();
         }
 
         private void rbe_SabtAConcreate_Click(object sender, EventArgs e)
         {
-            Frm_SabtAConcreate fsac = new Frm_SabtAConcreate();
+            FrmConcreteTypeSubmit fsac = new FrmConcreteTypeSubmit();
             fsac.ShowDialog();
         }
 

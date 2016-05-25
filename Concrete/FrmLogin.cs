@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Concrete
 {
-    public partial class Frm_Login : Form
+    public partial class FrmLogin : Form
     {
-        public Frm_Login()
+        public FrmLogin()
         {
             InitializeComponent();
         }

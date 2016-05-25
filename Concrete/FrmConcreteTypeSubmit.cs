@@ -9,14 +9,20 @@ using System.Windows.Forms;
 
 namespace Concrete
 {
-    public partial class Frm_SabtMixer : Form
+    public partial class FrmConcreteTypeSubmit : Form
     {
-        public Frm_SabtMixer()
+        public FrmConcreteTypeSubmit()
         {
             InitializeComponent();
         }
 
 
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+
+        }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {

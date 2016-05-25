@@ -20,5 +20,14 @@ namespace Concrete
         {
             this.Close();
         }
+
+        private void FrmConcreteTypeManage_Load(object sender, EventArgs e)
+        {
+            btnDelete.Enabled = false;
+            btnEdit.Enabled = false;
+            btnSubmit.Enabled = false;
+            txtconcretetype.Enabled = false;
+            txtconcretePrice.Enabled = false;
+        }
     }
 }

@@ -31,26 +31,26 @@
             this.radRibbonBar1 = new Telerik.WinControls.UI.RadRibbonBar();
             this.ribbonTab1 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup2 = new Telerik.WinControls.UI.RadRibbonBarGroup();
+            this.rbe_sabtCustomer = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeCustomerManage = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup3 = new Telerik.WinControls.UI.RadRibbonBarGroup();
+            this.rbe_SabtMixer = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeMixerManage = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbecarrierSubmit = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeCarrierManage = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup4 = new Telerik.WinControls.UI.RadRibbonBarGroup();
+            this.rbe_SabtAConcreate = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeConcreteTypeManage = new Telerik.WinControls.UI.RadButtonElement();
             this.ribbonTab2 = new Telerik.WinControls.UI.RibbonTab();
             this.ribbonTab3 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup1 = new Telerik.WinControls.UI.RadRibbonBarGroup();
+            this.rbe_SInvoice = new Telerik.WinControls.UI.RadButtonElement();
             this.rmi_tarifavaliye = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuSeparatorItem1 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.radMenuSeparatorItem2 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuSeparatorItem3 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.radMenuSeparatorItem4 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
-            this.rbe_sabtCustomer = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbeCustomerManage = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbe_SabtMixer = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbeMixerManage = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbecarrierSubmit = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbeCarrierManage = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbe_SabtAConcreate = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbe_SInvoice = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbeConcreteTypeManage = new Telerik.WinControls.UI.RadButtonElement();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,88 +100,6 @@
             this.radRibbonBarGroup2.Name = "radRibbonBarGroup2";
             this.radRibbonBarGroup2.Text = "مشتری";
             // 
-            // radRibbonBarGroup3
-            // 
-            this.radRibbonBarGroup3.AutoSize = false;
-            this.radRibbonBarGroup3.Bounds = new System.Drawing.Rectangle(0, 0, 307, 100);
-            this.radRibbonBarGroup3.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.rbe_SabtMixer,
-            this.rbeMixerManage,
-            this.rbecarrierSubmit,
-            this.rbeCarrierManage});
-            this.radRibbonBarGroup3.Name = "radRibbonBarGroup3";
-            this.radRibbonBarGroup3.Text = "میکسر ---- Carrier";
-            // 
-            // radRibbonBarGroup4
-            // 
-            this.radRibbonBarGroup4.AutoSize = false;
-            this.radRibbonBarGroup4.Bounds = new System.Drawing.Rectangle(0, 0, 160, 100);
-            this.radRibbonBarGroup4.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.rbe_SabtAConcreate,
-            this.rbeConcreteTypeManage});
-            this.radRibbonBarGroup4.Name = "radRibbonBarGroup4";
-            this.radRibbonBarGroup4.Text = "بتن";
-            // 
-            // ribbonTab2
-            // 
-            this.ribbonTab2.Name = "ribbonTab2";
-            this.ribbonTab2.Text = "خرید";
-            // 
-            // ribbonTab3
-            // 
-            this.ribbonTab3.IsSelected = false;
-            this.ribbonTab3.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radRibbonBarGroup1});
-            this.ribbonTab3.Name = "ribbonTab3";
-            this.ribbonTab3.Text = "فروش";
-            // 
-            // radRibbonBarGroup1
-            // 
-            this.radRibbonBarGroup1.AutoSize = false;
-            this.radRibbonBarGroup1.Bounds = new System.Drawing.Rectangle(0, 0, 150, 97);
-            this.radRibbonBarGroup1.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.rbe_SInvoice});
-            this.radRibbonBarGroup1.Name = "radRibbonBarGroup1";
-            this.radRibbonBarGroup1.Text = "ثبت فاکتور";
-            // 
-            // rmi_tarifavaliye
-            // 
-            this.rmi_tarifavaliye.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuSeparatorItem1});
-            this.rmi_tarifavaliye.Name = "rmi_tarifavaliye";
-            this.rmi_tarifavaliye.Text = "تعاریف اولیه";
-            // 
-            // radMenuSeparatorItem1
-            // 
-            this.radMenuSeparatorItem1.Name = "radMenuSeparatorItem1";
-            this.radMenuSeparatorItem1.Text = "radMenuSeparatorItem1";
-            this.radMenuSeparatorItem1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // radMenuSeparatorItem2
-            // 
-            this.radMenuSeparatorItem2.Name = "radMenuSeparatorItem2";
-            this.radMenuSeparatorItem2.Text = "radMenuSeparatorItem2";
-            this.radMenuSeparatorItem2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // radMenuItem2
-            // 
-            this.radMenuItem2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radMenuSeparatorItem3});
-            this.radMenuItem2.Name = "radMenuItem2";
-            this.radMenuItem2.Text = "خرید";
-            // 
-            // radMenuSeparatorItem3
-            // 
-            this.radMenuSeparatorItem3.Name = "radMenuSeparatorItem3";
-            this.radMenuSeparatorItem3.Text = "radMenuSeparatorItem3";
-            this.radMenuSeparatorItem3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // radMenuSeparatorItem4
-            // 
-            this.radMenuSeparatorItem4.Name = "radMenuSeparatorItem4";
-            this.radMenuSeparatorItem4.Text = "radMenuSeparatorItem4";
-            this.radMenuSeparatorItem4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // rbe_sabtCustomer
             // 
             this.rbe_sabtCustomer.AutoSize = false;
@@ -203,6 +121,18 @@
             this.rbeCustomerManage.Text = "مدیریت مشتری";
             this.rbeCustomerManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbeCustomerManage.Click += new System.EventHandler(this.rbeCustomerManage_Click);
+            // 
+            // radRibbonBarGroup3
+            // 
+            this.radRibbonBarGroup3.AutoSize = false;
+            this.radRibbonBarGroup3.Bounds = new System.Drawing.Rectangle(0, 0, 307, 100);
+            this.radRibbonBarGroup3.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.rbe_SabtMixer,
+            this.rbeMixerManage,
+            this.rbecarrierSubmit,
+            this.rbeCarrierManage});
+            this.radRibbonBarGroup3.Name = "radRibbonBarGroup3";
+            this.radRibbonBarGroup3.Text = "میکسر ---- Carrier";
             // 
             // rbe_SabtMixer
             // 
@@ -248,6 +178,16 @@
             this.rbeCarrierManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbeCarrierManage.Click += new System.EventHandler(this.rbeCarrierManage_Click);
             // 
+            // radRibbonBarGroup4
+            // 
+            this.radRibbonBarGroup4.AutoSize = false;
+            this.radRibbonBarGroup4.Bounds = new System.Drawing.Rectangle(0, 0, 160, 100);
+            this.radRibbonBarGroup4.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.rbe_SabtAConcreate,
+            this.rbeConcreteTypeManage});
+            this.radRibbonBarGroup4.Name = "radRibbonBarGroup4";
+            this.radRibbonBarGroup4.Text = "بتن";
+            // 
             // rbe_SabtAConcreate
             // 
             this.rbe_SabtAConcreate.AutoSize = false;
@@ -259,16 +199,6 @@
             this.rbe_SabtAConcreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbe_SabtAConcreate.Click += new System.EventHandler(this.rbe_SabtAConcreate_Click);
             // 
-            // rbe_SInvoice
-            // 
-            this.rbe_SInvoice.Alignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbe_SInvoice.Image = global::Concrete.Properties.Resources.eTMox9jTn;
-            this.rbe_SInvoice.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbe_SInvoice.Name = "rbe_SInvoice";
-            this.rbe_SInvoice.Text = "ثبت فاکتور فروش";
-            this.rbe_SInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.rbe_SInvoice.Click += new System.EventHandler(this.rbe_SInvoice_Click);
-            // 
             // rbeConcreteTypeManage
             // 
             this.rbeConcreteTypeManage.AutoSize = false;
@@ -279,6 +209,76 @@
             this.rbeConcreteTypeManage.Text = "مدیریت نوع بتن";
             this.rbeConcreteTypeManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbeConcreteTypeManage.Click += new System.EventHandler(this.rbeConcreteTypeManage_Click);
+            // 
+            // ribbonTab2
+            // 
+            this.ribbonTab2.Name = "ribbonTab2";
+            this.ribbonTab2.Text = "خرید";
+            // 
+            // ribbonTab3
+            // 
+            this.ribbonTab3.IsSelected = false;
+            this.ribbonTab3.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radRibbonBarGroup1});
+            this.ribbonTab3.Name = "ribbonTab3";
+            this.ribbonTab3.Text = "فروش";
+            // 
+            // radRibbonBarGroup1
+            // 
+            this.radRibbonBarGroup1.AutoSize = false;
+            this.radRibbonBarGroup1.Bounds = new System.Drawing.Rectangle(0, 0, 150, 97);
+            this.radRibbonBarGroup1.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.rbe_SInvoice});
+            this.radRibbonBarGroup1.Name = "radRibbonBarGroup1";
+            this.radRibbonBarGroup1.Text = "ثبت فاکتور";
+            // 
+            // rbe_SInvoice
+            // 
+            this.rbe_SInvoice.Alignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbe_SInvoice.Image = global::Concrete.Properties.Resources.eTMox9jTn;
+            this.rbe_SInvoice.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbe_SInvoice.Name = "rbe_SInvoice";
+            this.rbe_SInvoice.Text = "ثبت فاکتور فروش";
+            this.rbe_SInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbe_SInvoice.Click += new System.EventHandler(this.rbe_SInvoice_Click);
+            // 
+            // rmi_tarifavaliye
+            // 
+            this.rmi_tarifavaliye.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuSeparatorItem1});
+            this.rmi_tarifavaliye.Name = "rmi_tarifavaliye";
+            this.rmi_tarifavaliye.Text = "تعاریف اولیه";
+            // 
+            // radMenuSeparatorItem1
+            // 
+            this.radMenuSeparatorItem1.Name = "radMenuSeparatorItem1";
+            this.radMenuSeparatorItem1.Text = "radMenuSeparatorItem1";
+            this.radMenuSeparatorItem1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // radMenuSeparatorItem2
+            // 
+            this.radMenuSeparatorItem2.Name = "radMenuSeparatorItem2";
+            this.radMenuSeparatorItem2.Text = "radMenuSeparatorItem2";
+            this.radMenuSeparatorItem2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // radMenuItem2
+            // 
+            this.radMenuItem2.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuSeparatorItem3});
+            this.radMenuItem2.Name = "radMenuItem2";
+            this.radMenuItem2.Text = "خرید";
+            // 
+            // radMenuSeparatorItem3
+            // 
+            this.radMenuSeparatorItem3.Name = "radMenuSeparatorItem3";
+            this.radMenuSeparatorItem3.Text = "radMenuSeparatorItem3";
+            this.radMenuSeparatorItem3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // radMenuSeparatorItem4
+            // 
+            this.radMenuSeparatorItem4.Name = "radMenuSeparatorItem4";
+            this.radMenuSeparatorItem4.Text = "radMenuSeparatorItem4";
+            this.radMenuSeparatorItem4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Frm_Main
             // 

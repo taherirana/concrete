@@ -56,6 +56,24 @@ namespace Concrete
             ClearTextBox();
         }
 
+        private void pbCustomerSearch_Click(object sender, EventArgs e)
+        {
+            FrmCustomerSelect fcss = new FrmCustomerSelect();
+            fcss.ShowDialog();
+        }
+
+        private void pbMixerSearch_Click(object sender, EventArgs e)
+        {
+            FrmMixerSelect fms1 = new FrmMixerSelect();
+            fms1.ShowDialog();
+        }
+
+        private void pbCareer_Click(object sender, EventArgs e)
+        {
+            FrmCareerSelect fcs3 = new FrmCareerSelect();
+            fcs3.ShowDialog();
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
 

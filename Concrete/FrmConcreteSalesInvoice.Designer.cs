@@ -44,15 +44,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtweight = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pbCareer = new System.Windows.Forms.PictureBox();
             this.txtCareer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pbMixerSearch = new System.Windows.Forms.PictureBox();
             this.txtMixer = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbCustomerSearch = new System.Windows.Forms.PictureBox();
             this.txtCustomer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pbCareer = new System.Windows.Forms.PictureBox();
+            this.pbMixerSearch = new System.Windows.Forms.PictureBox();
+            this.pbCustomerSearch = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnNewInvoice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
@@ -268,16 +268,6 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "وزن:";
             // 
-            // pbCareer
-            // 
-            this.pbCareer.Image = global::Concrete.Properties.Resources.Search_icon;
-            this.pbCareer.Location = new System.Drawing.Point(9, 87);
-            this.pbCareer.Name = "pbCareer";
-            this.pbCareer.Size = new System.Drawing.Size(32, 33);
-            this.pbCareer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbCareer.TabIndex = 15;
-            this.pbCareer.TabStop = false;
-            // 
             // txtCareer
             // 
             this.txtCareer.Location = new System.Drawing.Point(47, 87);
@@ -293,16 +283,6 @@
             this.label3.Size = new System.Drawing.Size(73, 26);
             this.label3.TabIndex = 13;
             this.label3.Text = "Career";
-            // 
-            // pbMixerSearch
-            // 
-            this.pbMixerSearch.Image = global::Concrete.Properties.Resources.Search_icon;
-            this.pbMixerSearch.Location = new System.Drawing.Point(323, 89);
-            this.pbMixerSearch.Name = "pbMixerSearch";
-            this.pbMixerSearch.Size = new System.Drawing.Size(32, 33);
-            this.pbMixerSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbMixerSearch.TabIndex = 12;
-            this.pbMixerSearch.TabStop = false;
             // 
             // txtMixer
             // 
@@ -320,16 +300,6 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "میکسر:";
             // 
-            // pbCustomerSearch
-            // 
-            this.pbCustomerSearch.Image = global::Concrete.Properties.Resources.Search_icon;
-            this.pbCustomerSearch.Location = new System.Drawing.Point(323, 42);
-            this.pbCustomerSearch.Name = "pbCustomerSearch";
-            this.pbCustomerSearch.Size = new System.Drawing.Size(32, 33);
-            this.pbCustomerSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbCustomerSearch.TabIndex = 9;
-            this.pbCustomerSearch.TabStop = false;
-            // 
             // txtCustomer
             // 
             this.txtCustomer.Location = new System.Drawing.Point(361, 42);
@@ -345,6 +315,39 @@
             this.label1.Size = new System.Drawing.Size(75, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "نام مشتری:";
+            // 
+            // pbCareer
+            // 
+            this.pbCareer.Image = global::Concrete.Properties.Resources.Search_icon;
+            this.pbCareer.Location = new System.Drawing.Point(9, 87);
+            this.pbCareer.Name = "pbCareer";
+            this.pbCareer.Size = new System.Drawing.Size(32, 33);
+            this.pbCareer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbCareer.TabIndex = 15;
+            this.pbCareer.TabStop = false;
+            this.pbCareer.Click += new System.EventHandler(this.pbCareer_Click);
+            // 
+            // pbMixerSearch
+            // 
+            this.pbMixerSearch.Image = global::Concrete.Properties.Resources.Search_icon;
+            this.pbMixerSearch.Location = new System.Drawing.Point(323, 89);
+            this.pbMixerSearch.Name = "pbMixerSearch";
+            this.pbMixerSearch.Size = new System.Drawing.Size(32, 33);
+            this.pbMixerSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbMixerSearch.TabIndex = 12;
+            this.pbMixerSearch.TabStop = false;
+            this.pbMixerSearch.Click += new System.EventHandler(this.pbMixerSearch_Click);
+            // 
+            // pbCustomerSearch
+            // 
+            this.pbCustomerSearch.Image = global::Concrete.Properties.Resources.Search_icon;
+            this.pbCustomerSearch.Location = new System.Drawing.Point(323, 42);
+            this.pbCustomerSearch.Name = "pbCustomerSearch";
+            this.pbCustomerSearch.Size = new System.Drawing.Size(32, 33);
+            this.pbCustomerSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbCustomerSearch.TabIndex = 9;
+            this.pbCustomerSearch.TabStop = false;
+            this.pbCustomerSearch.Click += new System.EventHandler(this.pbCustomerSearch_Click);
             // 
             // FrmConcreteSalesInvoice
             // 

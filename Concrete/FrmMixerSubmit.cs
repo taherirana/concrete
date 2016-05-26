@@ -16,6 +16,11 @@ namespace Concrete
             InitializeComponent();
         }
 
+        public void clearTextBox()
+        {
+            txtDriverName.Clear();
+            txtDriverFamily.Clear();
+        }
 
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -26,6 +31,20 @@ namespace Concrete
         private void FrmMixerSubmit_Load(object sender, EventArgs e)
         {
             language.Persian();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (txtDriverName.Text == "")
+            {
+                MessageBox.Show("لطفا نام راننده را وارد کنید");
+                return;
+            }
+            else if(txtDriverFamily.Text=="")
+            {
+                MessageBox.Show("لطفا نام خانوادگی راننده را وارد کنید");
+                return;
+            }
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)

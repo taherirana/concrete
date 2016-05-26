@@ -56,6 +56,12 @@
     <Compile Include="Concrete.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="DB.cs" />
+    <Compile Include="FrmCareerSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCareerSelect.Designer.cs">
+      <DependentUpon>FrmCareerSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCarrierManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,12 @@
     <Compile Include="FrmCustomerManage.Designer.cs">
       <DependentUpon>FrmCustomerManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCustomerSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerSelect.Designer.cs">
+      <DependentUpon>FrmCustomerSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMixerManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     </Compile>
     <Compile Include="FrmCompanySubmit.Designer.cs">
       <DependentUpon>FrmCompanySubmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMixerSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMixerSelect.Designer.cs">
+      <DependentUpon>FrmMixerSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Main.cs">
       <SubType>Form</SubType>
@@ -137,6 +155,9 @@
     <Compile Include="language.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCareerSelect.resx">
+      <DependentUpon>FrmCareerSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCarrierManage.resx">
       <DependentUpon>FrmCarrierManage.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,8 +179,14 @@
     <EmbeddedResource Include="FrmCustomerManage.resx">
       <DependentUpon>FrmCustomerManage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerSelect.resx">
+      <DependentUpon>FrmCustomerSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMixerSelect.resx">
+      <DependentUpon>FrmMixerSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>

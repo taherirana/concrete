@@ -94,7 +94,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(1, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(627, 587);
+            this.groupBox1.Size = new System.Drawing.Size(629, 615);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت فاکتور فروش";
@@ -108,6 +108,7 @@
             this.btnNewInvoice.Size = new System.Drawing.Size(76, 27);
             this.btnNewInvoice.TabIndex = 11;
             this.btnNewInvoice.Text = "فاکتور جدید";
+            this.btnNewInvoice.Click += new System.EventHandler(this.btnNewInvoice_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnNewInvoice.GetChildAt(0))).Text = "فاکتور جدید";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnNewInvoice.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnNewInvoice.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -122,6 +123,7 @@
             this.btnSave.Size = new System.Drawing.Size(76, 27);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "ثبت";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSave.GetChildAt(0))).Text = "ثبت";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSave.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSave.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -151,6 +153,7 @@
             this.btnPrintReceipt.Size = new System.Drawing.Size(76, 27);
             this.btnPrintReceipt.TabIndex = 10;
             this.btnPrintReceipt.Text = "چاپ رسید";
+            this.btnPrintReceipt.Click += new System.EventHandler(this.btnPrintReceipt_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnPrintReceipt.GetChildAt(0))).Text = "چاپ رسید";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnPrintReceipt.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnPrintReceipt.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -165,6 +168,7 @@
             this.btnPrintInvoice.Size = new System.Drawing.Size(76, 27);
             this.btnPrintInvoice.TabIndex = 9;
             this.btnPrintInvoice.Text = "چاپ فاکتور";
+            this.btnPrintInvoice.Click += new System.EventHandler(this.btnPrintInvoice_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnPrintInvoice.GetChildAt(0))).Text = "چاپ فاکتور";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnPrintInvoice.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnPrintInvoice.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -196,6 +200,7 @@
             this.dgwSalesInvoice.ReadOnly = true;
             this.dgwSalesInvoice.Size = new System.Drawing.Size(623, 195);
             this.dgwSalesInvoice.TabIndex = 8;
+            this.dgwSalesInvoice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwSalesInvoice_CellContentClick);
             // 
             // textBox1
             // 
@@ -348,7 +353,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 570);
+            this.ClientSize = new System.Drawing.Size(625, 629);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

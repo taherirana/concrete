@@ -9,8 +9,6 @@ namespace Concrete
     public class DB : IDatabase
     {
 
-        int j = 20;
-        int i = 0;
         private SqlCommand cmd = new SqlCommand();
         private SqlConnection con = new SqlConnection();
         private SqlDataAdapter da = new SqlDataAdapter();

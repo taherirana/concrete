@@ -20,5 +20,11 @@ namespace Concrete
         {
             this.Close();
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "")
+                MessageBox.Show("لطفا متنی را داخل کادر جستجو وارد نمایید");
+        }
     }
 }

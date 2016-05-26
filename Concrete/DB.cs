@@ -350,6 +350,12 @@ namespace Concrete
         }
 
 
+
+
+        public bool ConcreteOrder()
+        {
+            return true;
+        }
     }
 
     public interface IDatabase
@@ -372,6 +378,9 @@ namespace Concrete
         int GetCareerOwnerShipTypeID(string OwnerShipTypeName);
 
         List<string> getAllownerShiptype();
+
+
+        bool ConcreteOrder();
 
         void Open();
 

@@ -55,5 +55,30 @@ namespace Concrete
         {
             ClearTextBox();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrintReceipt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrintInvoice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNewInvoice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgwSalesInvoice_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

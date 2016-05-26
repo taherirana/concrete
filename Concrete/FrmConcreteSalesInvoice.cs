@@ -11,6 +11,9 @@ namespace Concrete
 {
     public partial class FrmConcreteSalesInvoice : Form
     {
+        private int CustomerID;
+        private string careerID;
+
         public FrmConcreteSalesInvoice()
         {
             InitializeComponent();
@@ -58,8 +61,13 @@ namespace Concrete
 
         private void pbCustomerSearch_Click(object sender, EventArgs e)
         {
-            FrmCustomerSelect fcss = new FrmCustomerSelect();
-            fcss.ShowDialog();
+            FrmCustomerSelect frmSelectCustomer = new FrmCustomerSelect();
+            frmSelectCustomer.ShowDialog();
+
+            txtCustomer.Text = frmSelectCustomer.Name;
+            CustomerID = frmSelectCustomer.ID;
+            frmSelectCustomer.Close();
+
         }
 
         private void pbMixerSearch_Click(object sender, EventArgs e)
@@ -70,8 +78,11 @@ namespace Concrete
 
         private void pbCareer_Click(object sender, EventArgs e)
         {
-            FrmCareerSelect fcs3 = new FrmCareerSelect();
-            fcs3.ShowDialog();
+            FrmCareerSelect frmCareerSelect = new FrmCareerSelect();
+            frmCareerSelect.ShowDialog();
+            careerID = frmCareerSelect.ID;
+            txtCareer.Text = frmCareerSelect.Name;
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -96,7 +107,9 @@ namespace Concrete
 
         private void dgwSalesInvoice_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
+
+        
     }
 }

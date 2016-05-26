@@ -133,6 +133,7 @@
             this.btnSelect.Size = new System.Drawing.Size(76, 27);
             this.btnSelect.TabIndex = 4;
             this.btnSelect.Text = "انتخاب";
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSelect.GetChildAt(0))).Text = "انتخاب";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSelect.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSelect.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -159,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 273);
+            this.ClientSize = new System.Drawing.Size(688, 269);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

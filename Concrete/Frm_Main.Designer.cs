@@ -149,7 +149,7 @@
             // 
             // ribbonTab3
             // 
-            this.ribbonTab3.IsSelected = false;
+            this.ribbonTab3.IsSelected = true;
             this.ribbonTab3.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radRibbonBarGroup1});
             this.ribbonTab3.Name = "ribbonTab3";
@@ -321,10 +321,12 @@
             // rbe_SInvoice
             // 
             this.rbe_SInvoice.Alignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbe_SInvoice.AutoSize = false;
+            this.rbe_SInvoice.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
             this.rbe_SInvoice.Image = global::Concrete.Properties.Resources.eTMox9jTn;
             this.rbe_SInvoice.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbe_SInvoice.Name = "rbe_SInvoice";
-            this.rbe_SInvoice.Text = "ثبت فاکتور فروش";
+            this.rbe_SInvoice.Text = "فروش بتن";
             this.rbe_SInvoice.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.rbe_SInvoice.Click += new System.EventHandler(this.rbe_SInvoice_Click);
             // 

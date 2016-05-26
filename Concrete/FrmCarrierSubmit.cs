@@ -25,6 +25,8 @@ namespace Concrete
         {
             Career cr = new Career("fname","Lname","PQ","ow");
             DB db= new DB();
+
+            var d = db.getAllownerShiptype();
             db.InsertCareer(cr);
         }
     }

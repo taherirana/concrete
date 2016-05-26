@@ -284,7 +284,7 @@ namespace Concrete
 
         public int GetCareerOwnerShipTypeID(string OwnerShipTypeName)
         {
-            cmd.CommandText = "select Mixer_Owner_Type_ID from  Owner_Type where Mixer_Owner_Type = @OwnerShipTypeName";
+            cmd.CommandText = "select Owner_Type_ID from  Owner_Type where Owner_Type = @OwnerShipTypeName";
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@OwnerShipTypeName", OwnerShipTypeName);
 
@@ -302,6 +302,35 @@ namespace Concrete
                 Close();
             }
             return ID;
+        }
+
+        public List<string> getAllownerShiptype()
+        {
+            cmd.CommandText = "select * from  Owner_Type";
+            cmd.Parameters.Clear();
+
+            List<string> ownerShips = new List<string>();
+
+            try
+            {
+                Open();
+
+                var result = cmd.ExecuteReader();
+
+                if (result.HasRows)
+                {
+                    while (result.Read())
+                    {
+                        //CareerOwnerShipType cro = new CareerOwnerShipType ( int.Parse( result.GetValue(0).ToString()), result.GetValue(1).ToString() );
+                        ownerShips.Add(result.GetValue(1).ToString());
+                    }
+                }
+            }
+            catch (Exception)
+            {  
+            }
+
+            return ownerShips;
         }
     }
 
@@ -323,6 +352,8 @@ namespace Concrete
         bool InsertCareer(Career cr);
 
         int GetCareerOwnerShipTypeID(string OwnerShipTypeName);
+
+        List<string> getAllownerShiptype();
 
         void Open();
 

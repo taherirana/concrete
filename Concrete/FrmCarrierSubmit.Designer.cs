@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
-            this.cmbmCarrier = new System.Windows.Forms.ComboBox();
+            this.cmbCarrierOwnerShipType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.p5 = new System.Windows.Forms.TextBox();
             this.p4 = new System.Windows.Forms.TextBox();
@@ -52,7 +52,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnSubmit);
-            this.groupBox1.Controls.Add(this.cmbmCarrier);
+            this.groupBox1.Controls.Add(this.cmbCarrierOwnerShipType);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.p5);
             this.groupBox1.Controls.Add(this.p4);
@@ -64,12 +64,12 @@
             this.groupBox1.Controls.Add(this.txtDriverName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(2, 12);
+            this.groupBox1.Location = new System.Drawing.Point(2, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(697, 232);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ثبت Carrier";
+            this.groupBox1.Text = "ثبت کریر";
             // 
             // btnCancel
             // 
@@ -101,13 +101,13 @@
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             // 
-            // cmbmCarrier
+            // cmbCarrierOwnerShipType
             // 
-            this.cmbmCarrier.FormattingEnabled = true;
-            this.cmbmCarrier.Location = new System.Drawing.Point(35, 99);
-            this.cmbmCarrier.Name = "cmbmCarrier";
-            this.cmbmCarrier.Size = new System.Drawing.Size(180, 32);
-            this.cmbmCarrier.TabIndex = 15;
+            this.cmbCarrierOwnerShipType.FormattingEnabled = true;
+            this.cmbCarrierOwnerShipType.Location = new System.Drawing.Point(35, 99);
+            this.cmbCarrierOwnerShipType.Name = "cmbCarrierOwnerShipType";
+            this.cmbCarrierOwnerShipType.Size = new System.Drawing.Size(180, 32);
+            this.cmbCarrierOwnerShipType.TabIndex = 15;
             // 
             // label4
             // 
@@ -123,14 +123,14 @@
             this.p5.Location = new System.Drawing.Point(470, 138);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(39, 31);
-            this.p5.TabIndex = 13;
+            this.p5.TabIndex = 9;
             // 
             // p4
             // 
             this.p4.Location = new System.Drawing.Point(508, 138);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(78, 31);
-            this.p4.TabIndex = 12;
+            this.p4.TabIndex = 120;
             this.p4.Text = "ایران";
             this.p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -139,21 +139,21 @@
             this.p3.Location = new System.Drawing.Point(470, 105);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(39, 31);
-            this.p3.TabIndex = 11;
+            this.p3.TabIndex = 10;
             // 
             // p2
             // 
             this.p2.Location = new System.Drawing.Point(508, 105);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(38, 31);
-            this.p2.TabIndex = 10;
+            this.p2.TabIndex = 11;
             // 
             // p1
             // 
             this.p1.Location = new System.Drawing.Point(545, 105);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(41, 31);
-            this.p1.TabIndex = 9;
+            this.p1.TabIndex = 12;
             // 
             // label3
             // 
@@ -200,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 237);
+            this.ClientSize = new System.Drawing.Size(690, 245);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -210,7 +210,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ثبت Carrier";
+            this.Text = "ثبت کریر";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
@@ -224,7 +224,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private Telerik.WinControls.UI.RadButton btnCancel;
         private Telerik.WinControls.UI.RadButton btnSubmit;
-        private System.Windows.Forms.ComboBox cmbmCarrier;
+        private System.Windows.Forms.ComboBox cmbCarrierOwnerShipType;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox p5;
         private System.Windows.Forms.TextBox p4;

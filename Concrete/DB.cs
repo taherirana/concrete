@@ -224,7 +224,7 @@ namespace Concrete
                 if (count > 0)
                     return true;
             }
-            catch
+            catch(Exception ex)
             {
                 return false;
             }
@@ -284,15 +284,30 @@ namespace Concrete
 
         public int GetCareerOwnerShipTypeID(string OwnerShipTypeName)
         {
-            cmd.CommandText = "select Owner_Type_ID from  Owner_Type where Owner_Type = @OwnerShipTypeName";
+            cmd.CommandText = "select * from  Owner_Type ";//where Owner_Type = @OwnerShipTypeName";
             cmd.Parameters.Clear();
-            cmd.Parameters.AddWithValue("@OwnerShipTypeName", OwnerShipTypeName);
+            //cmd.Parameters.AddWithValue("@OwnerShipTypeName", OwnerShipTypeName);
+            //List<CareerOwnerShipType> ownerShips = new List<CareerOwnerShipType>();
 
             int ID = -1;
             try
             {
                 Open();
-                ID = cmd.ExecuteNonQuery();
+
+                var result = cmd.ExecuteReader();
+
+                if (result.HasRows)
+                {
+                    while (result.Read())
+                    {
+                        CareerOwnerShipType cro = new CareerOwnerShipType(int.Parse(result.GetValue(0).ToString()), result.GetValue(1).ToString());
+                       // ownerShips.Add(cro);
+
+                        if (OwnerShipTypeName == cro.OwnerShipName)
+                            return cro.ID;
+                    }
+                }
+
             }
             catch (Exception)
             {
@@ -332,6 +347,8 @@ namespace Concrete
 
             return ownerShips;
         }
+
+
     }
 
     public interface IDatabase

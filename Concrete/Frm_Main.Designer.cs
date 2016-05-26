@@ -31,6 +31,7 @@
             this.radRibbonBar1 = new Telerik.WinControls.UI.RadRibbonBar();
             this.ribbonTab1 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup5 = new Telerik.WinControls.UI.RadRibbonBarGroup();
+            this.rbeCompanySubbmit = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup2 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.rbe_sabtCustomer = new Telerik.WinControls.UI.RadButtonElement();
             this.rbeCustomerManage = new Telerik.WinControls.UI.RadButtonElement();
@@ -54,7 +55,6 @@
             this.radMenuSeparatorItem4 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.rbeCompanySubmit = new Telerik.WinControls.UI.RadButtonElement();
             this.rbeCompanyManage = new Telerik.WinControls.UI.RadButtonElement();
-            this.rbeCompanySubbmit = new Telerik.WinControls.UI.RadButtonElement();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +103,16 @@
             this.rbeCompanySubbmit});
             this.radRibbonBarGroup5.Name = "radRibbonBarGroup5";
             this.radRibbonBarGroup5.Text = "ثبت اطلاعات شرکت";
+            // 
+            // rbeCompanySubbmit
+            // 
+            this.rbeCompanySubbmit.AutoSize = false;
+            this.rbeCompanySubbmit.Bounds = new System.Drawing.Rectangle(0, 0, 75, 72);
+            this.rbeCompanySubbmit.Image = global::Concrete.Properties.Resources._1464208647_home;
+            this.rbeCompanySubbmit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbeCompanySubbmit.Name = "rbeCompanySubbmit";
+            this.rbeCompanySubbmit.Text = "ثبت شرکت";
+            this.rbeCompanySubbmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // radRibbonBarGroup2
             // 
@@ -303,16 +313,6 @@
             // rbeCompanyManage
             // 
             this.rbeCompanyManage.Name = "rbeCompanyManage";
-            // 
-            // rbeCompanySubbmit
-            // 
-            this.rbeCompanySubbmit.AutoSize = false;
-            this.rbeCompanySubbmit.Bounds = new System.Drawing.Rectangle(0, 0, 75, 72);
-            this.rbeCompanySubbmit.Image = global::Concrete.Properties.Resources._1464208647_home;
-            this.rbeCompanySubbmit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbeCompanySubbmit.Name = "rbeCompanySubbmit";
-            this.rbeCompanySubbmit.Text = "ثبت شرکت";
-            this.rbeCompanySubbmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // Frm_Main
             // 

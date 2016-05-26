@@ -22,11 +22,28 @@ namespace Concrete
         {
             Concrete ce = new Concrete( int.Parse( txtconcretetype.Text.Trim() ), int.Parse( txtconcretePrice.Text.Trim() ) );
 
+            DB db = new DB();
+
+            if (db.InsertConcrete(ce))
+            {
+                txtconcretePrice.Text = "";
+                txtconcretetype.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("اطلاعات ثبت نشد");
+            }
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmConcreteTypeSubmit_Load(object sender, EventArgs e)
+        {
+            language.Persian();
         }
     }
 }

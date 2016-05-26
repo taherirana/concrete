@@ -68,6 +68,12 @@
     <Compile Include="FrmCarrierSubmit.Designer.cs">
       <DependentUpon>FrmCarrierSubmit.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCompanyManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompanyManage.Designer.cs">
+      <DependentUpon>FrmCompanyManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConcreteSalesInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,7 @@
     <Compile Include="FrmMixerSubmit.Designer.cs">
       <DependentUpon>FrmMixerSubmit.cs</DependentUpon>
     </Compile>
+    <Compile Include="language.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCarrierManage.resx">
@@ -135,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCarrierSubmit.resx">
       <DependentUpon>FrmCarrierSubmit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompanyManage.resx">
+      <DependentUpon>FrmCompanyManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCompanySubmit.resx">
       <DependentUpon>FrmCompanySubmit.cs</DependentUpon>
@@ -237,6 +247,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mixer21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

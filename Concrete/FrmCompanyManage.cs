@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Concrete
 {
-    public partial class FrmCompanySubmit : Form
+    public partial class FrmCompanyManage : Form
     {
-        public FrmCompanySubmit()
+        public FrmCompanyManage()
         {
             InitializeComponent();
         }
@@ -19,6 +19,14 @@ namespace Concrete
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmCompanyManage_Load(object sender, EventArgs e)
+        {
+            btnDelete.Enabled = false;
+            btnEdit.Enabled = false;
+            btnSubmit.Enabled = false;
+            txtCompanyName.Enabled = false;
         }
     }
 }

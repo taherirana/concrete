@@ -74,5 +74,30 @@ namespace Concrete
             FrmConcreteTypeManage fctm = new FrmConcreteTypeManage();
             fctm.ShowDialog();
         }
+
+        private void rbeCompanySubbmit_Click(object sender, EventArgs e)
+        {
+            FrmCompanySubmit fCs1 = new FrmCompanySubmit();
+            fCs1.ShowDialog();
+        }
+
+        private void radButtonElement2_Click(object sender, EventArgs e)
+        {
+            FrmConcreteTypeManage fctm1 = new FrmConcreteTypeManage();
+            fctm1.ShowDialog();
+        }
+
+        private void radButtonElement1_Click(object sender, EventArgs e)
+        {
+            FrmConcreteTypeSubmit fcts1 = new FrmConcreteTypeSubmit();
+            fcts1.ShowDialog();
+        }
+
+        private void rbeCompanyManaage_Click(object sender, EventArgs e)
+        {
+            FrmCompanyManage fcm2 = new FrmCompanyManage();
+            fcm2.ShowDialog();
+
+        }
     }
 }

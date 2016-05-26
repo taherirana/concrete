@@ -31,9 +31,9 @@
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSearch = new Telerik.WinControls.UI.RadButton();
-            this.dgwMixer = new System.Windows.Forms.DataGridView();
+            this.dgwCarrier = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbMixer = new System.Windows.Forms.ComboBox();
+            this.cmbCarrier = new System.Windows.Forms.ComboBox();
             this.btnDelete = new Telerik.WinControls.UI.RadButton();
             this.btnEdit = new Telerik.WinControls.UI.RadButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwMixer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwCarrier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -80,9 +80,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnSearch);
-            this.groupBox2.Controls.Add(this.dgwMixer);
+            this.groupBox2.Controls.Add(this.dgwCarrier);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.cmbMixer);
+            this.groupBox2.Controls.Add(this.cmbCarrier);
             this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnEdit);
             this.groupBox2.Controls.Add(this.txtSearch);
@@ -108,16 +108,16 @@
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSearch.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSearch.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             // 
-            // dgwMixer
+            // dgwCarrier
             // 
-            this.dgwMixer.AllowUserToAddRows = false;
-            this.dgwMixer.AllowUserToDeleteRows = false;
-            this.dgwMixer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwMixer.Location = new System.Drawing.Point(0, 81);
-            this.dgwMixer.Name = "dgwMixer";
-            this.dgwMixer.ReadOnly = true;
-            this.dgwMixer.Size = new System.Drawing.Size(697, 157);
-            this.dgwMixer.TabIndex = 3;
+            this.dgwCarrier.AllowUserToAddRows = false;
+            this.dgwCarrier.AllowUserToDeleteRows = false;
+            this.dgwCarrier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwCarrier.Location = new System.Drawing.Point(0, 81);
+            this.dgwCarrier.Name = "dgwCarrier";
+            this.dgwCarrier.ReadOnly = true;
+            this.dgwCarrier.Size = new System.Drawing.Size(691, 157);
+            this.dgwCarrier.TabIndex = 3;
             // 
             // label5
             // 
@@ -128,19 +128,19 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "جستجو:";
             // 
-            // cmbMixer
+            // cmbCarrier
             // 
-            this.cmbMixer.FormattingEnabled = true;
-            this.cmbMixer.Items.AddRange(new object[] {
+            this.cmbCarrier.FormattingEnabled = true;
+            this.cmbCarrier.Items.AddRange(new object[] {
             "نام راننده",
             "نام خانوادگی راننده",
             "پلاک ماشین",
             "نوع مالکیت"});
-            this.cmbMixer.Location = new System.Drawing.Point(408, 44);
-            this.cmbMixer.Name = "cmbMixer";
-            this.cmbMixer.Size = new System.Drawing.Size(180, 32);
-            this.cmbMixer.TabIndex = 0;
-            this.cmbMixer.Text = "انتخاب کنید...";
+            this.cmbCarrier.Location = new System.Drawing.Point(408, 44);
+            this.cmbCarrier.Name = "cmbCarrier";
+            this.cmbCarrier.Size = new System.Drawing.Size(180, 32);
+            this.cmbCarrier.TabIndex = 0;
+            this.cmbCarrier.Text = "انتخاب کنید...";
             // 
             // btnDelete
             // 
@@ -322,7 +322,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 501);
+            this.ClientSize = new System.Drawing.Size(694, 497);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -339,7 +339,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwMixer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwCarrier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -354,9 +354,9 @@
         private Telerik.WinControls.UI.RadButton btnCancel;
         private System.Windows.Forms.GroupBox groupBox2;
         private Telerik.WinControls.UI.RadButton btnSearch;
-        private System.Windows.Forms.DataGridView dgwMixer;
+        private System.Windows.Forms.DataGridView dgwCarrier;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbMixer;
+        private System.Windows.Forms.ComboBox cmbCarrier;
         private Telerik.WinControls.UI.RadButton btnDelete;
         private Telerik.WinControls.UI.RadButton btnEdit;
         private System.Windows.Forms.TextBox txtSearch;

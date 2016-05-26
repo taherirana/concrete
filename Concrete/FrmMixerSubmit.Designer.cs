@@ -77,7 +77,7 @@
             this.btnCancel.Location = new System.Drawing.Point(426, 197);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 17;
+            this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "انصراف";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
@@ -92,7 +92,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(508, 197);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 16;
+            this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "ثبت";
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -106,7 +106,7 @@
             this.cmbmmixer.Location = new System.Drawing.Point(35, 99);
             this.cmbmmixer.Name = "cmbmmixer";
             this.cmbmmixer.Size = new System.Drawing.Size(180, 34);
-            this.cmbmmixer.TabIndex = 15;
+            this.cmbmmixer.TabIndex = 7;
             // 
             // label4
             // 
@@ -122,14 +122,14 @@
             this.p5.Location = new System.Drawing.Point(470, 138);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(39, 33);
-            this.p5.TabIndex = 13;
+            this.p5.TabIndex = 6;
             // 
             // p4
             // 
             this.p4.Location = new System.Drawing.Point(508, 138);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(78, 33);
-            this.p4.TabIndex = 12;
+            this.p4.TabIndex = 5;
             this.p4.Text = "ایران";
             this.p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -138,21 +138,21 @@
             this.p3.Location = new System.Drawing.Point(470, 105);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(39, 33);
-            this.p3.TabIndex = 11;
+            this.p3.TabIndex = 4;
             // 
             // p2
             // 
             this.p2.Location = new System.Drawing.Point(508, 105);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(38, 33);
-            this.p2.TabIndex = 10;
+            this.p2.TabIndex = 3;
             // 
             // p1
             // 
             this.p1.Location = new System.Drawing.Point(545, 105);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(41, 33);
-            this.p1.TabIndex = 9;
+            this.p1.TabIndex = 2;
             // 
             // label3
             // 
@@ -168,14 +168,14 @@
             this.txtDriverFamily.Location = new System.Drawing.Point(35, 44);
             this.txtDriverFamily.Name = "txtDriverFamily";
             this.txtDriverFamily.Size = new System.Drawing.Size(180, 33);
-            this.txtDriverFamily.TabIndex = 7;
+            this.txtDriverFamily.TabIndex = 1;
             // 
             // txtDriverName
             // 
             this.txtDriverName.Location = new System.Drawing.Point(404, 44);
             this.txtDriverName.Name = "txtDriverName";
             this.txtDriverName.Size = new System.Drawing.Size(180, 33);
-            this.txtDriverName.TabIndex = 6;
+            this.txtDriverName.TabIndex = 0;
             // 
             // label2
             // 
@@ -195,17 +195,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "نام راننده:";
             // 
-            // Frm_SabtMixer
+            // FrmMixerSubmit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 234);
+            this.ClientSize = new System.Drawing.Size(696, 230);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "Frm_SabtMixer";
+            this.Name = "FrmMixerSubmit";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

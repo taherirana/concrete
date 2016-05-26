@@ -86,7 +86,7 @@
             this.btnCancel.Location = new System.Drawing.Point(573, 226);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 12;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "انصراف";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
@@ -101,7 +101,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(656, 226);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 11;
+            this.btnSubmit.TabIndex = 6;
             this.btnSubmit.Text = "ثبت";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
@@ -115,21 +115,21 @@
             this.txt_address.Location = new System.Drawing.Point(12, 175);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(719, 33);
-            this.txt_address.TabIndex = 10;
+            this.txt_address.TabIndex = 5;
             // 
             // txt_mobile
             // 
             this.txt_mobile.Location = new System.Drawing.Point(259, 104);
             this.txt_mobile.Name = "txt_mobile";
             this.txt_mobile.Size = new System.Drawing.Size(180, 33);
-            this.txt_mobile.TabIndex = 9;
+            this.txt_mobile.TabIndex = 4;
             // 
             // txt_tell
             // 
             this.txt_tell.Location = new System.Drawing.Point(551, 104);
             this.txt_tell.Name = "txt_tell";
             this.txt_tell.Size = new System.Drawing.Size(180, 33);
-            this.txt_tell.TabIndex = 8;
+            this.txt_tell.TabIndex = 3;
             // 
             // label6
             // 
@@ -145,21 +145,21 @@
             this.txtKmeli.Location = new System.Drawing.Point(12, 36);
             this.txtKmeli.Name = "txtKmeli";
             this.txtKmeli.Size = new System.Drawing.Size(180, 33);
-            this.txtKmeli.TabIndex = 7;
+            this.txtKmeli.TabIndex = 2;
             // 
             // txtFamily
             // 
             this.txtFamily.Location = new System.Drawing.Point(259, 36);
             this.txtFamily.Name = "txtFamily";
             this.txtFamily.Size = new System.Drawing.Size(180, 33);
-            this.txtFamily.TabIndex = 6;
+            this.txtFamily.TabIndex = 1;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(551, 35);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(180, 33);
-            this.txtName.TabIndex = 5;
+            this.txtName.TabIndex = 0;
             // 
             // label5
             // 

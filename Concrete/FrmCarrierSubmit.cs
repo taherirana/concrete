@@ -27,5 +27,10 @@ namespace Concrete
             DB db= new DB();
             db.InsertCareer(cr);
         }
+
+        private void FrmCarrierSubmit_Load(object sender, EventArgs e)
+        {
+            language.Persian();
+        }
     }
 }

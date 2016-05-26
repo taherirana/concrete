@@ -23,6 +23,7 @@ namespace Concrete
 
         private void FrmCustomerManage_Load(object sender, EventArgs e)
         {
+            language.Persian();
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
             btnSubmit.Enabled = false;

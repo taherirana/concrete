@@ -134,6 +134,7 @@
     <Compile Include="FrmMixerSubmit.Designer.cs">
       <DependentUpon>FrmMixerSubmit.cs</DependentUpon>
     </Compile>
+    <Compile Include="language.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCarrierManage.resx">

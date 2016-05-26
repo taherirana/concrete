@@ -47,6 +47,11 @@ namespace Concrete
             return c;
         }
 
+        private void Frm_SabtCustomer_Load(object sender, EventArgs e)
+        {
+            language.Persian();
+        }
+
 
     }
 }

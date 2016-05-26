@@ -22,5 +22,10 @@ namespace Concrete
         {
             this.Close();
         }
+
+        private void FrmMixerSubmit_Load(object sender, EventArgs e)
+        {
+            language.Persian();
+        }
     }
 }

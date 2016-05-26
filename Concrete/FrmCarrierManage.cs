@@ -23,6 +23,7 @@ namespace Concrete
 
         private void FrmCarrierManage_Load(object sender, EventArgs e)
         {
+            language.Persian();
             btnDelete.Enabled = false;
             btnEdit.Enabled = false;
             btnSubmit.Enabled = false;

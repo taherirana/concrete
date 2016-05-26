@@ -32,5 +32,10 @@ namespace Concrete
         {
             this.Close();
         }
+
+        private void FrmConcreteSalesInvoice_Load(object sender, EventArgs e)
+        {
+            language.Persian();
+        }
     }
 }

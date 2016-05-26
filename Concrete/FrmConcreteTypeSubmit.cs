@@ -28,5 +28,10 @@ namespace Concrete
         {
             this.Close();
         }
+
+        private void FrmConcreteTypeSubmit_Load(object sender, EventArgs e)
+        {
+            language.Persian();
+        }
     }
 }

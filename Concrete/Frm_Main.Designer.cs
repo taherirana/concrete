@@ -254,10 +254,11 @@
             // 
             // rbe_SabtMixer
             // 
-            this.rbe_SabtMixer.AutoSize = true;
+            this.rbe_SabtMixer.AutoSize = false;
             this.rbe_SabtMixer.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
+            this.rbe_SabtMixer.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
             this.rbe_SabtMixer.DisplayStyle = Telerik.WinControls.DisplayStyle.ImageAndText;
-            this.rbe_SabtMixer.Image = global::Concrete.Properties.Resources.mixer21;
+            this.rbe_SabtMixer.Image = global::Concrete.Properties.Resources._2;
             this.rbe_SabtMixer.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbe_SabtMixer.Name = "rbe_SabtMixer";
             this.rbe_SabtMixer.Text = "ثبت میکسر";
@@ -279,7 +280,7 @@
             // 
             this.rbecarrierSubmit.AutoSize = false;
             this.rbecarrierSubmit.Bounds = new System.Drawing.Rectangle(0, 0, 75, 75);
-            this.rbecarrierSubmit.Image = global::Concrete.Properties.Resources.Foden_Concrete_Truck;
+            this.rbecarrierSubmit.Image = global::Concrete.Properties.Resources.Untitled_1;
             this.rbecarrierSubmit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbecarrierSubmit.Name = "rbecarrierSubmit";
             this.rbecarrierSubmit.Text = "ثبت carrier";

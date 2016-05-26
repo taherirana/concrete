@@ -33,9 +33,9 @@ namespace Concrete
             this.Close();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private void FrmConcreteSalesInvoice_Load(object sender, EventArgs e)
         {
-
+            language.Persian();
         }
     }
 }

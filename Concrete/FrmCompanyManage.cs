@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Concrete
 {
-    public partial class FrmCarrierManage : Form
+    public partial class FrmCompanyManage : Form
     {
-        public FrmCarrierManage()
+        public FrmCompanyManage()
         {
             InitializeComponent();
         }
@@ -21,20 +21,13 @@ namespace Concrete
             this.Close();
         }
 
-        private void FrmCarrierManage_Load(object sender, EventArgs e)
+        private void FrmCompanyManage_Load(object sender, EventArgs e)
         {
             language.Persian();
             btnDelete.Enabled = false;
             btnEdit.Enabled = false;
             btnSubmit.Enabled = false;
-            txtDriverName.Enabled = false;
-            txtDriverFamily.Enabled = false;
-            cmbmmixer.Enabled = false;
-            p1.Enabled = false;
-            p2.Enabled = false;
-            p3.Enabled = false;
-            p4.Enabled = false;
-            p5.Enabled = false;
+            txtCompanyName.Enabled = false;
         }
     }
 }

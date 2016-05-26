@@ -77,7 +77,7 @@
             this.btnCancel.Location = new System.Drawing.Point(426, 197);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 17;
+            this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "انصراف";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
@@ -92,7 +92,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(508, 197);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 16;
+            this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "ثبت";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
@@ -169,14 +169,14 @@
             this.txtDriverFamily.Location = new System.Drawing.Point(35, 44);
             this.txtDriverFamily.Name = "txtDriverFamily";
             this.txtDriverFamily.Size = new System.Drawing.Size(180, 31);
-            this.txtDriverFamily.TabIndex = 7;
+            this.txtDriverFamily.TabIndex = 1;
             // 
             // txtDriverName
             // 
             this.txtDriverName.Location = new System.Drawing.Point(404, 44);
             this.txtDriverName.Name = "txtDriverName";
             this.txtDriverName.Size = new System.Drawing.Size(180, 31);
-            this.txtDriverName.TabIndex = 6;
+            this.txtDriverName.TabIndex = 0;
             // 
             // label2
             // 
@@ -211,6 +211,8 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ثبت کریر";
+            
+            this.Load += new System.EventHandler(this.FrmCarrierSubmit_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();

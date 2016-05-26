@@ -69,5 +69,10 @@ namespace Concrete
             p5.Text = "";
 
         }
+
+        private void FrmCarrierSubmit_Load(object sender, EventArgs e)
+        {
+            language.Persian();
+        }
     }
 }

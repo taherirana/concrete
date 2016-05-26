@@ -24,6 +24,7 @@ namespace Concrete
 
         private void FrmMixerManage_Load(object sender, EventArgs e)
         {
+            language.Persian();
             btnDelete.Enabled = false;
             btnEdit.Enabled = false;
             btnSubmit.Enabled = false;

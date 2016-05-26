@@ -35,7 +35,7 @@
             this.btnPrintReceipt = new Telerik.WinControls.UI.RadButton();
             this.btnPrintInvoice = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgwSalesInvoice = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -60,7 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnPrintReceipt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrintInvoice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwSalesInvoice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCareer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMixerSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomerSearch)).BeginInit();
@@ -74,7 +74,7 @@
             this.groupBox1.Controls.Add(this.btnPrintReceipt);
             this.groupBox1.Controls.Add(this.btnPrintInvoice);
             this.groupBox1.Controls.Add(this.btnSubmit);
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dgwSalesInvoice);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -106,7 +106,7 @@
             this.btnNewInvoice.Location = new System.Drawing.Point(170, 531);
             this.btnNewInvoice.Name = "btnNewInvoice";
             this.btnNewInvoice.Size = new System.Drawing.Size(76, 27);
-            this.btnNewInvoice.TabIndex = 29;
+            this.btnNewInvoice.TabIndex = 11;
             this.btnNewInvoice.Text = "فاکتور جدید";
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnNewInvoice.GetChildAt(0))).Text = "فاکتور جدید";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnNewInvoice.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -120,7 +120,7 @@
             this.btnSave.Location = new System.Drawing.Point(88, 531);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(76, 27);
-            this.btnSave.TabIndex = 28;
+            this.btnSave.TabIndex = 12;
             this.btnSave.Text = "ثبت";
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSave.GetChildAt(0))).Text = "ثبت";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSave.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -134,7 +134,7 @@
             this.btnCancel.Location = new System.Drawing.Point(6, 531);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 27;
+            this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "انصراف";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
@@ -149,7 +149,7 @@
             this.btnPrintReceipt.Location = new System.Drawing.Point(463, 531);
             this.btnPrintReceipt.Name = "btnPrintReceipt";
             this.btnPrintReceipt.Size = new System.Drawing.Size(76, 27);
-            this.btnPrintReceipt.TabIndex = 26;
+            this.btnPrintReceipt.TabIndex = 10;
             this.btnPrintReceipt.Text = "چاپ رسید";
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnPrintReceipt.GetChildAt(0))).Text = "چاپ رسید";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnPrintReceipt.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -163,7 +163,7 @@
             this.btnPrintInvoice.Location = new System.Drawing.Point(547, 531);
             this.btnPrintInvoice.Name = "btnPrintInvoice";
             this.btnPrintInvoice.Size = new System.Drawing.Size(76, 27);
-            this.btnPrintInvoice.TabIndex = 26;
+            this.btnPrintInvoice.TabIndex = 9;
             this.btnPrintInvoice.Text = "چاپ فاکتور";
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnPrintInvoice.GetChildAt(0))).Text = "چاپ فاکتور";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnPrintInvoice.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -177,29 +177,35 @@
             this.btnSubmit.Location = new System.Drawing.Point(48, 284);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 25;
+            
             this.btnSubmit.Text = "افزودن";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "افزودن";
+            this.btnSubmit.TabIndex = 7;
+            
+            
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
             // 
-            // dataGridView1
+            // dgwSalesInvoice
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 322);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(617, 195);
-            this.dataGridView1.TabIndex = 24;
+            this.dgwSalesInvoice.AllowUserToAddRows = false;
+            this.dgwSalesInvoice.AllowUserToDeleteRows = false;
+            this.dgwSalesInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwSalesInvoice.Location = new System.Drawing.Point(0, 322);
+            this.dgwSalesInvoice.Name = "dgwSalesInvoice";
+            this.dgwSalesInvoice.ReadOnly = true;
+            this.dgwSalesInvoice.Size = new System.Drawing.Size(623, 195);
+            this.dgwSalesInvoice.TabIndex = 8;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(48, 239);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(493, 33);
-            this.textBox1.TabIndex = 23;
+            this.textBox1.TabIndex = 6;
             // 
             // label7
             // 
@@ -216,7 +222,7 @@
             this.comboBox1.Location = new System.Drawing.Point(48, 190);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(179, 34);
-            this.comboBox1.TabIndex = 21;
+            this.comboBox1.TabIndex = 5;
             // 
             // label6
             // 
@@ -233,7 +239,7 @@
             this.cbConcretetype.Location = new System.Drawing.Point(361, 189);
             this.cbConcretetype.Name = "cbConcretetype";
             this.cbConcretetype.Size = new System.Drawing.Size(179, 34);
-            this.cbConcretetype.TabIndex = 19;
+            this.cbConcretetype.TabIndex = 4;
             // 
             // label5
             // 
@@ -249,7 +255,7 @@
             this.txtweight.Location = new System.Drawing.Point(361, 138);
             this.txtweight.Name = "txtweight";
             this.txtweight.Size = new System.Drawing.Size(180, 33);
-            this.txtweight.TabIndex = 17;
+            this.txtweight.TabIndex = 3;
             // 
             // label4
             // 
@@ -275,7 +281,7 @@
             this.txtCareer.Location = new System.Drawing.Point(47, 87);
             this.txtCareer.Name = "txtCareer";
             this.txtCareer.Size = new System.Drawing.Size(180, 33);
-            this.txtCareer.TabIndex = 14;
+            this.txtCareer.TabIndex = 2;
             // 
             // label3
             // 
@@ -301,7 +307,7 @@
             this.txtMixer.Location = new System.Drawing.Point(361, 89);
             this.txtMixer.Name = "txtMixer";
             this.txtMixer.Size = new System.Drawing.Size(180, 33);
-            this.txtMixer.TabIndex = 11;
+            this.txtMixer.TabIndex = 1;
             // 
             // label2
             // 
@@ -327,7 +333,7 @@
             this.txtCustomer.Location = new System.Drawing.Point(361, 42);
             this.txtCustomer.Name = "txtCustomer";
             this.txtCustomer.Size = new System.Drawing.Size(180, 33);
-            this.txtCustomer.TabIndex = 8;
+            this.txtCustomer.TabIndex = 0;
             // 
             // label1
             // 
@@ -342,7 +348,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 564);
+            this.ClientSize = new System.Drawing.Size(620, 560);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -353,6 +359,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ثبت فاکتور فروش";
+            this.Load += new System.EventHandler(this.FrmConcreteSalesInvoice_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnNewInvoice)).EndInit();
@@ -361,7 +368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnPrintReceipt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrintInvoice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwSalesInvoice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCareer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMixerSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomerSearch)).EndInit();
@@ -385,7 +392,7 @@
         private System.Windows.Forms.ComboBox cbConcretetype;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtweight;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgwSalesInvoice;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1;

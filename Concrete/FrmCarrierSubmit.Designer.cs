@@ -37,7 +37,6 @@
             this.p4 = new System.Windows.Forms.TextBox();
             this.p3 = new System.Windows.Forms.TextBox();
             this.p2 = new System.Windows.Forms.TextBox();
-            this.p1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDriverFamily = new System.Windows.Forms.TextBox();
             this.txtDriverName = new System.Windows.Forms.TextBox();
@@ -58,7 +57,6 @@
             this.groupBox1.Controls.Add(this.p4);
             this.groupBox1.Controls.Add(this.p3);
             this.groupBox1.Controls.Add(this.p2);
-            this.groupBox1.Controls.Add(this.p1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtDriverFamily);
             this.groupBox1.Controls.Add(this.txtDriverName);
@@ -120,14 +118,14 @@
             // 
             // p5
             // 
-            this.p5.Location = new System.Drawing.Point(470, 138);
+            this.p5.Location = new System.Drawing.Point(531, 137);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(39, 31);
             this.p5.TabIndex = 9;
             // 
             // p4
             // 
-            this.p4.Location = new System.Drawing.Point(508, 138);
+            this.p4.Location = new System.Drawing.Point(514, 100);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(78, 31);
             this.p4.TabIndex = 120;
@@ -136,24 +134,17 @@
             // 
             // p3
             // 
-            this.p3.Location = new System.Drawing.Point(470, 105);
+            this.p3.Location = new System.Drawing.Point(404, 106);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(39, 31);
             this.p3.TabIndex = 10;
             // 
             // p2
             // 
-            this.p2.Location = new System.Drawing.Point(508, 105);
+            this.p2.Location = new System.Drawing.Point(449, 106);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(38, 31);
             this.p2.TabIndex = 11;
-            // 
-            // p1
-            // 
-            this.p1.Location = new System.Drawing.Point(545, 105);
-            this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(41, 31);
-            this.p1.TabIndex = 12;
             // 
             // label3
             // 
@@ -200,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 245);
+            this.ClientSize = new System.Drawing.Size(686, 241);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -211,7 +202,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ثبت کریر";
-            
             this.Load += new System.EventHandler(this.FrmCarrierSubmit_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -232,7 +222,6 @@
         private System.Windows.Forms.TextBox p4;
         private System.Windows.Forms.TextBox p3;
         private System.Windows.Forms.TextBox p2;
-        private System.Windows.Forms.TextBox p1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDriverFamily;
         private System.Windows.Forms.TextBox txtDriverName;

@@ -16,6 +16,15 @@ namespace Concrete
             InitializeComponent();
         }
 
+        public void ClearTextBox()
+        {
+            txtCustomer.Clear();
+            txtMixer.Clear();
+            txtweight.Clear();
+            txtCareer.Clear();
+            textBox1.Clear();
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -36,11 +45,15 @@ namespace Concrete
         private void FrmConcreteSalesInvoice_Load(object sender, EventArgs e)
         {
             language.Persian();
+            btnPrintReceipt.Enabled = false;
+            btnPrintInvoice.Enabled = false;
+            btnNewInvoice.Enabled = false;
+            btnSave.Enabled = false;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            ClearTextBox();
         }
     }
 }

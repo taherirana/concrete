@@ -25,9 +25,14 @@ namespace Concrete
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
+            if (checkError())
+            {
+                 DB db = new DB();
+                
+                db.InserCustomer(GetCustomer());
+            }
 
-            db.InserCustomer(GetCustomer());
+            
         }
 
         /// <summary>
@@ -52,6 +57,58 @@ namespace Concrete
             language.Persian();
         }
 
+        private bool checkError()
+        {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                errorProvider1.SetError(txtName, "نام مشتری را وارد کنید.");
+                return false;
 
+            }
+            else if (string.IsNullOrWhiteSpace(txtFamily.Text))
+            {
+                errorProvider1.SetError(txtFamily, "نام خانوادگی را وارد کنید");
+                return false;
+
+            }
+            else if (string.IsNullOrWhiteSpace(txtKmeli.Text))
+            {
+                errorProvider1.SetError(txtKmeli, "کدملی را وارد کنید");
+                return false;
+
+            }
+            else if (string.IsNullOrWhiteSpace(txt_tell.Text))
+            {
+                errorProvider1.SetError(txt_tell, "شماره تلفن را وارد کنید");
+                return false;
+
+            }
+            else if (string.IsNullOrWhiteSpace(txt_mobile.Text))
+            {
+                errorProvider1.SetError(txt_mobile, "شماره موبایل را وارد کنید");
+                return false;
+
+            }
+            else if (string.IsNullOrWhiteSpace(txt_address.Text))
+            {
+                errorProvider1.SetError(txt_address, "آدرس را وارد کنید");
+                return false;
+
+            }
+
+            else
+            {
+                errorProvider1.SetError(txtName, "");
+                errorProvider1.SetError(txtFamily, "");
+                errorProvider1.SetError(txtKmeli, "");
+                errorProvider1.SetError(txt_tell, "");
+                errorProvider1.SetError(txt_mobile, "");
+                errorProvider1.SetError(txt_address, "");
+                return true;
+
+            }
+           // return true;
+        }
     }
+
 }

@@ -25,5 +25,22 @@ namespace Concrete
         {
             language.Persian();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCompany.Text))
+            {
+                errorProvider1.SetError(txtCompany, "نام شرکت را وارد کنید.");
+
+            }
+
+            else
+            {
+                errorProvider1.SetError(txtCompany, "");
+
+            }
+        }
+
+
     }
 }

@@ -56,6 +56,8 @@
             this.radMenuSeparatorItem4 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.rbeCompanySubmit = new Telerik.WinControls.UI.RadButtonElement();
             this.rbeCompanyManage = new Telerik.WinControls.UI.RadButtonElement();
+            this.ribbonTab4 = new Telerik.WinControls.UI.RibbonTab();
+            this.radRibbonBarGroup6 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +66,8 @@
             this.radRibbonBar1.CommandTabs.AddRange(new Telerik.WinControls.RadItem[] {
             this.ribbonTab1,
             this.ribbonTab2,
-            this.ribbonTab3});
+            this.ribbonTab3,
+            this.ribbonTab4});
             // 
             // 
             // 
@@ -332,6 +335,19 @@
             // 
             this.rbeCompanyManage.Name = "rbeCompanyManage";
             // 
+            // ribbonTab4
+            // 
+            this.ribbonTab4.IsSelected = true;
+            this.ribbonTab4.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radRibbonBarGroup6});
+            this.ribbonTab4.Name = "ribbonTab4";
+            this.ribbonTab4.Text = "کرایه";
+            // 
+            // radRibbonBarGroup6
+            // 
+            this.radRibbonBarGroup6.Name = "radRibbonBarGroup6";
+            this.radRibbonBarGroup6.Text = "کرایه میکسر --- career";
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
@@ -383,5 +399,7 @@
         private Telerik.WinControls.UI.RadButtonElement rbeCompanyManaage;
         private Telerik.WinControls.UI.RadButtonElement radButtonElement1;
         private Telerik.WinControls.UI.RadButtonElement radButtonElement2;
+        private Telerik.WinControls.UI.RibbonTab ribbonTab4;
+        private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup6;
     }
 }

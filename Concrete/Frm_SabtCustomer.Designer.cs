@@ -116,6 +116,7 @@
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(719, 33);
             this.txt_address.TabIndex = 10;
+            this.txt_address.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_address_KeyPress);
             // 
             // txt_mobile
             // 
@@ -123,6 +124,7 @@
             this.txt_mobile.Name = "txt_mobile";
             this.txt_mobile.Size = new System.Drawing.Size(180, 33);
             this.txt_mobile.TabIndex = 9;
+            this.txt_mobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_mobile_KeyPress);
             // 
             // txt_tell
             // 
@@ -130,6 +132,7 @@
             this.txt_tell.Name = "txt_tell";
             this.txt_tell.Size = new System.Drawing.Size(180, 33);
             this.txt_tell.TabIndex = 8;
+            this.txt_tell.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tell_KeyPress);
             // 
             // label6
             // 
@@ -146,6 +149,7 @@
             this.txtKmeli.Name = "txtKmeli";
             this.txtKmeli.Size = new System.Drawing.Size(180, 33);
             this.txtKmeli.TabIndex = 7;
+            this.txtKmeli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKmeli_KeyPress);
             // 
             // txtFamily
             // 
@@ -153,6 +157,7 @@
             this.txtFamily.Name = "txtFamily";
             this.txtFamily.Size = new System.Drawing.Size(180, 33);
             this.txtFamily.TabIndex = 6;
+            this.txtFamily.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFamily_KeyPress);
             // 
             // txtName
             // 
@@ -160,6 +165,8 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(180, 33);
             this.txtName.TabIndex = 5;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // label5
             // 

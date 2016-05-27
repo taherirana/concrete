@@ -7,6 +7,6 @@ namespace Concrete
 {
     public class Util
     {
-        public User user;
+        public static User user;
     }
 }

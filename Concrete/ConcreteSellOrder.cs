@@ -7,7 +7,7 @@ namespace Concrete
 {
     public class ConcreteSellOrder : ICollection<SellItem>
     {
-        public static User user;
+        public Customer customer;
 
         List<SellItem> _sellItms;
 

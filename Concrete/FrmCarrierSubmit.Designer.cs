@@ -42,6 +42,7 @@
             this.txtDriverName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.P1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
@@ -49,6 +50,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.P1);
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnSubmit);
             this.groupBox1.Controls.Add(this.cmbCarrierOwnerShipType);
@@ -75,7 +77,7 @@
             this.btnCancel.Location = new System.Drawing.Point(426, 197);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 9;
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "انصراف";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
@@ -90,7 +92,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(508, 197);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 8;
+            this.btnSubmit.TabIndex = 7;
             this.btnSubmit.Text = "ثبت";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
@@ -105,7 +107,7 @@
             this.cmbCarrierOwnerShipType.Location = new System.Drawing.Point(35, 99);
             this.cmbCarrierOwnerShipType.Name = "cmbCarrierOwnerShipType";
             this.cmbCarrierOwnerShipType.Size = new System.Drawing.Size(180, 32);
-            this.cmbCarrierOwnerShipType.TabIndex = 15;
+            this.cmbCarrierOwnerShipType.TabIndex = 7;
             // 
             // label4
             // 
@@ -118,38 +120,38 @@
             // 
             // p5
             // 
-            this.p5.Location = new System.Drawing.Point(531, 137);
+            this.p5.Location = new System.Drawing.Point(436, 143);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(39, 31);
-            this.p5.TabIndex = 9;
+            this.p5.TabIndex = 2;
             // 
             // p4
             // 
-            this.p4.Location = new System.Drawing.Point(514, 100);
+            this.p4.Location = new System.Drawing.Point(474, 143);
             this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(78, 31);
+            this.p4.Size = new System.Drawing.Size(76, 31);
             this.p4.TabIndex = 120;
             this.p4.Text = "ایران";
             this.p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // p3
             // 
-            this.p3.Location = new System.Drawing.Point(404, 106);
+            this.p3.Location = new System.Drawing.Point(436, 113);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(39, 31);
-            this.p3.TabIndex = 10;
+            this.p3.TabIndex = 3;
             // 
             // p2
             // 
-            this.p2.Location = new System.Drawing.Point(449, 106);
+            this.p2.Location = new System.Drawing.Point(474, 113);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(38, 31);
-            this.p2.TabIndex = 11;
+            this.p2.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(598, 109);
+            this.label3.Location = new System.Drawing.Point(598, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 24);
             this.label3.TabIndex = 8;
@@ -187,11 +189,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "نام راننده:";
             // 
+            // P1
+            // 
+            this.P1.Location = new System.Drawing.Point(511, 113);
+            this.P1.Name = "P1";
+            this.P1.Size = new System.Drawing.Size(39, 31);
+            this.P1.TabIndex = 5;
+            // 
             // FrmCarrierSubmit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 241);
+            this.ClientSize = new System.Drawing.Size(682, 237);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -227,5 +236,6 @@
         private System.Windows.Forms.TextBox txtDriverName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox P1;
     }
 }

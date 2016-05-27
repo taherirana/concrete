@@ -50,7 +50,7 @@ namespace Concrete
             string DriverFname = txtDriverName.Text.Trim();
             string DriverLname = txtDriverFamily.Text.Trim();
 
-            string Plaque =p4.Text.Trim() + " " + p5.Text.Trim()  +" " + p3.Text.Trim() + " " + p2.Text.Trim() + " " + p1.Text.Trim();
+            string Plaque =p5.Text.Trim() + " " + p5.Text.Trim()  +" " + p3.Text.Trim() + " " + p2.Text.Trim() + " " + P1.Text.Trim();
 
             string OwnerShipType = cmbCarrierOwnerShipType.Text.Trim();
 
@@ -62,10 +62,9 @@ namespace Concrete
         {
             txtDriverFamily.Text = "";
             txtDriverName.Text = "";
-            p1.Text = "";
+            P1.Text = "";
             p2.Text = "";
             p3.Text = "";
-            //p4.Text = "";
             p5.Text = "";
 
         }

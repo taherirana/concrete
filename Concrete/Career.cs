@@ -7,6 +7,7 @@ namespace Concrete
 {
     public class Career
     {
+
         public Career(string _CareerDriverFName, string _CareerDriverLName, string _plaque, string _ownership)
         {
             CareerDriverFName = _CareerDriverFName;

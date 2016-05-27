@@ -11,6 +11,7 @@ namespace Concrete
 {
     public partial class FrmCareerSelect : Form
     {
+        public String Name, ID;
         public FrmCareerSelect()
         {
             InitializeComponent();
@@ -24,7 +25,21 @@ namespace Concrete
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (txtSearch.Text == "")
+            {
                 MessageBox.Show("لطفا متنی را داخل کادر جستجو وارد نمایید");
+                return;
+            }
+
+            DB db = new DB();
+            var C = db.getCareersbyPlaque(txtSearch.Text.Trim());
+            dgwCarrier.DataSource = C;
+        }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            Name = dgwCarrier.SelectedRows[0].Cells[0].Value.ToString();
+            ID = dgwCarrier.SelectedRows[0].Cells[4].Value.ToString();
+            this.Hide();
         }
     }
 }

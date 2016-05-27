@@ -45,11 +45,6 @@ namespace Concrete
                 MessageBox.Show("لطفا نام خانوادگی راننده را وارد کنید");
                 return;
             }
-        }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
-        {
-
-        }
+        } 
     }
 }

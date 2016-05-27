@@ -8,6 +8,8 @@ namespace Concrete
 {
     public class DB : IDatabase
     {
+        int i = 0;
+        int f = 0;
 
         private SqlCommand cmd = new SqlCommand();
         private SqlConnection con = new SqlConnection();
@@ -350,14 +352,94 @@ namespace Concrete
         }
 
 
+        public List<Customer> GetCustomersIDByCodeID(string CodeID)
+        {
+            cmd.CommandText = string.Format("select * from Customer where Customer_ID_code = '{0}'", CodeID);
+            
+            List<Customer> Customers = new List<Customer>();
 
+            try
+            {
+                Open();
+
+                var result = cmd.ExecuteReader();
+
+                if (result.HasRows)
+                {
+                    while (result.Read())
+                    {
+
+                        string Fname = result.GetValue(1).ToString();
+                        string Lname = result.GetValue(2).ToString();
+                        string IDCode = result.GetValue(3).ToString();
+
+                        Customer c = new Customer(Fname,Lname,IDCode);
+                        c.CustomerID = int.Parse(result.GetValue(0).ToString());
+                        Customers.Add(c);
+                        
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+
+            }
+            finally
+            {
+                Close();
+            }
+            return Customers;
+
+        }
+
+        public List<Career> getCareersbyPlaque(string _Plaque)
+        {
+            cmd.CommandText = string.Format("select * from Career where CareerNumber like '%{0}%'", _Plaque);
+
+            List<Career> careers = new List<Career>();
+
+            try
+            {
+                Open();
+
+                var results = cmd.ExecuteReader();
+
+                if (results.HasRows)
+                {
+                    while (results.Read())
+                    {
+                        string FName  = results.GetValue(1).ToString();
+                        string LName  = results.GetValue(2).ToString();    
+                        string Plaque = results.GetValue(3).ToString();
+                        string ownerShip = results.GetValue(4).ToString();
+
+                        Career c = new Career(FName, LName, Plaque, ownerShip);
+                        c.CareerID = results.GetValue(0).ToString();
+                        
+                        careers.Add(c);
+
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                
+            }
+            finally
+            {
+                Close();
+            }
+
+            return careers;
+        }
 
         public bool ConcreteOrder()
         {
             return true;
         }
     }
-
+        
     public interface IDatabase
     {
 

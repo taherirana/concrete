@@ -12,7 +12,7 @@ namespace Concrete
     public partial class FrmCustomerSelect : Form
     {
         public int ID;
-        public string Name;
+        public string CustomerName;
 
         public FrmCustomerSelect()
         {

@@ -8,7 +8,7 @@ namespace Concrete
 {
     public class DB : IDatabase
     {
-        int i = 0;
+        int i = 10;
         int f = 0;
 
         private SqlCommand cmd = new SqlCommand();

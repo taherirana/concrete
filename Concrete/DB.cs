@@ -517,9 +517,9 @@ namespace Concrete
                     while (result.Read())
                     {
                         c.Add(new Concrete(int.Parse( result.GetValue(0).ToString()), int.Parse( result.GetValue(1).ToString())));
-                    }
+    }
                 }
-
+        
             }
             catch
             {

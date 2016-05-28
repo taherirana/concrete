@@ -62,6 +62,28 @@
             this.pbCustomerSearch = new System.Windows.Forms.PictureBox();
             this.txtCustomer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblstonazh = new System.Windows.Forms.Label();
+            this.lblSumTonazh = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblselesprice = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnNewInvoice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
@@ -77,6 +99,28 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.lblselesprice);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.lblSumTonazh);
+            this.groupBox1.Controls.Add(this.lblstonazh);
             this.groupBox1.Controls.Add(this.btnNewInvoice);
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.btnCancel);
@@ -102,9 +146,9 @@
             this.groupBox1.Controls.Add(this.txtCustomer);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox1.Location = new System.Drawing.Point(29, 0);
+            this.groupBox1.Location = new System.Drawing.Point(5, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(757, 609);
+            this.groupBox1.Size = new System.Drawing.Size(757, 733);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "فروش بتن";
@@ -113,7 +157,7 @@
             // btnNewInvoice
             // 
             this.btnNewInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnNewInvoice.Location = new System.Drawing.Point(170, 531);
+            this.btnNewInvoice.Location = new System.Drawing.Point(170, 698);
             this.btnNewInvoice.Name = "btnNewInvoice";
             this.btnNewInvoice.Size = new System.Drawing.Size(76, 27);
             this.btnNewInvoice.TabIndex = 11;
@@ -128,7 +172,7 @@
             // btnSave
             // 
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnSave.Location = new System.Drawing.Point(88, 531);
+            this.btnSave.Location = new System.Drawing.Point(88, 698);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(76, 27);
             this.btnSave.TabIndex = 12;
@@ -143,7 +187,7 @@
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCancel.Location = new System.Drawing.Point(6, 531);
+            this.btnCancel.Location = new System.Drawing.Point(6, 698);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
             this.btnCancel.TabIndex = 13;
@@ -158,7 +202,7 @@
             // btnPrintReceipt
             // 
             this.btnPrintReceipt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnPrintReceipt.Location = new System.Drawing.Point(463, 531);
+            this.btnPrintReceipt.Location = new System.Drawing.Point(463, 698);
             this.btnPrintReceipt.Name = "btnPrintReceipt";
             this.btnPrintReceipt.Size = new System.Drawing.Size(76, 27);
             this.btnPrintReceipt.TabIndex = 10;
@@ -173,7 +217,7 @@
             // btnPrintInvoice
             // 
             this.btnPrintInvoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnPrintInvoice.Location = new System.Drawing.Point(547, 531);
+            this.btnPrintInvoice.Location = new System.Drawing.Point(547, 698);
             this.btnPrintInvoice.Name = "btnPrintInvoice";
             this.btnPrintInvoice.Size = new System.Drawing.Size(76, 27);
             this.btnPrintInvoice.TabIndex = 9;
@@ -426,11 +470,209 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "نام مشتری:";
             // 
+            // lblstonazh
+            // 
+            this.lblstonazh.AutoSize = true;
+            this.lblstonazh.Location = new System.Drawing.Point(176, 526);
+            this.lblstonazh.Name = "lblstonazh";
+            this.lblstonazh.Size = new System.Drawing.Size(84, 26);
+            this.lblstonazh.TabIndex = 23;
+            this.lblstonazh.Text = "جمع کل تناژ:";
+            // 
+            // lblSumTonazh
+            // 
+            this.lblSumTonazh.AutoSize = true;
+            this.lblSumTonazh.Location = new System.Drawing.Point(126, 528);
+            this.lblSumTonazh.Name = "lblSumTonazh";
+            this.lblSumTonazh.Size = new System.Drawing.Size(18, 26);
+            this.lblSumTonazh.TabIndex = 24;
+            this.lblSumTonazh.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(639, 565);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 26);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "نرخ واحد فروش:";
+            // 
+            // lblselesprice
+            // 
+            this.lblselesprice.AutoSize = true;
+            this.lblselesprice.Location = new System.Drawing.Point(668, 597);
+            this.lblselesprice.Name = "lblselesprice";
+            this.lblselesprice.Size = new System.Drawing.Size(54, 26);
+            this.lblselesprice.TabIndex = 26;
+            this.lblselesprice.Text = "1111111";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(541, 597);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 26);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "111111";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(524, 567);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(76, 26);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "تناژ کارکرد:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(409, 597);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 26);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "111111";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(373, 567);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(114, 26);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "متراژ( متر مکعب) :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(238, 597);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 26);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "111111";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(183, 567);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(157, 26);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "هزینه پمپاژ و ماشین آلات:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(72, 597);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 26);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "111111";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(43, 567);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(99, 26);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "مبلغ کل فاکتور:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(72, 658);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 26);
+            this.label17.TabIndex = 44;
+            this.label17.Text = "111111";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(42, 628);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(100, 26);
+            this.label18.TabIndex = 43;
+            this.label18.Text = "جمع کل حساب:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(237, 658);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(48, 26);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "111111";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(216, 628);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(90, 26);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "تعداد سرویس:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(408, 658);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(48, 26);
+            this.label21.TabIndex = 40;
+            this.label21.Text = "111111";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(394, 628);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(78, 26);
+            this.label22.TabIndex = 39;
+            this.label22.Text = "کل دریافتی:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(540, 658);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(48, 26);
+            this.label23.TabIndex = 38;
+            this.label23.Text = "111111";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(523, 628);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(77, 26);
+            this.label24.TabIndex = 37;
+            this.label24.Text = "مانده بدهی:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(667, 658);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(54, 26);
+            this.label25.TabIndex = 36;
+            this.label25.Text = "1111111";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(647, 628);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(92, 26);
+            this.label26.TabIndex = 35;
+            this.label26.Text = "مبلغ پرداختی:";
+            // 
             // FrmConcreteSalesInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 609);
+            this.ClientSize = new System.Drawing.Size(762, 733);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -494,5 +736,27 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblselesprice;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblSumTonazh;
+        private System.Windows.Forms.Label lblstonazh;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

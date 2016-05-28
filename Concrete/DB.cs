@@ -548,7 +548,7 @@ namespace Concrete
                 {
                     while (result.Read())
                     {
-                        co.Add(result.GetValue(0).ToString());
+                        co.Add(result.GetValue(1).ToString());
                     }
                 }
             }

@@ -36,18 +36,20 @@
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
             this.txtCompanyName = new System.Windows.Forms.TextBox();
             this.lblconcretetype = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwCompany)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDelete
             // 
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnDelete.Location = new System.Drawing.Point(54, 272);
+            this.btnDelete.Location = new System.Drawing.Point(60, 302);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(76, 27);
             this.btnDelete.TabIndex = 2;
@@ -61,7 +63,7 @@
             // btnEdit
             // 
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnEdit.Location = new System.Drawing.Point(136, 272);
+            this.btnEdit.Location = new System.Drawing.Point(142, 302);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(76, 27);
             this.btnEdit.TabIndex = 1;
@@ -77,7 +79,7 @@
             this.dgwCompany.AllowUserToAddRows = false;
             this.dgwCompany.AllowUserToDeleteRows = false;
             this.dgwCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwCompany.Location = new System.Drawing.Point(0, 0);
+            this.dgwCompany.Location = new System.Drawing.Point(9, 15);
             this.dgwCompany.Name = "dgwCompany";
             this.dgwCompany.ReadOnly = true;
             this.dgwCompany.Size = new System.Drawing.Size(287, 266);
@@ -89,7 +91,7 @@
             this.groupBox1.Controls.Add(this.btnSubmit);
             this.groupBox1.Controls.Add(this.txtCompanyName);
             this.groupBox1.Controls.Add(this.lblconcretetype);
-            this.groupBox1.Location = new System.Drawing.Point(0, 305);
+            this.groupBox1.Location = new System.Drawing.Point(6, 335);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(287, 132);
             this.groupBox1.TabIndex = 24;
@@ -141,16 +143,26 @@
             this.lblconcretetype.TabIndex = 0;
             this.lblconcretetype.Text = "نام شرکت:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgwCompany);
+            this.groupBox2.Controls.Add(this.btnDelete);
+            this.groupBox2.Controls.Add(this.groupBox1);
+            this.groupBox2.Controls.Add(this.btnEdit);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox2.Location = new System.Drawing.Point(1, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(302, 501);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
+            // 
             // FrmCompanyManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 425);
+            this.ClientSize = new System.Drawing.Size(303, 501);
             this.ControlBox = false;
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.dgwCompany);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -167,6 +179,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -181,5 +194,6 @@
         private Telerik.WinControls.UI.RadButton btnSubmit;
         private System.Windows.Forms.TextBox txtCompanyName;
         private System.Windows.Forms.Label lblconcretetype;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

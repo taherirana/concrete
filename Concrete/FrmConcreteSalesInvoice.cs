@@ -78,7 +78,7 @@ namespace Concrete
 
         private void setConcreteOperatin()
         {
-            List<string> C = db.getConccretesType().Select(c => c.Type.ToString()).ToList<string>();
+            List<string> C = db.getAllConcreteOperation();
             cmbOperation.DataSource = C;
         }
 
@@ -181,12 +181,9 @@ namespace Concrete
 
         }
 
-       
-
         private void dgwSalesInvoice_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
-
         }
 
         private string[] getSellItemArray(SellItem si)
@@ -199,10 +196,9 @@ namespace Concrete
             
         }
 
-
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-                if (keyData == Keys.F2)
+            if (keyData == Keys.F2)
             {
                 AddToDatagrid();
             }
@@ -217,17 +213,16 @@ namespace Concrete
                     cmbOperation.Focus();
                     return true;
                 }
+                else if (cmbOperation.Focused)
+                {
+                    txtAddress.Focus();
+                    return true;
+                }
                 else
                     this.ProcessTabKey(true);
                 
             }
             return false;
         }
-
-       
-
-        
-
-        
     }
 }

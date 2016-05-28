@@ -115,9 +115,8 @@ namespace Concrete
             else if (CheckPhoneNumber(txt_tell.Text.Trim()) == false)
                 MessageBox.Show("لطفا تلفن را صحیح وارد کنید");
             else { 
-
-            db.InserCustomer(GetCustomer());
-        }
+                db.InserCustomer(GetCustomer());
+            }
         
 
             

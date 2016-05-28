@@ -55,9 +55,12 @@ namespace Concrete
             btnPrintInvoice.Enabled = false;
             btnNewInvoice.Enabled = false;
             btnSave.Enabled = false;
-
-            SetConcreteOperation();
+          
+           SetConcreteOperation();
             setConcreteOperatin();
+
+            cmbConcretetype.SelectedIndex =-1;
+            cmbOperation.SelectedIndex = -1;
 
             
             
@@ -210,9 +213,24 @@ namespace Concrete
             else if (keyData == Keys.Enter)
             {
                 if (cmbConcretetype.Focused)
-                    cmbOperation.Focus();
+                {
+                    if (cmbConcretetype.SelectedIndex >= 0)
+                    {
+                        cmbOperation.Focus();
+                    }
+                }
+                else if (cmbOperation.Focused)
+                {
+                    if (cmbOperation.SelectedIndex >= 0)
+                    {
+                        txtAddress.Focus();
+
+                    }
+                }
                 else
-                this.ProcessTabKey(true);
+                {
+                    this.ProcessTabKey(true);
+                }
             }
             return false;
         }

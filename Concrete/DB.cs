@@ -9,7 +9,7 @@ namespace Concrete
     public class DB : IDatabase
     {
         int i = 12;
-        int f = 0;
+        int f = 100;
 
         private SqlCommand cmd = new SqlCommand();
         private SqlConnection con = new SqlConnection();

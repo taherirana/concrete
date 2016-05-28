@@ -7,13 +7,26 @@ namespace Concrete
 {
     public class ConcreteSellOrder : ICollection<SellItem>
     {
+        public User user;
+
         public Customer customer;
 
         List<SellItem> _sellItms;
 
+        public List<SellItem> Items
+        {
+            get
+            {
+                return _sellItms;
+            }
+        }
+
         public ConcreteSellOrder()
         {
             _sellItms = new List<SellItem>();
+
+            user = Util.user;
+
         }
 
 

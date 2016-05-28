@@ -18,6 +18,12 @@ namespace Concrete
           
         }
 
+
+        public Customer(string _FirstName , int _ID){
+            CustomerID = _ID;
+            Firstname = _FirstName;
+        }
+
         public int CustomerID
         {
             get;

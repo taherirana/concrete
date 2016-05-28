@@ -27,7 +27,7 @@ namespace Concrete
         private void btnSelect_Click(object sender, EventArgs e)
         {
             ID =  GetId();
-            Name = GetName();
+            CustomerName = GetName();
             this.Hide();
         }
 

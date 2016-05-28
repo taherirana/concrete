@@ -241,7 +241,6 @@ namespace Concrete
 
         }
 
-
         public bool InsertCareer(Career cr)
         {
 
@@ -434,8 +433,70 @@ namespace Concrete
             return careers;
         }
 
-        public bool ConcreteOrder()
+        public bool ConcreteOrder(ConcreteSellOrder cso)
         {
+            SqlTransaction tr = null;
+
+
+            cmd.CommandText = "INSERT INTO Concrete_Order (Total_Price , Total_Weight , FK_User_ID , FK_Customer_ID) OUTPUT INSERTED.OrderID  VALUES(@Total_Price , @Total_Weight , @FK_User_ID , @FK_Customer_ID)";
+            cmd.Parameters.Clear();
+
+            cmd.Parameters.AddWithValue("@Total_Price" , cso.Sum(c=>c.price));
+            cmd.Parameters.AddWithValue("@Total_Weight", cso.Sum(c => c.WeightInM2));
+            cmd.Parameters.AddWithValue("@FK_User_ID", Util.user.ID);
+            cmd.Parameters.AddWithValue("@FK_Customer_ID", cso.customer.CustomerID);
+
+            try
+            {
+                Open();
+                tr = con.BeginTransaction("Concrete Order tr");
+                cmd.Transaction = tr;
+                int OrderID = int .Parse(cmd.ExecuteScalar().ToString());
+
+
+                if(InsetCocereteOrderDetail(cso,OrderID))
+                    tr.Commit();
+            }
+            catch (Exception ex)
+            {
+                tr.Rollback();
+                return false;
+            }
+            finally
+            {
+                Close();
+                
+            }
+            
+            return true;
+        }
+        public bool InsetCocereteOrderDetail(ConcreteSellOrder cso , int OrderID)
+        {
+            cmd.CommandText = @"INSERT INTO Concrete_Order_Detail ([FK_Order_ID] ,[FK_Mixer_ID],[FK_Career] ,[FK_Concrete_Type_Code] ,[Weight] ,[FK_Customer_AddressID] ,[Date] ,[Concrete_Price]) 
+                                                            VALUES(@FK_Order_ID, @FK_Mixer_ID , @FK_Career , @FK_Concrete_Type_Code , @Weight , @FK_Customer_AddressID , @Date , @Concrete_Price)";
+
+            for (int i = 0; i < cso.Count; i++)
+            {
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@FK_Order_ID", OrderID);
+                cmd.Parameters.AddWithValue("@FK_Mixer_ID", DBNull.Value/*cso.Items[i].MixerID*/);
+                cmd.Parameters.AddWithValue("@FK_Career", cso.Items[i].CareerID);   
+                cmd.Parameters.AddWithValue("@FK_Concrete_Type_Code", int.Parse(cso.Items[i].ConcreteType));
+                cmd.Parameters.AddWithValue("@Weight", int.Parse(cso.Items[i].WeightInM2.ToString()));
+                cmd.Parameters.AddWithValue("@FK_Customer_AddressID", DBNull.Value);
+                cmd.Parameters.AddWithValue("@Date", "");
+                cmd.Parameters.AddWithValue("@Concrete_Price", cso.Items[i].price);
+
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+
             return true;
         }
     }
@@ -461,8 +522,7 @@ namespace Concrete
 
         List<string> getAllownerShiptype();
 
-
-        bool ConcreteOrder();
+        bool ConcreteOrder(ConcreteSellOrder cso);
 
         void Open();
 

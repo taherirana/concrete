@@ -54,9 +54,10 @@
             this.groupBox2.Controls.Add(this.btnSelect);
             this.groupBox2.Controls.Add(this.txtSearch);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(2, 0);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox2.Location = new System.Drawing.Point(25, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(697, 277);
+            this.groupBox2.Size = new System.Drawing.Size(697, 304);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "جستجوی Carrier";
@@ -113,7 +114,7 @@
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCancel.Location = new System.Drawing.Point(287, 244);
+            this.btnCancel.Location = new System.Drawing.Point(15, 244);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
             this.btnCancel.TabIndex = 5;
@@ -128,7 +129,7 @@
             // btnSelect
             // 
             this.btnSelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnSelect.Location = new System.Drawing.Point(369, 244);
+            this.btnSelect.Location = new System.Drawing.Point(97, 244);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(76, 27);
             this.btnSelect.TabIndex = 4;
@@ -160,11 +161,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 269);
+            this.ClientSize = new System.Drawing.Size(722, 304);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "FrmCareerSelect";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

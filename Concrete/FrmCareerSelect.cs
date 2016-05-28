@@ -19,7 +19,8 @@ namespace Concrete
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.DialogResult = DialogResult.Cancel;
+            //            this.Close();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -37,9 +38,17 @@ namespace Concrete
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            Name = dgwCarrier.SelectedRows[0].Cells[0].Value.ToString();
-            ID = dgwCarrier.SelectedRows[0].Cells[4].Value.ToString();
-            this.Hide();
+            if (dgwCarrier.SelectedRows.Count > 0)
+            {
+                Name = dgwCarrier.SelectedRows[0].Cells[0].Value.ToString();
+                ID = dgwCarrier.SelectedRows[0].Cells[4].Value.ToString();
+                //this.Hide();
+                this.DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                /// دادن پاسخ مناسب
+            }
         }
     }
 }

@@ -56,7 +56,7 @@ namespace Concrete
             btnNewInvoice.Enabled = false;
             btnSave.Enabled = false;
           
-           SetConcreteOperation();
+            SetConcreteOperation();
             setConcreteOperatin();
 
             cmbConcretetype.SelectedIndex =-1;
@@ -78,8 +78,8 @@ namespace Concrete
 
         private void setConcreteOperatin()
         {
-            List<string> co = db.getAllConcreteOperation();
-            cmbOperation.DataSource = co;
+            List<string> C = db.getConccretesType().Select(c => c.Type.ToString()).ToList<string>();
+            cmbOperation.DataSource = C;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -202,7 +202,7 @@ namespace Concrete
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.F2)
+                if (keyData == Keys.F2)
             {
                 AddToDatagrid();
             }
@@ -214,23 +214,12 @@ namespace Concrete
             {
                 if (cmbConcretetype.Focused)
                 {
-                    if (cmbConcretetype.SelectedIndex >= 0)
-                    {
-                        cmbOperation.Focus();
-                    }
-                }
-                else if (cmbOperation.Focused)
-                {
-                    if (cmbOperation.SelectedIndex >= 0)
-                    {
-                        txtAddress.Focus();
-
-                    }
+                    cmbOperation.Focus();
+                    return true;
                 }
                 else
-                {
                     this.ProcessTabKey(true);
-                }
+                
             }
             return false;
         }

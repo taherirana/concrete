@@ -8,7 +8,7 @@ namespace Concrete
 {
     public class DB : IDatabase
     {
-        int i = 0;
+        int i = 12;
         int f = 0;
 
         private SqlCommand cmd = new SqlCommand();
@@ -470,6 +470,7 @@ namespace Concrete
             
             return true;
         }
+
         public bool InsetCocereteOrderDetail(ConcreteSellOrder cso , int OrderID)
         {
             cmd.CommandText = @"INSERT INTO Concrete_Order_Detail ([FK_Order_ID] ,[FK_Mixer_ID],[FK_Career] ,[FK_Concrete_Type_Code] ,[Weight] ,[FK_Customer_AddressID] ,[Date] ,[Concrete_Price]) 
@@ -499,6 +500,68 @@ namespace Concrete
 
             return true;
         }
+
+        public List<Concrete> getConccretesType()
+        {
+            List<Concrete> c = new List<Concrete>();
+            
+            cmd.CommandText = "SELECT * FROM Concrete_Type";
+
+            try
+            {
+                Open();
+                var result = cmd.ExecuteReader();
+
+                if (result.HasRows)
+                {
+                    while (result.Read())
+                    {
+                        c.Add(new Concrete(int.Parse( result.GetValue(0).ToString()), int.Parse( result.GetValue(1).ToString())));
+                    }
+                }
+
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                Close();
+            }
+
+            return c;
+        }
+
+        public List<string> getAllConcreteOperation()
+        {
+            cmd.CommandText = "SELECT * FROM Concrete_Operation";
+            List<string> co = new List<string>();
+
+            try
+            {
+                Open();
+
+                var result = cmd.ExecuteReader();
+
+                if (result.HasRows)
+                {
+                    while (result.Read())
+                    {
+                        co.Add(result.GetValue(0).ToString());
+                    }
+                }
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                Close();
+            }
+            return co;
+        }
     }
         
     public interface IDatabase
@@ -523,6 +586,10 @@ namespace Concrete
         List<string> getAllownerShiptype();
 
         bool ConcreteOrder(ConcreteSellOrder cso);
+
+        List<Concrete> getConccretesType();
+
+        List<string> getAllConcreteOperation();
 
         void Open();
 

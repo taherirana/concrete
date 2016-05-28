@@ -14,7 +14,8 @@ namespace Concrete
         private int CustomerID;
         private int careerID ;
         private int MixerID ;
-
+        
+        DB db = new DB();
 
         public FrmConcreteSalesInvoice()
         {
@@ -25,8 +26,8 @@ namespace Concrete
         {
             txtCustomer.Clear();
             txtMixer.Clear();
-            txtweight.Clear();
             txtCareer.Clear();
+            txtweight.Clear();
             txtAddress.Clear();
         }
 
@@ -54,16 +55,35 @@ namespace Concrete
             btnPrintInvoice.Enabled = false;
             btnNewInvoice.Enabled = false;
             btnSave.Enabled = false;
+
+            SetConcreteOperation();
+            setConcreteOperatin();
+
+            
+            
+        }
+
+        
+
+        
+
+        private void SetConcreteOperation()
+        {
+            List<string> C = db.getConccretesType().Select(c => c.Type.ToString()).ToList<string>();
+            cmbConcretetype.DataSource = C;
+        }
+
+        private void setConcreteOperatin()
+        {
+            List<string> co = db.getAllConcreteOperation();
+            cmbOperation.DataSource = co;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             AddToDatagrid();
 
-            if (!btnSave.Enabled)
-                btnSave.Enabled = true;
-
-            ClearTextBox();
+            
         }
 
 
@@ -77,8 +97,13 @@ namespace Concrete
             cso.Add(si);
             
             dgwSalesInvoice.Rows.Add(getSellItemArray(si));
-            
-            
+
+            if (!btnSave.Enabled)
+                btnSave.Enabled = true;
+
+            ClearTextBox();
+            txtCustomer.Focus();
+
         }
 
         public SellItem getSellItem()
@@ -164,6 +189,32 @@ namespace Concrete
         private string[] getSellItemArray(SellItem si)
         {
            return new string[] { si.CustomerName, txtMixer.Text.Trim(), txtCareer.Text.Trim(), si.WeightInTon.ToString(), si.WeightInM2.ToString(), si.ConcreteType, si.price.ToString(),si.Operation, si.Address };
+        }
+
+        private void txtCustomer_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.F2)
+            {
+                AddToDatagrid();
+            }
+            else if (keyData == Keys.Escape)
+            {
+                this.Close();
+            }
+            else if (keyData == Keys.Enter)
+            {
+                if (cmbConcretetype.Focused)
+                    cmbOperation.Focus();
+                else
+                this.ProcessTabKey(true);
+            }
+            return false;
         }
 
        

@@ -102,9 +102,9 @@
             this.groupBox1.Controls.Add(this.txtCustomer);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox1.Location = new System.Drawing.Point(37, 0);
+            this.groupBox1.Location = new System.Drawing.Point(33, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(757, 617);
+            this.groupBox1.Size = new System.Drawing.Size(757, 613);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "فروش بتن";
@@ -299,6 +299,7 @@
             this.cmbOperation.Name = "cmbOperation";
             this.cmbOperation.Size = new System.Drawing.Size(179, 34);
             this.cmbOperation.TabIndex = 5;
+            this.cmbOperation.Text = "انتخاب کنید...";
             // 
             // label6
             // 
@@ -316,6 +317,7 @@
             this.cmbConcretetype.Name = "cmbConcretetype";
             this.cmbConcretetype.Size = new System.Drawing.Size(179, 34);
             this.cmbConcretetype.TabIndex = 4;
+            this.cmbConcretetype.Text = "انتخاب کنید...";
             // 
             // label5
             // 
@@ -428,7 +430,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 617);
+            this.ClientSize = new System.Drawing.Size(790, 613);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

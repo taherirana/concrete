@@ -8,8 +8,6 @@ namespace Concrete
 {
     public class DB : IDatabase
     {
-        int i = 12;
-        int f = 30;
 
         private SqlCommand cmd = new SqlCommand();
         private SqlConnection con = new SqlConnection();

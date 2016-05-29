@@ -99,11 +99,5 @@ namespace Concrete
             fcm2.ShowDialog();
 
         }
-
-        private void radButtonElement3_Click(object sender, EventArgs e)
-        {
-            frmConcreteSell f1 = new frmConcreteSell();
-            f1.ShowDialog();
-        }
     }
 }

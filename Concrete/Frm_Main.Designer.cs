@@ -75,8 +75,6 @@
             this.radMenuSeparatorItem4 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.rbeCompanySubmit = new Telerik.WinControls.UI.RadButtonElement();
             this.rbeCompanyManage = new Telerik.WinControls.UI.RadButtonElement();
-            this.radRibbonBarGroup7 = new Telerik.WinControls.UI.RadRibbonBarGroup();
-            this.radButtonElement3 = new Telerik.WinControls.UI.RadButtonElement();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -276,15 +274,12 @@
             // 
             // ribbonTab2
             // 
-            this.ribbonTab2.IsSelected = true;
-            this.ribbonTab2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radRibbonBarGroup7});
             this.ribbonTab2.Name = "ribbonTab2";
             this.ribbonTab2.Text = "خرید";
             // 
             // ribbonTab3
             // 
-            this.ribbonTab3.IsSelected = false;
+            this.ribbonTab3.IsSelected = true;
             this.ribbonTab3.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radRibbonBarGroup1});
             this.ribbonTab3.Name = "ribbonTab3";
@@ -485,21 +480,6 @@
             // 
             this.rbeCompanyManage.Name = "rbeCompanyManage";
             // 
-            // radRibbonBarGroup7
-            // 
-            this.radRibbonBarGroup7.AutoSize = false;
-            this.radRibbonBarGroup7.Bounds = new System.Drawing.Rectangle(0, 0, 26, 97);
-            this.radRibbonBarGroup7.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radButtonElement3});
-            this.radRibbonBarGroup7.Name = "radRibbonBarGroup7";
-            this.radRibbonBarGroup7.Text = "ثبت";
-            // 
-            // radButtonElement3
-            // 
-            this.radButtonElement3.Name = "radButtonElement3";
-            this.radButtonElement3.Text = "ثبت";
-            this.radButtonElement3.Click += new System.EventHandler(this.radButtonElement3_Click);
-            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
@@ -570,7 +550,5 @@
         private Telerik.WinControls.UI.RadMenuItem radMenuItem19;
         private Telerik.WinControls.UI.RadMenuItem radMenuItem20;
         private Telerik.WinControls.UI.RadMenuItem radMenuItem7;
-        private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup7;
-        private Telerik.WinControls.UI.RadButtonElement radButtonElement3;
     }
 }

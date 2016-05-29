@@ -32,15 +32,15 @@
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.RichTextBox();
+            this.txtFax = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTell = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtCompany = new System.Windows.Forms.TextBox();
             this.lblconcretetype = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtTell = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtFox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -81,7 +81,7 @@
             // 
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtAddress);
-            this.groupBox1.Controls.Add(this.txtFox);
+            this.groupBox1.Controls.Add(this.txtFax);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtTell);
             this.groupBox1.Controls.Add(this.label1);
@@ -95,6 +95,55 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت شرکت";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(219, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 24);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "آدرس:";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(13, 155);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(180, 108);
+            this.txtAddress.TabIndex = 7;
+            this.txtAddress.Text = "";
+            // 
+            // txtFax
+            // 
+            this.txtFax.Location = new System.Drawing.Point(13, 116);
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Size = new System.Drawing.Size(180, 31);
+            this.txtFax.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(220, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 24);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "فاکس:";
+            // 
+            // txtTell
+            // 
+            this.txtTell.Location = new System.Drawing.Point(13, 79);
+            this.txtTell.Name = "txtTell";
+            this.txtTell.Size = new System.Drawing.Size(180, 31);
+            this.txtTell.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(223, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "تلفن:";
             // 
             // txtCompany
             // 
@@ -116,60 +165,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // txtTell
-            // 
-            this.txtTell.Location = new System.Drawing.Point(13, 79);
-            this.txtTell.Name = "txtTell";
-            this.txtTell.Size = new System.Drawing.Size(180, 31);
-            this.txtTell.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(223, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "تلفن:";
-            // 
-            // txtFox
-            // 
-            this.txtFox.Location = new System.Drawing.Point(13, 116);
-            this.txtFox.Name = "txtFox";
-            this.txtFox.Size = new System.Drawing.Size(180, 31);
-            this.txtFox.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(220, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "فاکس:";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Location = new System.Drawing.Point(13, 155);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(180, 108);
-            this.txtAddress.TabIndex = 7;
-            this.txtAddress.Text = "";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(219, 157);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 24);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "آدرس:";
-            // 
             // FrmCompanySubmit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 308);
+            this.ClientSize = new System.Drawing.Size(291, 314);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -200,7 +200,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox txtAddress;
-        private System.Windows.Forms.TextBox txtFox;
+        private System.Windows.Forms.TextBox txtFax;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTell;
         private System.Windows.Forms.Label label1;

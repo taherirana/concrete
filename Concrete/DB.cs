@@ -545,6 +545,35 @@ namespace Concrete
             }
             return co;
         }
+
+        public bool InsertCompanyInfo(string Name, string Fax,string Tell, String Address)
+        {
+            cmd.CommandText = "INSERT INTO Company Values(@CompanyName , @companyFax , @CompanyAddress , @CompanyTell)";
+
+            cmd.Parameters.Add( "@CompanyName"     , Name);
+            cmd.Parameters.Add( "@companyFax"      , Fax);
+            cmd.Parameters.Add( "@CompanyAddress"  , Address);
+            cmd.Parameters.Add("@CompanyTell"      , Tell);
+            
+            int count = -1;
+            try
+            {
+                Open();
+
+                count = cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                Close();
+            }
+
+            return count > 0 ? true : false;  
+            
+        }
     }
         
     public interface IDatabase
@@ -573,6 +602,8 @@ namespace Concrete
         List<Concrete> getConccretesType();
 
         List<string> getAllConcreteOperation();
+
+        bool InsertCompanyInfo(string Name, string Fax, string Tell, String Address);
 
         void Open();
 

@@ -29,16 +29,34 @@ namespace Concrete
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtCompany.Text))
-            {
                 errorProvider1.SetError(txtCompany, "نام شرکت را وارد کنید.");
-
-            }
-
             else
             {
-                errorProvider1.SetError(txtCompany, "");
+                string Name    = txtCompany.Text.Trim()   ,
+                       Fax     = txtFax.Text.Trim()       ,
+                       Address = txtAddress.Text.Trim()   ,
+                       Tell    = txtTell.Text.Trim()      ;
+               
 
+                DB db = new DB();
+                if (db.InsertCompanyInfo(Name, Fax , Tell ,  Address))
+                {
+                    MessageBox.Show("اطلاعات شرکت ثبت شد");
+                    errorProvider1.SetError(txtCompany, "");
+                    ClearAllText();
+                }
+                else
+                    MessageBox.Show("خطا!اطلاعات ثبت نشد.لطفا مجددا سعی  کنید");
+                
             }
+        }
+
+        public void ClearAllText()
+        {
+            txtAddress.Text  = "";
+            txtCompany.Text  = "";
+            txtFax.Text      = "";
+            txtTell.Text     = "";
         }
 
 

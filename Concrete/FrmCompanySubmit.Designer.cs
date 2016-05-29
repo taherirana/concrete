@@ -34,7 +34,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
-            this.txtFax = new System.Windows.Forms.TextBox();
+            this.txtFox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTell = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,10 +53,10 @@
             this.btnCancel.Location = new System.Drawing.Point(25, 272);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "انصراف";
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "انصراف  ESC";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف  ESC";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
@@ -68,10 +68,10 @@
             this.btnSubmit.Location = new System.Drawing.Point(107, 272);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 1;
-            this.btnSubmit.Text = "ثبت";
+            this.btnSubmit.TabIndex = 4;
+            this.btnSubmit.Text = "ثبت F2";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت F2";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
@@ -81,7 +81,7 @@
             // 
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtAddress);
-            this.groupBox1.Controls.Add(this.txtFax);
+            this.groupBox1.Controls.Add(this.txtFox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtTell);
             this.groupBox1.Controls.Add(this.label1);
@@ -110,15 +110,15 @@
             this.txtAddress.Location = new System.Drawing.Point(13, 155);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(180, 108);
-            this.txtAddress.TabIndex = 7;
+            this.txtAddress.TabIndex = 3;
             this.txtAddress.Text = "";
             // 
-            // txtFax
+            // txtFox
             // 
-            this.txtFax.Location = new System.Drawing.Point(13, 116);
-            this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(180, 31);
-            this.txtFax.TabIndex = 5;
+            this.txtFox.Location = new System.Drawing.Point(13, 116);
+            this.txtFox.Name = "txtFox";
+            this.txtFox.Size = new System.Drawing.Size(180, 31);
+            this.txtFox.TabIndex = 2;
             // 
             // label2
             // 
@@ -134,7 +134,7 @@
             this.txtTell.Location = new System.Drawing.Point(13, 79);
             this.txtTell.Name = "txtTell";
             this.txtTell.Size = new System.Drawing.Size(180, 31);
-            this.txtTell.TabIndex = 3;
+            this.txtTell.TabIndex = 1;
             // 
             // label1
             // 
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(291, 314);
+            this.ClientSize = new System.Drawing.Size(291, 304);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -200,7 +200,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox txtAddress;
-        private System.Windows.Forms.TextBox txtFax;
+        private System.Windows.Forms.TextBox txtFox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTell;
         private System.Windows.Forms.Label label1;

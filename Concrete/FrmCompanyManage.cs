@@ -34,5 +34,35 @@ namespace Concrete
             txtAddress.Enabled = false;
 
         }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.F2)
+            {
+                // AddToDatagrid();
+            }
+            else if (keyData == Keys.F3)
+            {
+               //Edit Variable
+
+            }
+            else if (keyData == Keys.F4)
+            {
+                //Delete Record
+            }
+            else if (keyData == Keys.Escape)
+            {
+                this.Close();
+            }
+            else if (keyData == Keys.Enter)
+            {
+
+                this.ProcessTabKey(true);
+            }
+            return false;
+        }
+
+
+
     }
 }

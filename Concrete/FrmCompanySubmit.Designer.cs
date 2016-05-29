@@ -32,15 +32,15 @@
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.RichTextBox();
+            this.txtFox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTell = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtCompany = new System.Windows.Forms.TextBox();
             this.lblconcretetype = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtTell = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtFox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -53,10 +53,10 @@
             this.btnCancel.Location = new System.Drawing.Point(25, 272);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "انصراف";
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "انصراف  ESC";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف  ESC";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
@@ -68,10 +68,10 @@
             this.btnSubmit.Location = new System.Drawing.Point(107, 272);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
-            this.btnSubmit.TabIndex = 1;
-            this.btnSubmit.Text = "ثبت";
+            this.btnSubmit.TabIndex = 4;
+            this.btnSubmit.Text = "ثبت F2";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnSubmit.GetChildAt(0))).Text = "ثبت F2";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSubmit.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
@@ -96,6 +96,55 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ثبت شرکت";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(219, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 24);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "آدرس:";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(13, 155);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(180, 108);
+            this.txtAddress.TabIndex = 3;
+            this.txtAddress.Text = "";
+            // 
+            // txtFox
+            // 
+            this.txtFox.Location = new System.Drawing.Point(13, 116);
+            this.txtFox.Name = "txtFox";
+            this.txtFox.Size = new System.Drawing.Size(180, 31);
+            this.txtFox.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(220, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 24);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "فاکس:";
+            // 
+            // txtTell
+            // 
+            this.txtTell.Location = new System.Drawing.Point(13, 79);
+            this.txtTell.Name = "txtTell";
+            this.txtTell.Size = new System.Drawing.Size(180, 31);
+            this.txtTell.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(223, 83);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "تلفن:";
+            // 
             // txtCompany
             // 
             this.txtCompany.Location = new System.Drawing.Point(13, 42);
@@ -116,60 +165,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // txtTell
-            // 
-            this.txtTell.Location = new System.Drawing.Point(13, 79);
-            this.txtTell.Name = "txtTell";
-            this.txtTell.Size = new System.Drawing.Size(180, 31);
-            this.txtTell.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(223, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "تلفن:";
-            // 
-            // txtFox
-            // 
-            this.txtFox.Location = new System.Drawing.Point(13, 116);
-            this.txtFox.Name = "txtFox";
-            this.txtFox.Size = new System.Drawing.Size(180, 31);
-            this.txtFox.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(220, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "فاکس:";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Location = new System.Drawing.Point(13, 155);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(180, 108);
-            this.txtAddress.TabIndex = 7;
-            this.txtAddress.Text = "";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(219, 157);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 24);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "آدرس:";
-            // 
             // FrmCompanySubmit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 308);
+            this.ClientSize = new System.Drawing.Size(291, 304);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));

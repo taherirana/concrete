@@ -27,7 +27,11 @@ namespace Concrete
             btnDelete.Enabled = false;
             btnEdit.Enabled = false;
             btnSubmit.Enabled = false;
-            txtCompanyName.Enabled = false;
+            txtCompany.Enabled = false;
+            txtTell.Enabled = false;
+            txtFox.Enabled = false;
+            txtAddress.Enabled = false;
+
         }
     }
 }

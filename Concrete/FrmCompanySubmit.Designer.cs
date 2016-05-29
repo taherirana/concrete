@@ -34,7 +34,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
-            this.txtFox = new System.Windows.Forms.TextBox();
+            this.txtFax = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTell = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             // 
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtAddress);
-            this.groupBox1.Controls.Add(this.txtFox);
+            this.groupBox1.Controls.Add(this.txtFax);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtTell);
             this.groupBox1.Controls.Add(this.label1);
@@ -113,12 +113,12 @@
             this.txtAddress.TabIndex = 3;
             this.txtAddress.Text = "";
             // 
-            // txtFox
+            // txtFax
             // 
-            this.txtFox.Location = new System.Drawing.Point(13, 116);
-            this.txtFox.Name = "txtFox";
-            this.txtFox.Size = new System.Drawing.Size(180, 31);
-            this.txtFox.TabIndex = 2;
+            this.txtFax.Location = new System.Drawing.Point(13, 116);
+            this.txtFax.Name = "txtFax";
+            this.txtFax.Size = new System.Drawing.Size(180, 31);
+            this.txtFax.TabIndex = 2;
             // 
             // label2
             // 
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(291, 304);
+            this.ClientSize = new System.Drawing.Size(287, 316);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -200,7 +200,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox txtAddress;
-        private System.Windows.Forms.TextBox txtFox;
+        private System.Windows.Forms.TextBox txtFax;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTell;
         private System.Windows.Forms.Label label1;

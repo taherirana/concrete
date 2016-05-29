@@ -29,6 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtTotalWeight = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtpriceunit = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -73,17 +84,6 @@
             this.pbCustomerSearch = new System.Windows.Forms.PictureBox();
             this.txtCustomer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtpriceunit = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnNewInvoice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
@@ -99,7 +99,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtTotalWeight);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.textBox8);
@@ -146,13 +146,101 @@
             this.groupBox1.Controls.Add(this.txtCustomer);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox1.Location = new System.Drawing.Point(1, 0);
+            this.groupBox1.Location = new System.Drawing.Point(-3, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(757, 734);
+            this.groupBox1.Size = new System.Drawing.Size(757, 730);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "فروش بتن";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtTotalWeight
+            // 
+            this.txtTotalWeight.Location = new System.Drawing.Point(51, 523);
+            this.txtTotalWeight.Name = "txtTotalWeight";
+            this.txtTotalWeight.ReadOnly = true;
+            this.txtTotalWeight.Size = new System.Drawing.Size(96, 33);
+            this.txtTotalWeight.TabIndex = 55;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(50, 657);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(96, 33);
+            this.textBox10.TabIndex = 54;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(193, 657);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(152, 33);
+            this.textBox9.TabIndex = 53;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(387, 657);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(96, 33);
+            this.textBox8.TabIndex = 52;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(513, 657);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(96, 33);
+            this.textBox7.TabIndex = 51;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(639, 657);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(96, 33);
+            this.textBox6.TabIndex = 50;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(51, 592);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(96, 33);
+            this.textBox5.TabIndex = 49;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(193, 592);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(152, 33);
+            this.textBox4.TabIndex = 48;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(387, 592);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(96, 33);
+            this.textBox3.TabIndex = 47;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(513, 592);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(96, 33);
+            this.textBox2.TabIndex = 46;
+            // 
+            // txtpriceunit
+            // 
+            this.txtpriceunit.Location = new System.Drawing.Point(639, 592);
+            this.txtpriceunit.Name = "txtpriceunit";
+            this.txtpriceunit.ReadOnly = true;
+            this.txtpriceunit.Size = new System.Drawing.Size(96, 33);
+            this.txtpriceunit.TabIndex = 45;
             // 
             // label18
             // 
@@ -569,99 +657,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "نام مشتری:";
             // 
-            // txtpriceunit
-            // 
-            this.txtpriceunit.Location = new System.Drawing.Point(639, 592);
-            this.txtpriceunit.Name = "txtpriceunit";
-            this.txtpriceunit.ReadOnly = true;
-            this.txtpriceunit.Size = new System.Drawing.Size(96, 33);
-            this.txtpriceunit.TabIndex = 45;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(513, 592);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(96, 33);
-            this.textBox2.TabIndex = 46;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(387, 592);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(96, 33);
-            this.textBox3.TabIndex = 47;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(193, 592);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(152, 33);
-            this.textBox4.TabIndex = 48;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(51, 592);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(96, 33);
-            this.textBox5.TabIndex = 49;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(639, 657);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(96, 33);
-            this.textBox6.TabIndex = 50;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(513, 657);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(96, 33);
-            this.textBox7.TabIndex = 51;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(387, 657);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(96, 33);
-            this.textBox8.TabIndex = 52;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(193, 657);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(152, 33);
-            this.textBox9.TabIndex = 53;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(50, 657);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(96, 33);
-            this.textBox10.TabIndex = 54;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(51, 523);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(96, 33);
-            this.textBox1.TabIndex = 55;
-            // 
             // FrmConcreteSalesInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 734);
+            this.ClientSize = new System.Drawing.Size(754, 730);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -746,6 +746,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTotalWeight;
     }
 }

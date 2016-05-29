@@ -85,8 +85,6 @@ namespace Concrete
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             AddToDatagrid();
-
-            
         }
 
 
@@ -107,6 +105,13 @@ namespace Concrete
             ClearTextBox();
             txtCustomer.Focus();
 
+        }
+        /// <summary>
+        /// محاسبه تناژ کل ،تعداد سرویس و...
+        /// </summary>
+        private void calc()
+        {
+            txtTotalWeight.Text = cso.Sum(c => c.WeightInM2).ToString();
         }
 
         public SellItem getSellItem()

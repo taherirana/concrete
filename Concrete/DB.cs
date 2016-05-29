@@ -19,8 +19,6 @@ namespace Concrete
             cmd.Connection = con;
         }
 
-
-
         public bool InserCustomer(Customer c)
         {
             Open();
@@ -46,7 +44,6 @@ namespace Concrete
             return false;
 
         }
-
 
         private bool InsertCustomerBasicInfo(Customer c)
         {
@@ -244,7 +241,6 @@ namespace Concrete
 
             int CareerOwnerShipID = GetCareerOwnerShipTypeID(cr.ownership);
 
-
             cmd.CommandText = "INSERT INTO Career (CareerDriverName , CareerDriverFamily , CareerNumber ,FK_Career_OwnerShip_type )  VALUES (@CareerDriverName , @CareerDriverFamily,@CareerNumber,@FK_Career_OwnerShip_type)";
             cmd.Parameters.Clear();
 
@@ -252,8 +248,6 @@ namespace Concrete
             cmd.Parameters.AddWithValue("@CareerDriverFamily", cr.CareerDriverLName);
             cmd.Parameters.AddWithValue("@CareerNumber", cr.plaque);
             cmd.Parameters.AddWithValue("@FK_Career_OwnerShip_type", CareerOwnerShipID);
-
-
 
             if (CareerOwnerShipID > 0)
             {
@@ -286,8 +280,6 @@ namespace Concrete
         {
             cmd.CommandText = "select * from  Owner_Type ";//where Owner_Type = @OwnerShipTypeName";
             cmd.Parameters.Clear();
-            //cmd.Parameters.AddWithValue("@OwnerShipTypeName", OwnerShipTypeName);
-            //List<CareerOwnerShipType> ownerShips = new List<CareerOwnerShipType>();
 
             int ID = -1;
             try
@@ -341,9 +333,7 @@ namespace Concrete
                     }
                 }
             }
-            catch (Exception)
-            {  
-            }
+            catch (Exception){}
 
             return ownerShips;
         }
@@ -377,11 +367,7 @@ namespace Concrete
                     }
                 }
             }
-            catch (Exception)
-            {
-
-
-            }
+            catch (Exception){}
             finally
             {
                 Close();
@@ -434,7 +420,6 @@ namespace Concrete
         public bool ConcreteOrder(ConcreteSellOrder cso)
         {
             SqlTransaction tr = null;
-
 
             cmd.CommandText = "INSERT INTO Concrete_Order (Total_Price , Total_Weight , FK_User_ID , FK_Customer_ID) OUTPUT INSERTED.OrderID  VALUES(@Total_Price , @Total_Weight , @FK_User_ID , @FK_Customer_ID)";
             cmd.Parameters.Clear();
@@ -515,7 +500,7 @@ namespace Concrete
                     while (result.Read())
                     {
                         c.Add(new Concrete(int.Parse( result.GetValue(0).ToString()), int.Parse( result.GetValue(1).ToString())));
-    }
+                    }
                 }
         
             }

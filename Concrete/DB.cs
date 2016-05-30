@@ -244,8 +244,8 @@ namespace Concrete
             cmd.CommandText = "INSERT INTO Career (CareerDriverName , CareerDriverFamily , CareerNumber ,FK_Career_OwnerShip_type )  VALUES (@CareerDriverName , @CareerDriverFamily,@CareerNumber,@FK_Career_OwnerShip_type)";
             cmd.Parameters.Clear();
 
-            cmd.Parameters.AddWithValue("@CareerDriverName", cr.PompDriverFName);
-            cmd.Parameters.AddWithValue("@CareerDriverFamily", cr.PompDriverLName);
+            cmd.Parameters.AddWithValue("@CareerDriverName", cr.Driver.FirstName);
+            cmd.Parameters.AddWithValue("@CareerDriverFamily", cr.Driver.LastName);
             cmd.Parameters.AddWithValue("@CareerNumber", cr.plaque);
             cmd.Parameters.AddWithValue("@FK_Career_OwnerShip_type", CareerOwnerShipID);
 

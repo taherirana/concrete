@@ -88,5 +88,29 @@ namespace Concrete
         {
 
         }
+
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.F2)
+            {
+                // AddToDatagrid();
+            }
+            else if (keyData == Keys.Escape)
+            {
+                this.Close();
+            }
+            else if (keyData == Keys.Enter)
+            {
+
+                this.ProcessTabKey(true);
+            }
+            return false;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

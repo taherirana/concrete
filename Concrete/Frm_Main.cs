@@ -100,5 +100,26 @@ namespace Concrete
             fcm2.ShowDialog();
 
         }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.F1)
+            {
+              //  rbeCompanySubbmit_Click(null,null);
+            }
+            else if (keyData == Keys.Escape)
+            {
+                this.Close();
+            }
+            else if (keyData == Keys.Enter)
+            {
+
+                this.ProcessTabKey(true);
+            }
+            return false;
+        }
+
+
+
     }
 }

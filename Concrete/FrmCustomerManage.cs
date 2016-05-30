@@ -35,5 +35,28 @@ namespace Concrete
             txt_mobile.Enabled = false;
             txt_address.Enabled = false;
         }
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.F2)
+            {
+                // AddToDatagrid();
+            }
+            else if (keyData == Keys.Escape)
+            {
+                this.Close();
+            }
+            else if (keyData == Keys.Enter)
+            {
+
+                this.ProcessTabKey(true);
+            }
+            return false;
+        }
     }
 }

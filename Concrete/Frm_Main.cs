@@ -103,20 +103,77 @@ namespace Concrete
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.F1)
+            if (ribbonTab1.IsSelected)
             {
-              //  rbeCompanySubbmit_Click(null,null);
+                if (keyData == Keys.F1)
+                {
+                    rbeCompanySubbmit_Click(null, null);
+                }
+                else if (keyData == Keys.Escape)
+                {
+                    Application.Exit();
+                }
+                else if (keyData == Keys.F2)
+                {
+                    rbeCompanyManaage_Click(null, null);
+                }
+                else if (keyData == Keys.F3)
+                {
+                    rbe_sabtCustomer_Click(null, null);
+                }
+                else if (keyData == Keys.F4)
+                {
+                    rbeCustomerManage_Click(null, null);
+                }
+                else if (keyData == Keys.F5)
+                {
+                    rbe_SabtMixer_Click(null, null);
+                }
+                else if (keyData == Keys.F6)
+                {
+                    rbeMixerManage_Click(null, null);
+                }
+                else if (keyData == Keys.F7)
+                {
+                    rbecarrierSubmit_Click(null, null);
+                }
+                else if (keyData == Keys.F8)
+                {
+                    rbeCarrierManage_Click(null, null);
+                }
+                else if (keyData == Keys.F9)
+                {
+                    radButtonElement1_Click(null, null);
+                }
+                else if (keyData == Keys.F10)
+                {
+                    rbeConcreteTypeManage_Click(null, null);
+                }
             }
-            else if (keyData == Keys.Escape)
+            else if (ribbonTab3.IsSelected)
             {
-                this.Close();
-            }
-            else if (keyData == Keys.Enter)
-            {
-
-                this.ProcessTabKey(true);
+                if (keyData == Keys.F1)
+                {
+                    rbe_SInvoice_Click(null, null);
+                }
+                else if (keyData == Keys.Escape)
+                {
+                    Application.Exit();
+                }
             }
             return false;
+        }
+
+        private void rebmixerrent_Click(object sender, EventArgs e)
+        {
+            FrmMixerRent fmr = new FrmMixerRent();
+            fmr.ShowDialog();
+        }
+
+        private void rbepomprent_Click(object sender, EventArgs e)
+        {
+            FrmPompRent fpp = new FrmPompRent();
+            fpp.ShowDialog();
         }
 
 

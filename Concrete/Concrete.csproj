@@ -51,6 +51,18 @@
     <Reference Include="TelerikCommon, Version=2016.1.112.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmMixerRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMixerRent.Designer.cs">
+      <DependentUpon>FrmMixerRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPompRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPompRent.Designer.cs">
+      <DependentUpon>FrmPompRent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pomp.cs" />
     <Compile Include="CareerOwnerShipType.cs" />
     <Compile Include="Concrete.cs" />
@@ -201,8 +213,14 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMixerRent.resx">
+      <DependentUpon>FrmMixerRent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMixerSelect.resx">
       <DependentUpon>FrmMixerSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPompRent.resx">
+      <DependentUpon>FrmPompRent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>

@@ -164,6 +164,18 @@ namespace Concrete
             return false;
         }
 
+        private void rebmixerrent_Click(object sender, EventArgs e)
+        {
+            FrmMixerRent fmr = new FrmMixerRent();
+            fmr.ShowDialog();
+        }
+
+        private void rbepomprent_Click(object sender, EventArgs e)
+        {
+            FrmPompRent fpp = new FrmPompRent();
+            fpp.ShowDialog();
+        }
+
 
 
     }

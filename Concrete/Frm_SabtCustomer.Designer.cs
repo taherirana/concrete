@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.grpMain = new System.Windows.Forms.GroupBox();
+            this.btnAddAddress = new Telerik.WinControls.UI.RadButton();
+            this.lstAddresses = new System.Windows.Forms.ListBox();
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.btnSubmit = new Telerik.WinControls.UI.RadButton();
             this.txt_address = new System.Windows.Forms.TextBox();
@@ -45,13 +47,11 @@
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.lstAddresses = new System.Windows.Forms.ListBox();
-            this.btnAddAddress = new Telerik.WinControls.UI.RadButton();
             this.grpMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFirstName
@@ -83,15 +83,39 @@
             this.grpMain.Controls.Add(this.lblFirstName);
             this.grpMain.Location = new System.Drawing.Point(1, 0);
             this.grpMain.Name = "grpMain";
-            this.grpMain.Size = new System.Drawing.Size(791, 380);
+            this.grpMain.Size = new System.Drawing.Size(791, 292);
             this.grpMain.TabIndex = 1;
             this.grpMain.TabStop = false;
             this.grpMain.Text = "ثبت مشتری";
             // 
+            // btnAddAddress
+            // 
+            this.btnAddAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.btnAddAddress.Location = new System.Drawing.Point(20, 125);
+            this.btnAddAddress.Name = "btnAddAddress";
+            this.btnAddAddress.Size = new System.Drawing.Size(76, 27);
+            this.btnAddAddress.TabIndex = 6;
+            this.btnAddAddress.Text = "افزودن F1";
+            this.btnAddAddress.Click += new System.EventHandler(this.btnAddAddress_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnAddAddress.GetChildAt(0))).Text = "افزودن F1";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            // 
+            // lstAddresses
+            // 
+            this.lstAddresses.FormattingEnabled = true;
+            this.lstAddresses.ItemHeight = 26;
+            this.lstAddresses.Location = new System.Drawing.Point(102, 158);
+            this.lstAddresses.Name = "lstAddresses";
+            this.lstAddresses.Size = new System.Drawing.Size(627, 82);
+            this.lstAddresses.TabIndex = 1111;
+            // 
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCancel.Location = new System.Drawing.Point(570, 347);
+            this.btnCancel.Location = new System.Drawing.Point(570, 253);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
             this.btnCancel.TabIndex = 8;
@@ -106,7 +130,7 @@
             // btnSubmit
             // 
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnSubmit.Location = new System.Drawing.Point(653, 347);
+            this.btnSubmit.Location = new System.Drawing.Point(653, 253);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 27);
             this.btnSubmit.TabIndex = 7;
@@ -120,7 +144,7 @@
             // 
             // txt_address
             // 
-            this.txt_address.Location = new System.Drawing.Point(102, 188);
+            this.txt_address.Location = new System.Drawing.Point(102, 121);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(629, 33);
             this.txt_address.TabIndex = 5;
@@ -128,7 +152,7 @@
             // 
             // txt_mobile
             // 
-            this.txt_mobile.Location = new System.Drawing.Point(259, 104);
+            this.txt_mobile.Location = new System.Drawing.Point(259, 77);
             this.txt_mobile.Name = "txt_mobile";
             this.txt_mobile.Size = new System.Drawing.Size(180, 33);
             this.txt_mobile.TabIndex = 4;
@@ -136,7 +160,7 @@
             // 
             // txt_tell
             // 
-            this.txt_tell.Location = new System.Drawing.Point(551, 104);
+            this.txt_tell.Location = new System.Drawing.Point(551, 77);
             this.txt_tell.Name = "txt_tell";
             this.txt_tell.Size = new System.Drawing.Size(180, 33);
             this.txt_tell.TabIndex = 3;
@@ -145,7 +169,7 @@
             // lblMobile
             // 
             this.lblMobile.AutoSize = true;
-            this.lblMobile.Location = new System.Drawing.Point(460, 107);
+            this.lblMobile.Location = new System.Drawing.Point(460, 80);
             this.lblMobile.Name = "lblMobile";
             this.lblMobile.Size = new System.Drawing.Size(50, 26);
             this.lblMobile.TabIndex = 108;
@@ -187,7 +211,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(741, 107);
+            this.lblPhone.Location = new System.Drawing.Point(741, 80);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(41, 26);
             this.lblPhone.TabIndex = 103;
@@ -196,7 +220,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(737, 191);
+            this.lblAddress.Location = new System.Drawing.Point(737, 124);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(48, 26);
             this.lblAddress.TabIndex = 102;
@@ -215,35 +239,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // lstAddresses
-            // 
-            this.lstAddresses.FormattingEnabled = true;
-            this.lstAddresses.ItemHeight = 26;
-            this.lstAddresses.Location = new System.Drawing.Point(102, 228);
-            this.lstAddresses.Name = "lstAddresses";
-            this.lstAddresses.Size = new System.Drawing.Size(627, 82);
-            this.lstAddresses.TabIndex = 1111;
-            // 
-            // btnAddAddress
-            // 
-            this.btnAddAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnAddAddress.Location = new System.Drawing.Point(20, 192);
-            this.btnAddAddress.Name = "btnAddAddress";
-            this.btnAddAddress.Size = new System.Drawing.Size(76, 27);
-            this.btnAddAddress.TabIndex = 6;
-            this.btnAddAddress.Text = "افزودن F1";
-            this.btnAddAddress.Click += new System.EventHandler(this.btnAddAddress_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnAddAddress.GetChildAt(0))).Text = "افزودن F1";
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddAddress.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            // 
             // Frm_SabtCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 409);
+            this.ClientSize = new System.Drawing.Size(795, 301);
             this.ControlBox = false;
             this.Controls.Add(this.grpMain);
             this.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -256,10 +256,10 @@
             this.Load += new System.EventHandler(this.Frm_SabtCustomer_Load);
             this.grpMain.ResumeLayout(false);
             this.grpMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSubmit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddAddress)).EndInit();
             this.ResumeLayout(false);
 
         }

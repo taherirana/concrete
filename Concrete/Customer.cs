@@ -5,9 +5,21 @@ using System.Text;
 
 namespace Concrete
 {
-    public class Customer
+    public class Customer:Person
     {
-        public Customer(string _FirstName , string _LastName , String _IDCode )
+        public Customer(String Fname, String Lname, string Ncode): base(Fname, Lname, Ncode)
+        {
+
+        }
+
+        public Customer()
+        {
+
+        }
+
+        public int CustomerID { get; set; }
+
+        /*public Customer(string _FirstName , string _LastName , String _IDCode )
         {
             Firstname = _FirstName;
             LastName = _LastName;
@@ -41,8 +53,7 @@ namespace Concrete
         }
 
         public string Firstname
-        {
-            get;
+        {   get;
             set;
         }
 
@@ -68,6 +79,6 @@ namespace Concrete
         {
             get;
             set;
-        }
+        }*/
     }
 }

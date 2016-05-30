@@ -45,7 +45,7 @@ namespace Concrete
             cmbCarrierOwnerShipType.DataSource = OwnerShipTypes;
         }
 
-        public Career GetCareer()
+        public Pomp GetCareer()
         {
             string DriverFname = txtDriverName.Text.Trim();
             string DriverLname = txtDriverFamily.Text.Trim();
@@ -54,7 +54,8 @@ namespace Concrete
 
             string OwnerShipType = cmbCarrierOwnerShipType.Text.Trim();
 
-            return new Career(DriverFname, DriverLname, Plaque, OwnerShipType);
+            //return new Pomp(DriverFname, DriverLname, Plaque, OwnerShipType);
+            return null;
 
         }
 

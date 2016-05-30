@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Concrete
 {
-    public class CareerOwnerShipType
+    public class OwnerShipType
     {
-        public CareerOwnerShipType(int _ID, string _OwnerShipName) 
+        public OwnerShipType(int _ID, string _OwnerShipName) 
         {
             ID = _ID;
             OwnerShipName = _OwnerShipName;

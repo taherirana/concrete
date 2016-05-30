@@ -127,9 +127,9 @@ namespace Concrete
                   WeightInM2 = WeightInTon,
                   price = 0;
 
-            cso.customer = new Customer(CustomerName,CustomerID);
+            //cso.customer = new Customer(CustomerName,"",CustomerID);
 
-            return  new SellItem(CustomerName,careerID , MixerID, ConcreteType, Operation, Address, WeightInTon, WeightInM2, price);
+            return new SellItem(CustomerName,careerID , MixerID, ConcreteType, Operation, Address, WeightInTon, WeightInM2, price);
 
         }
 

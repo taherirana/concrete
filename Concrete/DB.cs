@@ -48,9 +48,9 @@ namespace Concrete
         private bool InsertCustomerBasicInfo(Customer c)
         {
             cmd.CommandText = "INSERT INTO Customer (Customer_Name,Customer_Family,Customer_ID_code) OUTPUT INSERTED.Customer_ID values (@FirstName , @LastName , @IDCode)";
-            cmd.Parameters.AddWithValue("@FirstName", c.Firstname);
+            cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
             cmd.Parameters.AddWithValue("@LastName", c.LastName);
-            cmd.Parameters.AddWithValue("@IDCode", c.IDCode);
+            cmd.Parameters.AddWithValue("@IDCode", c.NationalCode);
 
             try
             {
@@ -74,7 +74,7 @@ namespace Concrete
             {
                 Open();
 
-                foreach (string phone in c.Phones)
+                foreach (string phone in c.PhoneNumers)
                 {
                     cmd.Parameters.AddWithValue("@FK_Customer_ID", c.CustomerID);
                     cmd.Parameters.AddWithValue("@PhoneNumber", phone);
@@ -236,7 +236,7 @@ namespace Concrete
 
         }
 
-        public bool InsertCareer(Career cr)
+        public bool InsertCareer(Pomp cr)
         {
 
             int CareerOwnerShipID = GetCareerOwnerShipTypeID(cr.ownership);
@@ -244,8 +244,8 @@ namespace Concrete
             cmd.CommandText = "INSERT INTO Career (CareerDriverName , CareerDriverFamily , CareerNumber ,FK_Career_OwnerShip_type )  VALUES (@CareerDriverName , @CareerDriverFamily,@CareerNumber,@FK_Career_OwnerShip_type)";
             cmd.Parameters.Clear();
 
-            cmd.Parameters.AddWithValue("@CareerDriverName", cr.CareerDriverFName);
-            cmd.Parameters.AddWithValue("@CareerDriverFamily", cr.CareerDriverLName);
+            cmd.Parameters.AddWithValue("@CareerDriverName", cr.PompDriverFName);
+            cmd.Parameters.AddWithValue("@CareerDriverFamily", cr.PompDriverLName);
             cmd.Parameters.AddWithValue("@CareerNumber", cr.plaque);
             cmd.Parameters.AddWithValue("@FK_Career_OwnerShip_type", CareerOwnerShipID);
 
@@ -292,7 +292,7 @@ namespace Concrete
                 {
                     while (result.Read())
                     {
-                        CareerOwnerShipType cro = new CareerOwnerShipType(int.Parse(result.GetValue(0).ToString()), result.GetValue(1).ToString());
+                        OwnerShipType cro = new OwnerShipType(int.Parse(result.GetValue(0).ToString()), result.GetValue(1).ToString());
                        // ownerShips.Add(cro);
 
                         if (OwnerShipTypeName == cro.OwnerShipName)
@@ -376,11 +376,11 @@ namespace Concrete
 
         }
 
-        public List<Career> getCareersbyPlaque(string _Plaque)
+        public List<Pomp> getCareersbyPlaque(string _Plaque)
         {
             cmd.CommandText = string.Format("select * from Career where CareerNumber like '%{0}%'", _Plaque);
 
-            List<Career> careers = new List<Career>();
+            List<Pomp> careers = new List<Pomp>();
 
             try
             {
@@ -397,10 +397,10 @@ namespace Concrete
                         string Plaque = results.GetValue(3).ToString();
                         string ownerShip = results.GetValue(4).ToString();
 
-                        Career c = new Career(FName, LName, Plaque, ownerShip);
-                        c.CareerID = results.GetValue(0).ToString();
+                        //Pomp c = new Pomp(FName, LName, Plaque, ownerShip);
+                        //c.CareerID = results.GetValue(0).ToString();
                         
-                        careers.Add(c);
+                        //careers.Add(c);
 
                     }
                 }
@@ -591,7 +591,7 @@ namespace Concrete
 
         bool InsertConcrete(Concrete ce);
 
-        bool InsertCareer(Career cr);
+        bool InsertCareer(Pomp cr);
 
         int GetCareerOwnerShipTypeID(string OwnerShipTypeName);
 

@@ -75,5 +75,18 @@ namespace Concrete
         {
 
         }
+
+        private void cmbOwnership_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbMixerOwnership.SelectedIndex == 1)
+                txtMixerRent.Enabled = true;
+            else
+                txtMixerRent.Enabled = false;
+        }
+
+        private void btnAddMixer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

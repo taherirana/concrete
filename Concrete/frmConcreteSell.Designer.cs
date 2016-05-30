@@ -55,6 +55,7 @@
             this.btnCancel = new Telerik.WinControls.UI.RadButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btnAddMixer = new Telerik.WinControls.UI.RadButton();
             this.cmbMixerOwnership = new System.Windows.Forms.ComboBox();
             this.txtMixerRent = new System.Windows.Forms.TextBox();
@@ -74,10 +75,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtBillNumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.btnAddCareer = new Telerik.WinControls.UI.RadButton();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.pbCustomerSearch = new System.Windows.Forms.PictureBox();
             this.txtCustomer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,19 +103,7 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.btnAddCareer = new Telerik.WinControls.UI.RadButton();
             this.object_7cf25c9a_32e6_4de9_bb2e_40e29d680a47 = new Telerik.WinControls.RootRadElement();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
@@ -111,9 +111,9 @@
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddMixer)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddCareer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomerSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwSellItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddCareer)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -167,7 +167,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(287, 567);
+            this.textBox10.Location = new System.Drawing.Point(312, 567);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(96, 31);
@@ -175,7 +175,7 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(430, 567);
+            this.textBox11.Location = new System.Drawing.Point(440, 567);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(152, 31);
@@ -207,7 +207,7 @@
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(288, 502);
+            this.textBox15.Location = new System.Drawing.Point(313, 507);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(96, 31);
@@ -215,7 +215,7 @@
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(430, 502);
+            this.textBox16.Location = new System.Drawing.Point(440, 507);
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(152, 31);
@@ -223,7 +223,7 @@
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(624, 502);
+            this.textBox17.Location = new System.Drawing.Point(624, 507);
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(96, 31);
@@ -231,7 +231,7 @@
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(750, 502);
+            this.textBox18.Location = new System.Drawing.Point(750, 507);
             this.textBox18.Name = "textBox18";
             this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(96, 31);
@@ -239,15 +239,15 @@
             // 
             // txtpriceunit
             // 
-            this.txtpriceunit.Location = new System.Drawing.Point(876, 502);
+            this.txtpriceunit.Location = new System.Drawing.Point(876, 507);
             this.txtpriceunit.Name = "txtpriceunit";
             this.txtpriceunit.Size = new System.Drawing.Size(96, 31);
-            this.txtpriceunit.TabIndex = 69;
+            this.txtpriceunit.TabIndex = 10;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(287, 538);
+            this.label18.Location = new System.Drawing.Point(312, 538);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(93, 24);
             this.label18.TabIndex = 68;
@@ -256,7 +256,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(453, 538);
+            this.label20.Location = new System.Drawing.Point(463, 538);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(85, 24);
             this.label20.TabIndex = 67;
@@ -292,7 +292,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(293, 475);
+            this.label16.Location = new System.Drawing.Point(313, 477);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(92, 24);
             this.label16.TabIndex = 63;
@@ -301,7 +301,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(435, 475);
+            this.label11.Location = new System.Drawing.Point(441, 477);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(144, 24);
             this.label11.TabIndex = 62;
@@ -310,7 +310,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(617, 477);
+            this.label12.Location = new System.Drawing.Point(618, 477);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(105, 24);
             this.label12.TabIndex = 61;
@@ -319,7 +319,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(761, 477);
+            this.label15.Location = new System.Drawing.Point(763, 477);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(71, 24);
             this.label15.TabIndex = 60;
@@ -328,7 +328,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(876, 475);
+            this.label17.Location = new System.Drawing.Point(876, 477);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(95, 24);
             this.label17.TabIndex = 59;
@@ -346,10 +346,10 @@
             // btnSave
             // 
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnSave.Location = new System.Drawing.Point(111, 570);
+            this.btnSave.Location = new System.Drawing.Point(111, 567);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(76, 27);
-            this.btnSave.TabIndex = 56;
+            this.btnSave.TabIndex = 11;
             this.btnSave.Text = "ثبت";
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnSave.GetChildAt(0))).Text = "ثبت";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnSave.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -360,10 +360,10 @@
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnCancel.Location = new System.Drawing.Point(29, 570);
+            this.btnCancel.Location = new System.Drawing.Point(29, 567);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(76, 27);
-            this.btnCancel.TabIndex = 57;
+            this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "انصراف Esc";
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnCancel.GetChildAt(0))).Text = "انصراف Esc";
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnCancel.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
@@ -375,11 +375,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(16, 69);
+            this.tabControl1.Location = new System.Drawing.Point(0, 69);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(961, 195);
+            this.tabControl1.Size = new System.Drawing.Size(977, 195);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -407,18 +407,26 @@
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Location = new System.Drawing.Point(4, 33);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(953, 158);
+            this.tabPage1.Size = new System.Drawing.Size(969, 158);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "میکسر";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(481, 115);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(375, 32);
+            this.comboBox2.TabIndex = 12;
+            // 
             // btnAddMixer
             // 
             this.btnAddMixer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(113)))), ((int)(((byte)(0)))));
-            this.btnAddMixer.Location = new System.Drawing.Point(15, 118);
+            this.btnAddMixer.Location = new System.Drawing.Point(35, 118);
             this.btnAddMixer.Name = "btnAddMixer";
             this.btnAddMixer.Size = new System.Drawing.Size(76, 27);
-            this.btnAddMixer.TabIndex = 50;
+            this.btnAddMixer.TabIndex = 13;
             this.btnAddMixer.Text = "افزودن F2";
             this.btnAddMixer.Click += new System.EventHandler(this.btnAddMixer_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnAddMixer.GetChildAt(0))).Text = "افزودن F2";
@@ -438,23 +446,23 @@
             "استیجاری"});
             this.cmbMixerOwnership.Location = new System.Drawing.Point(259, 68);
             this.cmbMixerOwnership.Name = "cmbMixerOwnership";
-            this.cmbMixerOwnership.Size = new System.Drawing.Size(158, 32);
-            this.cmbMixerOwnership.TabIndex = 49;
+            this.cmbMixerOwnership.Size = new System.Drawing.Size(149, 32);
+            this.cmbMixerOwnership.TabIndex = 10;
             this.cmbMixerOwnership.Text = "انتخاب کنید...";
             this.cmbMixerOwnership.SelectedIndexChanged += new System.EventHandler(this.cmbOwnership_SelectedIndexChanged);
             // 
             // txtMixerRent
             // 
             this.txtMixerRent.Enabled = false;
-            this.txtMixerRent.Location = new System.Drawing.Point(39, 71);
+            this.txtMixerRent.Location = new System.Drawing.Point(35, 71);
             this.txtMixerRent.Name = "txtMixerRent";
-            this.txtMixerRent.Size = new System.Drawing.Size(122, 31);
-            this.txtMixerRent.TabIndex = 47;
+            this.txtMixerRent.Size = new System.Drawing.Size(126, 31);
+            this.txtMixerRent.TabIndex = 11;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(184, 74);
+            this.label13.Location = new System.Drawing.Point(161, 74);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(60, 24);
             this.label13.TabIndex = 48;
@@ -463,7 +471,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(423, 72);
+            this.label14.Location = new System.Drawing.Point(417, 72);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 24);
             this.label14.TabIndex = 46;
@@ -474,7 +482,7 @@
             this.txtMixerWeightingPrice.Location = new System.Drawing.Point(733, 67);
             this.txtMixerWeightingPrice.Name = "txtMixerWeightingPrice";
             this.txtMixerWeightingPrice.Size = new System.Drawing.Size(123, 31);
-            this.txtMixerWeightingPrice.TabIndex = 42;
+            this.txtMixerWeightingPrice.TabIndex = 8;
             // 
             // label9
             // 
@@ -487,15 +495,15 @@
             // 
             // txtMixerPlaque
             // 
-            this.txtMixerPlaque.Location = new System.Drawing.Point(481, 70);
+            this.txtMixerPlaque.Location = new System.Drawing.Point(482, 67);
             this.txtMixerPlaque.Name = "txtMixerPlaque";
             this.txtMixerPlaque.Size = new System.Drawing.Size(158, 31);
-            this.txtMixerPlaque.TabIndex = 40;
+            this.txtMixerPlaque.TabIndex = 9;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(641, 73);
+            this.label10.Location = new System.Drawing.Point(650, 74);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 24);
             this.label10.TabIndex = 41;
@@ -503,15 +511,15 @@
             // 
             // txtMixerNetWeight
             // 
-            this.txtMixerNetWeight.Location = new System.Drawing.Point(39, 16);
+            this.txtMixerNetWeight.Location = new System.Drawing.Point(35, 16);
             this.txtMixerNetWeight.Name = "txtMixerNetWeight";
             this.txtMixerNetWeight.Size = new System.Drawing.Size(70, 31);
-            this.txtMixerNetWeight.TabIndex = 38;
+            this.txtMixerNetWeight.TabIndex = 7;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(115, 18);
+            this.label8.Location = new System.Drawing.Point(106, 18);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 24);
             this.label8.TabIndex = 39;
@@ -519,15 +527,15 @@
             // 
             // txtMierFullWeight
             // 
-            this.txtMierFullWeight.Location = new System.Drawing.Point(194, 15);
+            this.txtMierFullWeight.Location = new System.Drawing.Point(190, 15);
             this.txtMierFullWeight.Name = "txtMierFullWeight";
             this.txtMierFullWeight.Size = new System.Drawing.Size(70, 31);
-            this.txtMierFullWeight.TabIndex = 36;
+            this.txtMierFullWeight.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(270, 19);
+            this.label5.Location = new System.Drawing.Point(263, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 24);
             this.label5.TabIndex = 37;
@@ -535,16 +543,16 @@
             // 
             // txtMierEmpetyWeight
             // 
-            this.txtMierEmpetyWeight.Location = new System.Drawing.Point(333, 15);
+            this.txtMierEmpetyWeight.Location = new System.Drawing.Point(328, 15);
             this.txtMierEmpetyWeight.Name = "txtMierEmpetyWeight";
             this.txtMierEmpetyWeight.Size = new System.Drawing.Size(80, 31);
-            this.txtMierEmpetyWeight.TabIndex = 34;
+            this.txtMierEmpetyWeight.TabIndex = 5;
             this.txtMierEmpetyWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(419, 17);
+            this.label6.Location = new System.Drawing.Point(410, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 24);
             this.label6.TabIndex = 35;
@@ -552,15 +560,15 @@
             // 
             // txtMixerDriverName
             // 
-            this.txtMixerDriverName.Location = new System.Drawing.Point(499, 15);
+            this.txtMixerDriverName.Location = new System.Drawing.Point(481, 15);
             this.txtMixerDriverName.Name = "txtMixerDriverName";
             this.txtMixerDriverName.Size = new System.Drawing.Size(158, 31);
-            this.txtMixerDriverName.TabIndex = 32;
+            this.txtMixerDriverName.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(663, 20);
+            this.label4.Location = new System.Drawing.Point(654, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 24);
             this.label4.TabIndex = 33;
@@ -571,7 +579,7 @@
             this.txtBillNumber.Location = new System.Drawing.Point(733, 17);
             this.txtBillNumber.Name = "txtBillNumber";
             this.txtBillNumber.Size = new System.Drawing.Size(123, 31);
-            this.txtBillNumber.TabIndex = 30;
+            this.txtBillNumber.TabIndex = 3;
             // 
             // label3
             // 
@@ -581,6 +589,15 @@
             this.label3.Size = new System.Drawing.Size(73, 24);
             this.label3.TabIndex = 31;
             this.label3.Text = "شماره قبض:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(899, 118);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 24);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "آدرس:";
             // 
             // tabPage2
             // 
@@ -597,17 +614,118 @@
             this.tabPage2.Controls.Add(this.label25);
             this.tabPage2.Location = new System.Drawing.Point(4, 33);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(953, 158);
+            this.tabPage2.Size = new System.Drawing.Size(969, 158);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "پمپ";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(496, 68);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(375, 32);
+            this.comboBox3.TabIndex = 7;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(900, 76);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(45, 24);
+            this.label27.TabIndex = 81;
+            this.label27.Text = "آدرس:";
+            // 
+            // btnAddCareer
+            // 
+            this.btnAddCareer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
+            this.btnAddCareer.Location = new System.Drawing.Point(82, 114);
+            this.btnAddCareer.Name = "btnAddCareer";
+            this.btnAddCareer.Size = new System.Drawing.Size(76, 27);
+            this.btnAddCareer.TabIndex = 8;
+            this.btnAddCareer.Text = "افزودن F2";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.btnAddCareer.GetChildAt(0))).Text = "افزودن F2";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "اموال",
+            "استیجاری"});
+            this.comboBox1.Location = new System.Drawing.Point(295, 16);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(158, 32);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.Text = "انتخاب کنید...";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(82, 17);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(122, 31);
+            this.textBox9.TabIndex = 6;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(211, 16);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(60, 24);
+            this.label19.TabIndex = 56;
+            this.label19.Text = "اجاره بها :";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(459, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 24);
+            this.label21.TabIndex = 54;
+            this.label21.Text = "مالکیت :";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(514, 17);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(158, 31);
+            this.textBox19.TabIndex = 4;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(678, 20);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(64, 24);
+            this.label23.TabIndex = 53;
+            this.label23.Text = "نام راننده :";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(748, 17);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(123, 31);
+            this.textBox20.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(878, 20);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(73, 24);
+            this.label25.TabIndex = 51;
+            this.label25.Text = "شماره قبض:";
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(402, 27);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(180, 31);
-            this.textBox1.TabIndex = 28;
+            this.textBox1.TabIndex = 1;
             // 
             // label2
             // 
@@ -617,15 +735,6 @@
             this.label2.Size = new System.Drawing.Size(77, 24);
             this.label2.TabIndex = 29;
             this.label2.Text = "شماره تماس:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(899, 118);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 24);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "آدرس:";
             // 
             // pbCustomerSearch
             // 
@@ -642,7 +751,7 @@
             this.txtCustomer.Location = new System.Drawing.Point(717, 26);
             this.txtCustomer.Name = "txtCustomer";
             this.txtCustomer.Size = new System.Drawing.Size(180, 31);
-            this.txtCustomer.TabIndex = 23;
+            this.txtCustomer.TabIndex = 0;
             // 
             // label1
             // 
@@ -668,11 +777,11 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dgwSellItem.Location = new System.Drawing.Point(20, 272);
+            this.dgwSellItem.Location = new System.Drawing.Point(0, 272);
             this.dgwSellItem.Name = "dgwSellItem";
             this.dgwSellItem.ReadOnly = true;
-            this.dgwSellItem.Size = new System.Drawing.Size(957, 195);
-            this.dgwSellItem.TabIndex = 8;
+            this.dgwSellItem.Size = new System.Drawing.Size(977, 195);
+            this.dgwSellItem.TabIndex = 9;
             // 
             // Column1
             // 
@@ -728,120 +837,11 @@
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "اموال",
-            "استیجاری"});
-            this.comboBox1.Location = new System.Drawing.Point(295, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 32);
-            this.comboBox1.TabIndex = 57;
-            this.comboBox1.Text = "انتخاب کنید...";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(82, 17);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(122, 31);
-            this.textBox9.TabIndex = 55;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(211, 16);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 24);
-            this.label19.TabIndex = 56;
-            this.label19.Text = "اجاره بها :";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(459, 16);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(53, 24);
-            this.label21.TabIndex = 54;
-            this.label21.Text = "مالکیت :";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(514, 17);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(158, 31);
-            this.textBox19.TabIndex = 52;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(678, 20);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(64, 24);
-            this.label23.TabIndex = 53;
-            this.label23.Text = "نام راننده :";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(748, 17);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(123, 31);
-            this.textBox20.TabIndex = 50;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(878, 20);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(73, 24);
-            this.label25.TabIndex = 51;
-            this.label25.Text = "شماره قبض:";
-            // 
-            // btnAddCareer
-            // 
-            this.btnAddCareer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(168)))), ((int)(((byte)(12)))));
-            this.btnAddCareer.Location = new System.Drawing.Point(82, 114);
-            this.btnAddCareer.Name = "btnAddCareer";
-            this.btnAddCareer.Size = new System.Drawing.Size(76, 27);
-            this.btnAddCareer.TabIndex = 58;
-            this.btnAddCareer.Text = "افزودن F2";
-            ((Telerik.WinControls.UI.RadButtonElement)(this.btnAddCareer.GetChildAt(0))).Text = "افزودن F2";
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(170)))), ((int)(((byte)(2)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.btnAddCareer.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(128)))), ((int)(((byte)(20)))));
-            // 
             // object_7cf25c9a_32e6_4de9_bb2e_40e29d680a47
             // 
             this.object_7cf25c9a_32e6_4de9_bb2e_40e29d680a47.Name = "object_7cf25c9a_32e6_4de9_bb2e_40e29d680a47";
             this.object_7cf25c9a_32e6_4de9_bb2e_40e29d680a47.StretchHorizontally = true;
             this.object_7cf25c9a_32e6_4de9_bb2e_40e29d680a47.StretchVertically = true;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(481, 115);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(375, 32);
-            this.comboBox2.TabIndex = 80;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(496, 68);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(375, 32);
-            this.comboBox3.TabIndex = 82;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(900, 76);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(45, 24);
-            this.label27.TabIndex = 81;
-            this.label27.Text = "آدرس:";
             // 
             // frmConcreteSell
             // 
@@ -865,9 +865,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnAddMixer)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddCareer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomerSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwSellItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAddCareer)).EndInit();
             this.ResumeLayout(false);
 
         }
